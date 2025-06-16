@@ -1,0 +1,1 @@
+/dataset/gsm8k - /generate_res/gsm8k/gsm8k_fewshot ✅ Accuracy: 14/15 correct → 93.33%

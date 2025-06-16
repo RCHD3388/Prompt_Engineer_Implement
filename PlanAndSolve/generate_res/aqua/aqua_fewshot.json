@@ -1,0 +1,227 @@
+[
+  {
+    "question": "A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car and, in the process, it takes 10 minutes for the angle of elevation to change from 45° to 60°. After how much more time will this car reach the base of the tower?",
+    "options": [
+      "A)5(√3 + 1)",
+      "B)6(√3 + √2)",
+      "C)7(√3 – 1)",
+      "D)8(√3 – 2)",
+      "E)None of these"
+    ],
+    "plan": "1.  Draw a diagram representing the situation. Let the height of the tower be $h$. Let the initial distance of the car from the base of the tower be $x$, and the distance after 10 minutes be $y$.\n2.  Write equations for the angles of elevation at the two points. We have $\\tan(45^\\circ) = \\frac{h}{x}$ and $\\tan(60^\\circ) = \\frac{h}{y}$.\n3.  Since $\\tan(45^\\circ) = 1$, we have $x = h$. Since $\\tan(60^\\circ) = \\sqrt{3}$, we have $y = \\frac{h}{\\sqrt{3}}$.\n4.  The car travels a distance $x - y$ in 10 minutes. We have $x - y = h - \\frac{h}{\\sqrt{3}} = h(1 - \\frac{1}{\\sqrt{3}})$.\n5.  Let $t$ be the time it takes for the car to travel the distance $y$ to the base of the tower. Since the car is moving at a uniform speed, we have $\\frac{x-y}{10} = \\frac{y}{t}$.\n6.  Substitute the expressions for $x$ and $y$ in terms of $h$:\n    $\\frac{h(1 - \\frac{1}{\\sqrt{3}})}{10} = \\frac{\\frac{h}{\\sqrt{3}}}{t}$.\n7.  Simplify the equation to solve for $t$:\n    $\\frac{1 - \\frac{1}{\\sqrt{3}}}{10} = \\frac{1}{\\sqrt{3}t}$.\n    $t = \\frac{10}{\\sqrt{3}(1 - \\frac{1}{\\sqrt{3}})} = \\frac{10}{\\sqrt{3} - 1}$.\n8.  Rationalize the denominator:\n    $t = \\frac{10(\\sqrt{3} + 1)}{(\\sqrt{3} - 1)(\\sqrt{3} + 1)} = \\frac{10(\\sqrt{3} + 1)}{3 - 1} = \\frac{10(\\sqrt{3} + 1)}{2} = 5(\\sqrt{3} + 1)$.",
+    "solve": "Let $h$ be the height of the tower.\nLet $x$ be the initial distance from the car to the tower.\nLet $y$ be the distance from the car to the tower after 10 minutes.\n$\\tan(45^\\circ) = \\frac{h}{x} \\Rightarrow x = h$\n$\\tan(60^\\circ) = \\frac{h}{y} \\Rightarrow y = \\frac{h}{\\sqrt{3}}$\nThe car travels $x - y$ in 10 minutes, so $x - y = h - \\frac{h}{\\sqrt{3}} = h(1 - \\frac{1}{\\sqrt{3}})$.\nLet $t$ be the time it takes to travel the remaining distance $y$.\nSince the speed is uniform, $\\frac{x-y}{10} = \\frac{y}{t}$.\n$\\frac{h(1 - \\frac{1}{\\sqrt{3}})}{10} = \\frac{\\frac{h}{\\sqrt{3}}}{t}$\n$\\frac{1 - \\frac{1}{\\sqrt{3}}}{10} = \\frac{1}{\\sqrt{3}t}$\n$t = \\frac{10}{\\sqrt{3}(1 - \\frac{1}{\\sqrt{3}})} = \\frac{10}{\\sqrt{3} - 1} = \\frac{10(\\sqrt{3} + 1)}{3 - 1} = \\frac{10(\\sqrt{3} + 1)}{2} = 5(\\sqrt{3} + 1)$",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "The original price of an item is discounted 22%. A customer buys the item at this discounted price using a $20-off coupon. There is no tax on the item, and this was the only item the customer bought. If the customer paid $1.90 more than half the original price of the item, what was the original price of the item?",
+    "options": [
+      "A)$61",
+      "B)$65",
+      "C)$67.40",
+      "D)$70",
+      "E)$78.20"
+    ],
+    "plan": "1. Define a variable for the original price.\n2. Write an expression for the discounted price (22% off).\n3. Write an expression for the price after the coupon.\n4. Write an equation based on the given information (paid $1.90 more than half the original price).\n5. Solve for the original price.",
+    "solve": "Let 'x' be the original price of the item.\nThe discounted price is x - 0.22x = 0.78x.\nThe price after the coupon is 0.78x - 20.\nThe customer paid $1.90 more than half the original price, so 0.78x - 20 = 0.5x + 1.90.\nNow solve for x:\n0.  78x - 0.5x = 1.90 + 20\n0.  28x = 21.90\nx = 21.90 / 0.28\nx = 78.214...\n\nRounding to two decimal places, the original price is approximately $78.21. Among the answer choices, $78.20 is the closest.",
+    "generated_answer": "E",
+    "expected_answer": "E",
+    "correct": true
+  },
+  {
+    "question": "Find out which of the following values is the multiple of X, if it is divisible by 9 and 12?",
+    "options": [
+      "A)36",
+      "B)15",
+      "C)17",
+      "D)5",
+      "E)7"
+    ],
+    "plan": "- Find the Least Common Multiple (LCM) of 9 and 12.\n- Check each option to see if it is a multiple of the LCM.",
+    "solve": "- Prime factorization of 9: 3 x 3\n- Prime factorization of 12: 2 x 2 x 3\n- LCM(9, 12) = 2 x 2 x 3 x 3 = 36\n- Check the options:\n    - A) 36 / 36 = 1 (Multiple)\n    - B) 15 / 36 = Not an integer\n    - C) 17 / 36 = Not an integer\n    - D) 5 / 36 = Not an integer\n    - E) 7 / 36 = Not an integer",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during the next month is 0.74. What is the greatest value for the probability that neither of these two events will occur?",
+    "options": [
+      "A)0.22",
+      "B)0.26",
+      "C)0.37",
+      "D)0.46",
+      "E)0.63"
+    ],
+    "plan": "- Define events: Let A be the event that Stock A increases in value, and B be the event that Stock B increases in value.\n- We are given P(A) = 0.56 and P(B) = 0.74.\n- We want to find the greatest value for the probability that neither A nor B occurs, which is P(A' and B') = P((A or B)') = 1 - P(A or B).\n- To maximize P(A' and B'), we need to minimize P(A or B).\n- We know that P(A or B) = P(A) + P(B) - P(A and B).\n- To minimize P(A or B), we need to maximize P(A and B). The maximum value of P(A and B) is the minimum of P(A) and P(B).\n- So, max(P(A and B)) = min(P(A), P(B)) = min(0.56, 0.74) = 0.56.\n- Then, min(P(A or B)) = P(A) + P(B) - max(P(A and B)) = 0.56 + 0.74 - 0.56 = 0.74.\n- Therefore, max(P(A' and B')) = 1 - min(P(A or B)) = 1 - 0.74 = 0.26.",
+    "solve": "P(A) = 0.56\nP(B) = 0.74\nP(A or B) = P(A) + P(B) - P(A and B)\nWe want to maximize P(A' and B') = P((A or B)') = 1 - P(A or B).  This means we want to minimize P(A or B).\nTo minimize P(A or B), we need to maximize P(A and B).\nThe maximum value of P(A and B) is min(P(A), P(B)) = min(0.56, 0.74) = 0.56.\nSo, min(P(A or B)) = 0.56 + 0.74 - 0.56 = 0.74.\nmax(P(A' and B')) = 1 - 0.74 = 0.26.",
+    "generated_answer": "B",
+    "expected_answer": "B",
+    "correct": true
+  },
+  {
+    "question": "A trader sold an article at a profit of 20% for Rs.360. What is the cost price of the article?",
+    "options": [
+      "A)270",
+      "B)300",
+      "C)280",
+      "D)320",
+      "E)315"
+    ],
+    "plan": "- Let the cost price be 'x'.\n- The selling price is the cost price plus the profit.\n- The profit is 20% of the cost price.\n- Set up an equation: x + 0.20x = 360\n- Solve for x.",
+    "solve": "Let the cost price be x.\nSelling price = Cost price + Profit\nProfit = 20% of x = 0.20x\nSelling price = x + 0.20x = 1.20x\nGiven that the selling price is Rs. 360.\n1.  20x = 360\nx = 360 / 1.20\nx = 300",
+    "generated_answer": "B",
+    "expected_answer": "B",
+    "correct": true
+  },
+  {
+    "question": "20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 was black, after which they were all returned to the bag. If the percentage of black marbles pulled out the second time represents their percentage in the bag, how many marbles in total Q does the bag currently hold?",
+    "options": [
+      "A)40",
+      "B)200",
+      "C)380",
+      "D)400",
+      "E)3200"
+    ],
+    "plan": "- Determine the percentage of black marbles in the second sample.\n- Set up a proportion to represent the relationship between the number of black marbles, the total number of marbles, and the percentage.\n- Solve for the total number of marbles in the bag.",
+    "solve": "- The percentage of black marbles in the second sample is (1 black marble / 20 total marbles) * 100% = 5%.\n- Let Q be the total number of marbles in the bag. We know there are 20 black marbles in the bag.\n- We can set up the proportion: 20 / Q = 5 / 100 (since 5% = 5/100).\n- Cross-multiply: 20 * 100 = 5 * Q\n- Simplify: 2000 = 5Q\n- Divide both sides by 5: Q = 2000 / 5\n- Q = 400",
+    "generated_answer": "D",
+    "expected_answer": "D",
+    "correct": true
+  },
+  {
+    "question": "Find the total no. of distinct bike no.'s that can beformed using 2 letters followed by 2 no.'s. How many letters need to be distinct?",
+    "options": [
+      "A)74453",
+      "B)64543",
+      "C)74325",
+      "D)65000",
+      "E)97656"
+    ],
+    "plan": "- Determine the number of choices for each of the 2 letters. Since the letters must be distinct, the first letter has 26 options, and the second letter has 25 options.\n- Determine the number of choices for each of the 2 numbers. Each number has 10 options (0-9).\n- Multiply the number of choices for each position to find the total number of distinct bike numbers.",
+    "solve": "- Number of choices for the first letter: 26\n- Number of choices for the second letter (distinct from the first): 25\n- Number of choices for the first number: 10\n- Number of choices for the second number: 10\n\nTotal number of distinct bike numbers = 26 * 25 * 10 * 10 = 65000",
+    "generated_answer": "D",
+    "expected_answer": "D",
+    "correct": true
+  },
+  {
+    "question": "A train running at a speed of 100 miles/hour, takes 10 hours to reach its destination. After covering quarter of the distance, it starts raining and the train has to be slowed to speed of 75 miles/hour. What is the total journey duration?",
+    "options": [
+      "A)10",
+      "B)11.5",
+      "C)12.5",
+      "D)13.5",
+      "E)15"
+    ],
+    "plan": "- Calculate the total distance of the journey.\n- Calculate the distance covered before the rain.\n- Calculate the remaining distance after the rain started.\n- Calculate the time taken to cover the initial distance at 100 miles/hour.\n- Calculate the time taken to cover the remaining distance at 75 miles/hour.\n- Add the two times to get the total journey duration.",
+    "solve": "Total distance = Speed * Time = 100 miles/hour * 10 hours = 1000 miles\nDistance covered before rain = (1/4) * 1000 miles = 250 miles\nRemaining distance = 1000 miles - 250 miles = 750 miles\nTime taken to cover initial distance = Distance / Speed = 250 miles / 100 miles/hour = 2.5 hours\nTime taken to cover remaining distance = Distance / Speed = 750 miles / 75 miles/hour = 10 hours\nTotal journey duration = 2.5 hours + 10 hours = 12.5 hours",
+    "generated_answer": "C",
+    "expected_answer": "C",
+    "correct": true
+  },
+  {
+    "question": "Of the 200 students in a school, at least 45% attended the prom night and at least 35% took part in the debating session. What is the maximum number of students who could have neither attended the prom night nor the debating session?",
+    "options": [
+      "A)27",
+      "B)81",
+      "C)90",
+      "D)99",
+      "E)110"
+    ],
+    "plan": "- Calculate the minimum number of students who attended the prom night.\n- Calculate the minimum number of students who took part in the debating session.\n- Calculate the maximum number of students who participated in at least one event (prom or debate). This occurs when the overlap between the two groups is maximized. To maximize overlap, assume all debaters also attended the prom. Thus, the number who attended at least one event is just the number who attended the prom.\n- Subtract the number of students who participated in at least one event from the total number of students to find the number of students who participated in neither event.",
+    "solve": "- Minimum number of students attending prom night: 45% of 200 = 0.45 * 200 = 90\n- Minimum number of students in debating session: 35% of 200 = 0.35 * 200 = 70\n- Maximum number of students participating in at least one event: Since at least 90 attended the prom, the maximum overlap would result in all 70 debaters being included in the 90 prom attendees. Therefore, at least 90 students attended at least one event.\n- Maximum number of students who attended neither event: 200 - 90 = 110",
+    "generated_answer": "E",
+    "expected_answer": "E",
+    "correct": true
+  },
+  {
+    "question": "A sales person gets a 10% commission on each sale he makes. How many sales of $250 each must he make in order to reach a salary of at least $1000?",
+    "options": [
+      "A)15",
+      "B)24",
+      "C)25",
+      "D)40",
+      "E)52"
+    ],
+    "plan": "- Calculate the commission per sale: 10% of $250.\n- Divide the desired salary ($1000) by the commission per sale to find the number of sales needed.\n- If the result is not a whole number, round up to the next whole number since the salesperson needs to reach *at least* $1000.",
+    "solve": "- Commission per sale: 0.10 * $250 = $25\n- Number of sales needed: $1000 / $25 = 40",
+    "generated_answer": "D",
+    "expected_answer": "D",
+    "correct": true
+  },
+  {
+    "question": "A company produces 420 units of a particular computer component every month, at a production cost to the company of $110 per component, and sells all of the components by the end of each month. What is the minimum selling price per component that will guarantee that the yearly profit (revenue from sales minus production costs) will be at least $626,400 ?",
+    "options": [
+      "A)226",
+      "B)230",
+      "C)240",
+      "D)260",
+      "E)280"
+    ],
+    "plan": "1. Calculate the total yearly production cost.\n2. Calculate the required yearly revenue by adding the desired profit to the yearly production cost.\n3. Calculate the required monthly revenue by dividing the required yearly revenue by 12.\n4. Calculate the required selling price per component by dividing the required monthly revenue by the number of components produced each month.",
+    "solve": "1. Total yearly production cost: 420 units/month * $110/unit * 12 months/year = $554,400\n2. Required yearly revenue: $554,400 + $626,400 = $1,180,800\n3. Required monthly revenue: $1,180,800 / 12 months = $98,400\n4. Required selling price per component: $98,400 / 420 units = $234.29\n\nSince we need the *minimum* selling price that guarantees the profit, we round up to the nearest dollar. The closest option is $240. Let's verify to be sure that $230 is not enough:\n\nIf selling price is $230:\nMonthly revenue: 420 * $230 = $96,600\nYearly revenue: $96,600 * 12 = $1,159,200\nYearly profit: $1,159,200 - $554,400 = $604,800 (which is less than $626,400)\n\nIf selling price is $240:\nMonthly revenue: 420 * $240 = $100,800\nYearly revenue: $100,800 * 12 = $1,209,600\nYearly profit: $1,209,600 - $554,400 = $655,200 (which is greater than $626,400)",
+    "generated_answer": "C",
+    "expected_answer": "B",
+    "correct": false
+  },
+  {
+    "question": "At a certain factory, 10 percent of the staplers produced on Monday were defective and 2 percent of the non-defective staplers were rejected by mistake. If 72 of the non-defective staplers were rejected, what was the number of staplers produced that day?",
+    "options": [
+      "A)4,000",
+      "B)4,200",
+      "C)4,500",
+      "D)4,800",
+      "E)5,000"
+    ],
+    "plan": "- Let 'x' be the total number of staplers produced on Monday.\n- 10% of x were defective, so 0.1x were defective.\n- Therefore, 90% of x were non-defective, so 0.9x were non-defective.\n- 2% of the non-defective staplers were rejected by mistake, so 0.02 * (0.9x) were rejected.\n- We are given that 72 non-defective staplers were rejected, so 0.02 * (0.9x) = 72.\n- Solve for x.",
+    "solve": "0.  02 * (0.9x) = 72\n1.  018x = 72\nx = 72 / 0.018\nx = 4000",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "Machine A puts out a yo-yo every 6 minutes. Machine B puts out a yo-yo every 9 minutes. After how many minutes will they have produced 10 yo-yos?",
+    "options": [
+      "A)24 minutes",
+      "B)32 minutes",
+      "C)36 minutes",
+      "D)64 minutes",
+      "E)72 minutes"
+    ],
+    "plan": "- Find the rate of production for each machine (yo-yos per minute).\n- Combine the rates to find the total rate of production.\n- Calculate the time it takes to produce 10 yo-yos at the combined rate.",
+    "solve": "Machine A produces 1 yo-yo every 6 minutes, so its rate is 1/6 yo-yos per minute.\nMachine B produces 1 yo-yo every 9 minutes, so its rate is 1/9 yo-yos per minute.\nThe combined rate is (1/6) + (1/9) = (3/18) + (2/18) = 5/18 yo-yos per minute.\nTo produce 10 yo-yos, the time required is 10 / (5/18) = 10 * (18/5) = (10/5) * 18 = 2 * 18 = 36 minutes.",
+    "generated_answer": "C",
+    "expected_answer": "C",
+    "correct": true
+  },
+  {
+    "question": "Add: +45 and -30",
+    "options": [
+      "A)-30",
+      "B)+30",
+      "C)0",
+      "D)15",
+      "E)-15"
+    ],
+    "plan": "- Add the two numbers together, taking into account the signs.\n- Since the numbers have different signs, we subtract the smaller absolute value from the larger absolute value.\n- The result will have the sign of the number with the larger absolute value.",
+    "solve": "45 + (-30) = 45 - 30 = 15\nSince 45 has a larger absolute value than -30, the result is positive.",
+    "generated_answer": "D",
+    "expected_answer": "D",
+    "correct": true
+  },
+  {
+    "question": "In how many ways can the letters of the word \"PROBLEC\" be rearranged to make 7 letter words such that none of the letters repeat?",
+    "options": [
+      "A)2!",
+      "B)3!",
+      "C)7!",
+      "D)8!",
+      "E)9!"
+    ],
+    "plan": "- Determine the number of distinct letters in the word \"PROBLEC\".\n- Recognize that rearranging n distinct objects is a permutation problem.\n- Calculate the number of permutations of the letters.",
+    "solve": "The word \"PROBLEC\" has 7 distinct letters: P, R, O, B, L, E, C.\nWe want to rearrange these 7 letters to form 7-letter words. This is a permutation of 7 distinct objects taken 7 at a time, which is denoted as P(7,7) or 7!.\n7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 5040",
+    "generated_answer": "C",
+    "expected_answer": "C",
+    "correct": true
+  }
+]
