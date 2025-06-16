@@ -50,11 +50,12 @@ def handle_game24(args):
             "index": index,
             "input": row["Puzzles"],
             "steps": [],
+            "final_score": 0,
         }
-
+        
         for step_index, _ in enumerate(range(3)):
             generated_samples = []
-            if index == 0:
+            if step_index == 0:
                 current_input_list = [list(map(int, row["Puzzles"].split()))]
             else: 
                 current_input_list = new_target_input.copy()
@@ -75,10 +76,16 @@ def handle_game24(args):
             # STEP 2 EVALUATE SAMPLES
             candidate_input_list = []
             for sample in generated_samples:
-                match = re.search(r'\(left:\s*([0-9\s]+)\)$', sample)
+                match = re.search(r'\(left:\s*([0-9.\s]+(?:\.\.\.)?)\)$', sample)
                 if match:
-                    numbers = list(map(int, match.group(1).strip().split()))
-                    candidate_input_list.append(numbers)
+                    raw_values = match.group(1).strip().split()
+                    cleaned_values = [val.replace('...', '') for val in raw_values]
+                    try:
+                        numbers = [float(v) if '.' in v else int(v) for v in cleaned_values]
+                        candidate_input_list.append(numbers)
+                    except ValueError:
+                        # Lewati jika parsing gagal (misalnya string tidak valid)
+                        continue
             
             print(candidate_input_list)
             print("Evaluating candidates...")
@@ -122,7 +129,9 @@ def handle_game24(args):
                 "new_target_path": [generated_samples[i] for i in top_3_index]
             })
         
+        logging_info["final_score"] = "passed" if logging_info["steps"][2]["candidate_scores"][0] == 24 else "failed"
         output_info.append(logging_info)
+        time.sleep(60)  # Sleep to avoid rate limiting issues
 
     # Save output_info to file based on the output argument
     output_path = args.output
