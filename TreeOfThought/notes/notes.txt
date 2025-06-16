@@ -1,0 +1,1 @@
+python main.py --technique tot --dataset dataset/gsm8k.json --dataset-type gsm8k --output generate_res/gsm8k_tot.json
