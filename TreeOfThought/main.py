@@ -17,14 +17,14 @@ def parse_args():
     parser.add_argument(
         "--output",
         type=str,
-        default="generate_res/gameof24_res.json",
-        help="Output file path (default: generate_res/gameof24_res.json)"
+        default="generate_res/dummy.json",
+        help="Output file path (default: generate_res/dummy.json)"
     )
     parser.add_argument(
         "--dataset",
         type=str,
-        default="game24",
-        help="Dataset type ? game24 or writing (default: game24)"
+        default="writing",
+        help="Dataset type ? game24 or writing (default: writing)"
     )
     parser.add_argument(
         "--n-sample",
@@ -52,7 +52,7 @@ def handle_game24(args):
             "steps": [],
             "final_score": 0,
         }
-        
+        print("\nSolve Puzzle Record : ", index)
         for step_index, _ in enumerate(range(3)):
             generated_samples = []
             if step_index == 0:
@@ -109,7 +109,6 @@ def handle_game24(args):
                     
             time.sleep(60)
             
-            
             print("Candidate scores:", candidate_scores)
 
             # STEP 3 FINALIZE ANSWER
@@ -129,7 +128,7 @@ def handle_game24(args):
                 "new_target_path": [generated_samples[i] for i in top_3_index]
             })
         
-        logging_info["final_score"] = "passed" if logging_info["steps"][2]["candidate_scores"][0] == 24 else "failed"
+        logging_info["final_score"] = "passed" if logging_info["steps"][2]["new_target_input"][0] == "[24]" else "failed"
         output_info.append(logging_info)
         time.sleep(60)  # Sleep to avoid rate limiting issues
 
@@ -140,14 +139,38 @@ def handle_game24(args):
     return
 
 def handle_writing(args):
+    with open(os.path.join("dataset", "writing.txt"), "r") as f:
+        writing_data = [line.strip() for line in f.readlines()]
+    
+    output_info = []
+    for idx, data in enumerate(writing_data):
+        logging_info = {
+            "id": idx + 1,
+            "input": data,
+            "steps": []
+        }
+
+        # ToT Prompting 
+
+
+        output_info.append(logging_info)
+    
+    # Save output_info to file based on the output argument
+    output_path = args.output
+    save_json(output_info, output_path)
     return
+
+
 def main():
     args = parse_args()
+    print("Arguments parsed:")
+    for arg, value in vars(args).items():
+        print(f"{arg}: {value}")
+    print("\n")
+
     if args.dataset == "game24":
-        print("Game of 24 dataset")
         handle_game24(args)
     elif args.dataset == "writing":
-        print("Writing dataset")
         handle_writing(args)
         
 if __name__ == "__main__":

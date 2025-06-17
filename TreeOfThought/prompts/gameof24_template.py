@@ -1,5 +1,10 @@
-generate_prompt = """you are only allowed to choose two input numbers to obtain a new number
-you MUST provide {n_sample} possible next steps
+generate_prompt = """
+Select exactly two of the input numbers, combine them using one of the operators (+, -, , /), and replace them with the result—reducing the list by one number.
+
+IMPORTANT:
+1. You MUST provide 5 possible next steps that are STRATEGICALLY HELPFUL toward reaching 24.
+2. Do NOT combine numbers randomly — choose pairs that can help reduce the input set toward 24.
+3. if the number 24 already exists in the input, you are NOT done. You still MUST combine two numbers into one. Do NOT stop early just because 24 appears — all input numbers must be used exactly once, in a valid operation chain.
 
 Input: 2 8 8 14
 Possible next steps:
@@ -25,8 +30,9 @@ Input: {input}
 Possible next steps:
 """
 
-evaluate_prompt = """Evaluate if given numbers can reach 24 (sure/likely/impossible). 
-Each number can be used only and must be used once.
+evaluate_prompt = """Evaluate if the given numbers can reach exactly 24 by combining each number exactly once using +, -, *, or /. 
+Each input number must be used exactly one time — no numbers can be left unused or reused.
+
 input: 10 14
 10 + 14 = 24
 evaluate: sure
