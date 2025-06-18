@@ -1,0 +1,44 @@
+[
+  {
+    "question": "Take the letters at position 3 of the words in \"Masako Carmen Perera Sun\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Masako Carmen Perera Sun\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Masako\", \"Carmen\", \"Perera\", \"Sun\"]",
+      "",
+      ""
+    ]
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Rajesh Annie Adamu Maung\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Rajesh Annie Adamu Maung\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Rajesh\", \"Annie\", \"Adamu\", \"Maung\"]",
+      "",
+      ""
+    ]
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Marilyn Dominique Yakubu Choe\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Marilyn Dominique Yakubu Choe\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Marilyn\", \"Dominique\", \"Yakubu\", \"Choe\"]",
+      "",
+      ""
+    ]
+  }
+]

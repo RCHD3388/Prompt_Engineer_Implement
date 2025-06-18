@@ -1,0 +1,370 @@
+[
+  {
+    "question": "Reverse the sequence \"alarm clock, purse, umbrella, case\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. alarm clock, 2. purse, 3. umbrella, 4. case\". The sequence is 4 items long, which is equal to the minimum length of 4, so we split it. Half of 4 is 4 / 2 = 2.0. Dropping the decimal, we get that the first half will be 2 items long. The first half (2 items) of the sequence is \"1. alarm clock, 2. purse\".",
+      "[extract] The first half of the sequence ends with \"2. purse\", so the second half starts after \"2. purse\" with \"3. umbrella\". The full sequence is 4 items long and the first half is 2 items long, so the second half will be 4 - 2 = 2 items long, ending in \"4. case\". The second half of the sequence (2 items) is \"3. umbrella, 4. case\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. alarm clock, 2. purse",
+      "3. umbrella, 4. case",
+      "alarm clock, purse",
+      "umbrella, case",
+      "purse, alarm clock",
+      "case, umbrella",
+      "case, umbrella, purse, alarm clock"
+    ],
+    "is_valid": true
+  },
+  {
+    "question": "Reverse the sequence \"postcard, match, bin, light bulb\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. postcard, 2. match, 3. bin, 4. light bulb\". The sequence is 4 items long, which is equal to the minimum length of 4, so we split it. Half of 4 is 4 / 2 = 2.0. Dropping the decimal, we get that the first half will be 2 items long. The first half (2 items) of the sequence is \"1. postcard, 2. match\".",
+      "[extract] The first half of the sequence ends with \"2. match\", so the second half starts after \"2. match\" with \"3. bin\". The full sequence is 4 items long and the first half is 2 items long, so the second half will be 4 - 2 = 2 items long, ending in \"4. light bulb\". The second half of the sequence (2 items) is \"3. bin, 4. light bulb\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. postcard, 2. match",
+      "3. bin, 4. light bulb",
+      "postcard, match",
+      "bin, light bulb",
+      "match, postcard",
+      "light bulb, bin",
+      "light bulb, bin match, postcard"
+    ],
+    "is_valid": true
+  },
+  {
+    "question": "Reverse the sequence \"scissors, comb, purse, wallet\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. scissors, 2. comb, 3. purse, 4. wallet\". The sequence is 4 items long, which is equal to the minimum length of 4, so we split it. Half of 4 is 4 / 2 = 2.0. Dropping the decimal, we get that the first half will be 2 items long. The first half (2 items) of the sequence is \"1. scissors, 2. comb\".",
+      "[extract] The first half of the sequence ends with \"2. comb\", so the second half starts after \"2. comb\" with \"3. purse\". The full sequence is 4 items long and the first half is 2 items long, so the second half will be 4 - 2 = 2 items long, ending in \"4. wallet\". The second half of the sequence (2 items) is \"3. purse, 4. wallet\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. scissors, 2. comb",
+      "3. purse, 4. wallet",
+      "scissors, comb",
+      "purse, wallet",
+      "comb, scissors",
+      "wallet, purse",
+      "wallet, purse, comb, scissors"
+    ],
+    "is_valid": true
+  },
+  {
+    "question": "Reverse the sequence \"water, wallet, battery, notebook\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. water, 2. wallet, 3. battery, 4. notebook\". The sequence is 4 items long, which is equal to the minimum length of 4, so we split it. Half of 4 is 4 / 2 = 2.0. Dropping the decimal, we get that the first half will be 2 items long. The first half (2 items) of the sequence is \"1. water, 2. wallet\".",
+      "[extract] The first half of the sequence ends with \"2. wallet\", so the second half starts after \"2. wallet\" with \"3. battery\". The full sequence is 4 items long and the first half is 2 items long, so the second half will be 4 - 2 = 2 items long, ending in \"2. wallet\". The second half of the sequence (2 items) is \"3. battery, 4. notebook\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. water, 2. wallet",
+      "3. battery, 4. notebook",
+      "water, wallet",
+      "battery, notebook",
+      "wallet, water",
+      "notebook, battery",
+      "notebook, battery, wallet, water"
+    ],
+    "is_valid": true
+  },
+  {
+    "question": "Reverse the sequence \"wallet, sweet, newspaper, light bulb\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. wallet, 2. sweet, 3. newspaper, 4. light bulb\". The sequence is 4 items long, which is equal to the minimum length of 4, so we split it. Half of 4 is 4 / 2 = 2.0. Dropping the decimal, we get that the first half will be 2 items long. The first half (2 items) of the sequence is \"1. wallet, 2. sweet\".",
+      "[extract] The first half of the sequence ends with \"2. sweet\", so the second half starts after \"2. sweet\" with \"3. newspaper\". The full sequence is 4 items long and the first half is 2 items long, so the second half will be 4 - 2 = 2 items long, ending in \"2. sweet\". The second half of the sequence (2 items) is \"3. newspaper, 4. light bulb\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. wallet, 2. sweet",
+      "3. newspaper, 4. light bulb",
+      "wallet, sweet",
+      "newspaper, light bulb",
+      "sweet, wallet",
+      "light bulb, newspaper",
+      "light bulb, newspaper, sweet, wallet"
+    ],
+    "is_valid": true
+  },
+  {
+    "question": "Reverse the sequence \"identity card, laptop, player, dictionary\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. identity card, 2. laptop, 3. player, 4. dictionary\". The sequence is 4 items long, which is equal to the minimum length of 4, so we split it. Half of 4 is 4 / 2 = 2.0. Dropping the decimal, we get that the first half will be 2 items long. The first half (2 items) of the sequence is \"1. identity card, 2. laptop\".",
+      "[extract] The first half of the sequence ends with \"2. laptop\", so the second half starts after \"2. laptop\" with \"3. player\". The full sequence is 4 items long and the first half is 2 items long, so the second half will be 4 - 2 = 2 items long, ending in \"2. laptop\". The second half of the sequence (2 items) is \"3. player, 4. dictionary\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. identity card, 2. laptop",
+      "3. player, 4. dictionary",
+      "identity card, laptop",
+      "player, dictionary",
+      "laptop, identity card",
+      "dictionary, player",
+      "dictionary, player, laptop, identity card"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Reverse the sequence \"brush, player, stamp, toothbrush\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. brush, 2. player, 3. stamp, 4. toothbrush\". The sequence is 4 items long, which is equal to the minimum length of 4, so we split it. Half of 4 is 4 / 2 = 2.0. Dropping the decimal, we get that the first half will be 2 items long. The first half (2 items) of the sequence is \"1. brush, 2. player\".",
+      "[extract] The first half of the sequence ends with \"2. player\", so the second half starts after \"2. player\" with \"3. stamp\". The full sequence is 4 items long and the first half is 2 items long, so the second half will be 4 - 2 = 2 items long. The second half of the sequence (2 items) is \"3. stamp, 4. toothbrush\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. brush, 2. player",
+      "3. stamp, 4. toothbrush",
+      "brush, player",
+      "stamp, toothbrush",
+      "player, brush",
+      "toothbrush, stamp",
+      "toothbrush, stamp, player, brush"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Reverse the sequence \"laptop, alarm clock, cigarette, credit card\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. laptop, 2. alarm clock, 3. cigarette, 4. credit card\". The sequence is 4 items long, which is equal to the minimum length of 4, so we split it. Half of 4 is 4 / 2 = 2.0. Dropping the decimal, we get that the first half will be 2 items long. The first half (2 items) of the sequence is \"1. laptop, 2. alarm clock\".",
+      "[extract] The first half of the sequence ends with \"2. alarm clock\", so the second half starts after \"2. alarm clock\" with \"3. cigarette\". The full sequence is 4 items long and the first half is 2 items long, so the second half will be 4 - 2 = 2 items long, ending in \"4. credit card\". The second half of the sequence (2 items) is \"3. cigarette, 4. credit card\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. laptop, 2. alarm clock",
+      "3. cigarette, 4. credit card",
+      "laptop, alarm clock",
+      "cigarette, credit card",
+      "alarm clock, laptop",
+      "credit card, cigarette",
+      "credit card, cigarette, alarm clock, laptop"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Reverse the sequence \"water, camera, file, cigarette, clip, tissue\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. water, 2. camera, 3. file, 4. cigarette, 5. clip, 6. tissue\". The sequence is 6 items long, which is more than the minimum length of 4, so we split it. Half of 6 is 6 / 2 = 3.0. Dropping the decimal, we get that the first half will be 3 items long, ending in \"3. file\". The first half (3 items) is \"1. water, 2. camera, 3. file\".",
+      "[extract] The first half of the sequence ends with \"3. file\", so the second half starts after \"3. file\" with \"4. cigarette\". The full sequence is 6 items long, and the first half is 3 items long, so the second half will be 6 - 3 = 3 items long. The second half of the sequence (3 items) is \"4. cigarette, 5. clip, 6. tissue\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. water, 2. camera, 3. file",
+      "4. cigarette, 5. clip, 6. tissue",
+      "water, camera, file",
+      "cigarette, clip, tissue",
+      "file, camera, water",
+      "tissue, clip, cigarette",
+      "tissue, clip, cigarette file, camera, water"
+    ],
+    "is_correct": false
+  },
+  {
+    "question": "Reverse the sequence \"notebook, driving licence, alarm clock, button, rubbish, banknote\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. notebook, 2. driving licence, 3. alarm clock, 4. button, 5. rubbish, 6. banknote\". The sequence is 6 items long, which is more than the minimum length of 4, so we split it. Half of 6 is 6 / 2 = 3.0. Dropping the decimal, we get that the first half will be 3 items long, ending in \"3. alarm clock\". The first half (3 items) is \"1. notebook, 2. driving licence, 3. alarm clock\".",
+      "[extract] The first half of the sequence ends with \"3. alarm clock\", so the second half starts after \"3. alarm clock\" with \"4. button\". The full sequence is 6 items long, and the first half is 3 items long, so the second half will be 6 - 3 = 3 items long. The second half of the sequence (3 items) is \"4. button, 5. rubbish, 6. banknote\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. notebook, 2. driving licence, 3. alarm clock",
+      "4. button, 5. rubbish, 6. banknote",
+      "notebook, driving licence, alarm clock",
+      "button, rubbish, banknote",
+      "alarm clock, driving licence, notebook",
+      "banknote, rubbish, button",
+      "banknote, rubbish, button, alarm clock, driving licence, notebook"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Reverse the sequence \"sweet, pen, driving licence, laptop, coin, watch\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. sweet, 2. pen, 3. driving licence, 4. laptop, 5. coin, 6. watch\". The sequence is 6 items long, which is more than the minimum length of 4, so we split it. Half of 6 is 6 / 2 = 3.0. Dropping the decimal, we get that the first half will be 3 items long, ending in \"3. driving licence\". The first half (3 items) is \"1. sweet, 2. pen, 3. driving licence\".",
+      "[extract] The first half of the sequence ends with \"3. driving licence\", so the second half starts after \"3. driving licence\" with \"4. laptop\". The full sequence is 6 items long, and the first half is 3 items long, so the second half will be 6 - 3 = 3 items long. The second half of the sequence (3 items) is \"4. laptop, 5. coin, 6. watch\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. sweet, 2. pen, 3. driving licence",
+      "4. laptop, 5. coin, 6. watch",
+      "sweet, pen, driving licence",
+      "laptop, coin, watch",
+      "driving licence, pen, sweet",
+      "watch, coin, laptop",
+      "watch, coin, laptop, driving licence, pen, sweet"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Reverse the sequence \"laptop, case, rubbish, tissue, headphone, umbrella\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. laptop, 2. case, 3. rubbish, 4. tissue, 5. headphone, 6. umbrella\". The sequence is 6 items long, which is more than the minimum length of 4, so we split it. Half of 6 is 6 / 2 = 3.0. Dropping the decimal, we get that the first half will be 3 items long, ending in \"3. rubbish\". The first half (3 items) is \"1. laptop, 2. case, 3. rubbish\".",
+      "[extract] The first half of the sequence ends with \"3. rubbish\", so the second half starts after \"3. rubbish\" with \"4. tissue\". The full sequence is 6 items long and the first half is 3 items long, so the second half will be 6 - 3 = 3 items long. The second half of the sequence (3 items) is \"4. tissue, 5. headphone, 6. umbrella\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. laptop, 2. case, 3. rubbish",
+      "4. tissue, 5. headphone, 6. umbrella",
+      "laptop, case, rubbish",
+      "tissue, headphone, umbrella",
+      "rubbish, case, laptop",
+      "umbrella, headphone, tissue",
+      "umbrella, headphone, tissue, rubbish, case, laptop"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Reverse the sequence \"headphone, alarm clock, passport, water, file, photo\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. headphone, 2. alarm clock, 3. passport, 4. water, 5. file, 6. photo\". The sequence is 6 items long, which is more than the minimum length of 4, so we split it. Half of 6 is 6 / 2 = 3.0. Dropping the decimal, we get that the first half will be 3 items long, ending in \"3. passport\". The first half (3 items) is \"1. headphone, 2. alarm clock, 3. passport\".",
+      "[extract] The first half of the sequence ends with \"3. passport\", so the second half starts after \"3. passport\" with \"4. water\". The full sequence is 6 items long, and the first half is 3 items long, so the second half will be 6 - 3 = 3 items long. The second half of the sequence (3 items) is \"4. water, 5. file, 6. photo\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. headphone, 2. alarm clock, 3. passport",
+      "4. water, 5. file, 6. photo",
+      "headphone, alarm clock, passport",
+      "water, file, photo",
+      "passport, alarm clock, headphone",
+      "photo, file, water",
+      "photo, file, water passport, alarm clock, headphone"
+    ],
+    "is_correct": false
+  },
+  {
+    "question": "Reverse the sequence \"mobile phone, key, diary, stamp, case, light bulb\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. mobile phone, 2. key, 3. diary, 4. stamp, 5. case, 6. light bulb\". The sequence is 6 items long, which is more than the minimum length of 4, so we split it. Half of 6 is 6 / 2 = 3.0. Dropping the decimal, we get that the first half will be 3 items long, ending in \"3. diary\". The first half (3 items) is \"1. mobile phone, 2. key, 3. diary\".",
+      "[extract] The first half of the sequence ends with \"3. diary\", so the second half starts after \"3. diary\" with \"4. stamp\". The full sequence is 6 items long, and the first half is 3 items long, so the second half will be 6 - 3 = 3 items long. The second half of the sequence (3 items) is \"4. stamp, 5. case, 6. light bulb\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. mobile phone, 2. key, 3. diary",
+      "4. stamp, 5. case, 6. light bulb",
+      "mobile phone, key, diary",
+      "stamp, case, light bulb",
+      "diary, key, mobile phone",
+      "light bulb, case, stamp",
+      "light bulb, case, stamp, diary, key, mobile phone"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Reverse the sequence \"wallet, bin, purse, phone card, lipstick, lighter\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. wallet, 2. bin, 3. purse, 4. phone card, 5. lipstick, 6. lighter\". The sequence is 6 items long, which is more than the minimum length of 4, so we split it. Half of 6 is 6 / 2 = 3.0. Dropping the decimal, we get that the first half will be 3 items long, ending in \"3. purse\". The first half (3 items) is \"1. wallet, 2. bin, 3. purse\".",
+      "[extract] The first half of the sequence ends with \"3. purse\", so the second half starts after \"3. purse\" with \"4. phone card\". The full sequence is 6 items long, and the first half is 3 items long, so the second half will be 6 - 3 = 3 items long. The second half of the sequence (3 items) is \"4. phone card, 5. lipstick, 6. lighter\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. wallet, 2. bin, 3. purse",
+      "4. phone card, 5. lipstick, 6. lighter",
+      "wallet, bin, purse",
+      "phone card, lipstick, lighter",
+      "purse, bin, wallet",
+      "lighter, lipstick, phone card",
+      "lighter, lipstick, phone card, purse, bin, wallet"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Reverse the sequence \"laptop, phone card, battery, banknote, bottle, sunscreen\".",
+    "qs_lines": [
+      "[extract] The sequence is \"1. laptop, 2. phone card, 3. battery, 4. banknote, 5. bottle, 6. sunscreen\". The sequence is 6 items long, which is more than the minimum length of 4, so we split it. Half of 6 is 6 / 2 = 3.0. Dropping the decimal, we get that the first half will be 3 items long, ending in \"3. battery\". The first half (3 items) is \"1. laptop, 2. phone card, 3. battery\".",
+      "[extract] The first half of the sequence ends with \"3. battery\", so the second half starts after \"3. battery\" with \"4. banknote\". The full sequence is 6 items long, and the first half is 3 items long, so the second half will be 6 - 3 = 3 items long. The second half of the sequence (3 items) is \"4. banknote, 5. bottle, 6. sunscreen\".",
+      "[remove_numbers] Remove the numbers from #1.",
+      "[remove_numbers] Remove the numbers from #2.",
+      "[reverse] Reverse the sequence #3.",
+      "[reverse] Reverse the sequence #4.",
+      "[join] #6 #5",
+      "[EOQ]"
+    ],
+    "result": [
+      "1. laptop, 2. phone card, 3. battery",
+      "4. banknote, 5. bottle, 6. sunscreen",
+      "laptop, phone card, battery",
+      "banknote, bottle, sunscreen",
+      "battery, phone card, laptop",
+      "sunscreen, bottle, banknote",
+      "sunscreen, bottle, banknote, battery, phone card, laptop"
+    ],
+    "is_correct": true
+  }
+]

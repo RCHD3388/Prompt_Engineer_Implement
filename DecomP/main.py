@@ -17,13 +17,26 @@ def parse_args():
         help="Output file path (default: generate_res/dummy.json)"
     )
     parser.add_argument(
-        "--dataset",
+        "--task",
         type=str,
-        default="writing",
-        help="Dataset type ? game24 or writing (default: writing)"
+        default="lettercat",
+        help="Dataset type ? (default: lettercat)"
     )
 
     return parser.parse_args()
+
+def get_controller(task):
+    if task == "reverse":
+        from reverse_controller import ReverseController
+        return ReverseController()
+    elif task == "lettercat":
+        from lettercat_controller import LatterCatController
+        return LatterCatController()
+    elif task == "commaqa":
+        from commaqa import CommAQAController
+        return CommAQAController()
+    else:
+        raise ValueError(f"Unsupported task: {task}")
 
 def main():
     args = parse_args()
@@ -32,6 +45,10 @@ def main():
         print(f"{arg}: {value}")
     print("\n")
 
+    controller = get_controller(args.task)
+
+    # get decomposition chains
+    controller.solve()
     
 if __name__ == "__main__":
     main()
