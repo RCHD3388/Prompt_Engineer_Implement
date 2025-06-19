@@ -1,258 +1,262 @@
-[
-  {
-    "question": "Reverse the sequence \"alarm clock, purse, umbrella, case\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "case, umbrella, purse, alarm clock"
+{
+  "0": {
+      "passage": "movie: Skob ; directed by: Haldron. movie: Riften ; directed by: Conanopeia. movie: Tetroxidine ; directed by: Conanopeia. movie: Sheepcrest ; directed by: Flumph. movie: Sheepcrest ; award: Mariskenna. movie: Skob ; award: Jubeus. movie: Tetroxidine ; award: Handt. movie: Riften ; awarded: Handt. movie: Tetroxidine ; written by: Conanopeia. movie: Riften ; written by: Conanopeia. movie: Riften ; writer: Flumph. movie: Tetroxidine ; written by: Haldron. movie: Skob ; written by: Haldron. movie: Sheepcrest ; writer: Flumph. movie: Skob ; year: 1962. movie: Tetroxidine ; release year: 1997. movie: Riften ; release year: 1972. movie: Sheepcrest ; release year: 1997. Flumph was an actor in the movie Riften. Flumph acted in the movie Sheepcrest. Conanopeia was an actor in the movie Riften. Conanopeia acted in the movie Tetroxidine. Conanopeia acted in the movie Sheepcrest. Haldron acted in the movie Tetroxidine. Haldron acted in the movie Skob. Haldron was born in the year 1939. Flumph was born in the year 1938. Conanopeia was born in 1938. Haldron is from the country of Poquet. Conanopeia grew up in the nation of Poquet. Flumph grew up in the nation of Stridery. Diaqum was awarded to Flumph. Lidus was awarded to Conanopeia. Haldron won the Lidus award. Conanopeia was one of the producers of the movie Tetroxidine. Flumph was one of the producers of the movie Sheepcrest. Flumph produced the movie Skob with others. Haldron was one of the producers of the movie Sheepcrest. Haldron was one of the producers of the movie Riften. Haldron produced the movie Skob with others. Conanopeia was one of the producers of the movie Riften.",
+      "qa_pairs": [
+          {
+              "question": "What movies have the people from Poquet written?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Tetroxidine",
+                      "Skob",
+                      "Riften"
+                  ]
+              },
+              "query_id": "d7af408fe191e12c"
+          },
+          {
+              "question": "What awards have movies written by people from Poquet won?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Handt",
+                      "Jubeus"
+                  ]
+              },
+              "query_id": "0bbccce99e54ed4a"
+          },
+          {
+              "question": "What movies have the people from Stridery written?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Riften",
+                      "Sheepcrest"
+                  ]
+              },
+              "query_id": "85cdec763ed6fae0"
+          },
+          {
+              "question": "What awards have movies written by people from Stridery won?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Handt",
+                      "Mariskenna"
+                  ]
+              },
+              "query_id": "0bbe43ca433aace5"
+          },
+          {
+              "question": "What awards have movies produced by people from Poquet won?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Mariskenna",
+                      "Handt",
+                      "Jubeus"
+                  ]
+              },
+              "query_id": "dec999beee7aa7af"
+          }
       ]
-    },
-    "query_id": "57",
-    "validated_answers": []
   },
-  {
-    "question": "Reverse the sequence \"postcard, match, bin, light bulb\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "light bulb, bin, match, postcard"
+  "1": {
+      "passage": "movie: Noenometer ; directed by: Mimicocycle. movie: Dewbar ; director: Mimicocycle. movie: Kavashpat ; director: Deplexology. movie: Sprezzler ; directed by: Jimayo. movie: Dewbar ; award: Dysmetis. movie: Noenometer ; award: Pistarmen. movie: Kavashpat ; award: Mariskenna. movie: Sprezzler ; awarded: Mariskenna. movie: Sprezzler ; written by: Mimicocycle. movie: Dewbar ; writer: Jimayo. movie: Sprezzler ; written by: Deplexology. movie: Kavashpat ; written by: Deplexology. movie: Noenometer ; writer: Mimicocycle. movie: Noenometer ; writer: Jimayo. movie: Dewbar ; writer: Mimicocycle. movie: Kavashpat ; writer: Jimayo. movie: Kavashpat ; year: 1982. movie: Dewbar ; year: 2004. movie: Sprezzler ; year: 2010. movie: Noenometer ; year: 2004. Mimicocycle was an actor in the movie Noenometer. Deplexology was an actor in the movie Dewbar. Deplexology was an actor in the movie Kavashpat. Jimayo was an actor in the movie Noenometer. Mimicocycle was an actor in the movie Sprezzler. Jimayo was an actor in the movie Dewbar. Jimayo was born in 1931. Deplexology was born in 1912. Mimicocycle was born in 1912. Mimicocycle is from the country of Moulole. Deplexology is from the country of Moulole. Jimayo is from the country of Dynope. Jimayo won the Polyquadrase award. Deplexology won the Roontang award. Polyquadrase was awarded to Mimicocycle. Mimicocycle produced the movie Noenometer with others. Mimicocycle produced the movie Dewbar with others. Jimayo produced the movie Noenometer with others. Deplexology was one of the producers of the movie Sprezzler. Jimayo was one of the producers of the movie Dewbar. Deplexology produced the movie Kavashpat with others. Jimayo produced the movie Sprezzler with others.",
+      "qa_pairs": [
+          {
+              "question": "What awards have the directors of the Dysmetis winning movies received?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Polyquadrase"
+                  ]
+              },
+              "query_id": "9fff49ead8ed77a2"
+          },
+          {
+              "question": "What awards have movies directed by people born in 1912 won?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Mariskenna",
+                      "Pistarmen",
+                      "Dysmetis"
+                  ]
+              },
+              "query_id": "fff0ffe07795f17b"
+          },
+          {
+              "question": "What movies have the people from Moulole written?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Sprezzler",
+                      "Noenometer",
+                      "Dewbar",
+                      "Kavashpat"
+                  ]
+              },
+              "query_id": "a59ca3d05a7f3bd8"
+          },
+          {
+              "question": "What awards have movies written by people from Dynope won?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Dysmetis",
+                      "Pistarmen",
+                      "Mariskenna"
+                  ]
+              },
+              "query_id": "7a417a0b0a9fd546"
+          },
+          {
+              "question": "What movies have people born in 1931 acted in?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Noenometer",
+                      "Dewbar"
+                  ]
+              },
+              "query_id": "b0c52f7da9fbd31e"
+          }
       ]
-    },
-    "query_id": "11",
-    "validated_answers": []
   },
-  {
-    "question": "Reverse the sequence \"scissors, comb, purse, wallet\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "wallet, purse, comb, scissors"
+  "2": {
+      "passage": "movie: Percevalence ; director: Magainitis. movie: Partnershipmaker ; director: Lougeri\u00e8re. movie: Caudacite ; director: Carpoon. movie: Coule ; directed by: Lougeri\u00e8re. movie: Caudacite ; awarded: Leatherie. movie: Percevalence ; award: Brownbeard. movie: Partnershipmaker ; award: Bouchery. movie: Coule ; awarded: Brownbeard. movie: Partnershipmaker ; writer: Lougeri\u00e8re. movie: Coule ; writer: Lougeri\u00e8re. movie: Partnershipmaker ; writer: Magainitis. movie: Percevalence ; written by: Magainitis. movie: Caudacite ; writer: Carpoon. movie: Caudacite ; release year: 1984. movie: Percevalence ; year: 1954. movie: Coule ; year: 1984. movie: Partnershipmaker ; release year: 1991. Carpoon acted in the movie Coule. Magainitis was an actor in the movie Coule. Lougeri\u00e8re acted in the movie Partnershipmaker. Magainitis was an actor in the movie Percevalence. Lougeri\u00e8re was an actor in the movie Caudacite. Carpoon was an actor in the movie Percevalence. Magainitis was an actor in the movie Partnershipmaker. Magainitis was born in 1939. Carpoon was born in 1938. Lougeri\u00e8re was born in 1939. Carpoon is from the country of Zaggery. Lougeri\u00e8re is from the country of Dentalogy. Magainitis grew up in the nation of Zaggery. Carpoon won the Divetail award. Magainitis won the Divetail award. Lougeri\u00e8re won the Lidus award. Magainitis was one of the producers of the movie Percevalence. Magainitis produced the movie Caudacite with others. Magainitis produced the movie Partnershipmaker with others. Lougeri\u00e8re produced the movie Coule with others. Lougeri\u00e8re was one of the producers of the movie Partnershipmaker. Lougeri\u00e8re produced the movie Caudacite with others. Carpoon was one of the producers of the movie Percevalence. Carpoon produced the movie Coule with others.",
+      "qa_pairs": [
+          {
+              "question": "What awards have movies written by people from Dentalogy won?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Bouchery",
+                      "Brownbeard"
+                  ]
+              },
+              "query_id": "5fba2ef031c9f9af"
+          },
+          {
+              "question": "What movies have people born in 1938 acted in?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Coule",
+                      "Percevalence"
+                  ]
+              },
+              "query_id": "aa4c1bce22dafdce"
+          },
+          {
+              "question": "What awards have the directors of the Bouchery winning movies received?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Lidus"
+                  ]
+              },
+              "query_id": "37a8a57b9ed30ada"
+          },
+          {
+              "question": "What movies have the people from Zaggery written?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Caudacite",
+                      "Partnershipmaker",
+                      "Percevalence"
+                  ]
+              },
+              "query_id": "5af8f2370eba3ba9"
+          },
+          {
+              "question": "What awards have movies directed by people born in 1939 won?",
+              "answer": {
+                  "number": "",
+                  "date": {
+                      "day": "",
+                      "month": "",
+                      "year": ""
+                  },
+                  "spans": [
+                      "Brownbeard",
+                      "Bouchery"
+                  ]
+              },
+              "query_id": "1e0df47c36a7af33"
+          }
       ]
-    },
-    "query_id": "10",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"water, wallet, battery, notebook\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "notebook, battery, wallet, water"
-      ]
-    },
-    "query_id": "40",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"wallet, sweet, newspaper, light bulb\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "light bulb, newspaper, sweet, wallet"
-      ]
-    },
-    "query_id": "65",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"identity card, laptop, player, dictionary\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "dictionary, player, laptop, identity card"
-      ]
-    },
-    "query_id": "62",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"brush, player, stamp, toothbrush\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "toothbrush, stamp, player, brush"
-      ]
-    },
-    "query_id": "13",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"laptop, alarm clock, cigarette, credit card\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "credit card, cigarette, alarm clock, laptop"
-      ]
-    },
-    "query_id": "38",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"water, camera, file, cigarette, clip, tissue\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "tissue, clip, cigarette, file, camera, water"
-      ]
-    },
-    "query_id": "35",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"notebook, driving licence, alarm clock, button, rubbish, banknote\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "banknote, rubbish, button, alarm clock, driving licence, notebook"
-      ]
-    },
-    "query_id": "17",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"sweet, pen, driving licence, laptop, coin, watch\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "watch, coin, laptop, driving licence, pen, sweet"
-      ]
-    },
-    "query_id": "30",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"laptop, case, rubbish, tissue, headphone, umbrella\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "umbrella, headphone, tissue, rubbish, case, laptop"
-      ]
-    },
-    "query_id": "61",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"headphone, alarm clock, passport, water, file, photo\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "photo, file, water, passport, alarm clock, headphone"
-      ]
-    },
-    "query_id": "45",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"mobile phone, key, diary, stamp, case, light bulb\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "light bulb, case, stamp, diary, key, mobile phone"
-      ]
-    },
-    "query_id": "78",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"wallet, bin, purse, phone card, lipstick, lighter\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "lighter, lipstick, phone card, purse, bin, wallet"
-      ]
-    },
-    "query_id": "36",
-    "validated_answers": []
-  },
-  {
-    "question": "Reverse the sequence \"laptop, phone card, battery, banknote, bottle, sunscreen\".",
-    "answer": {
-      "number": "",
-      "date": {
-        "day": "",
-        "month": "",
-        "year": ""
-      },
-      "spans": [
-        "sunscreen, bottle, banknote, battery, phone card, laptop"
-      ]
-    },
-    "query_id": "86",
-    "validated_answers": []
   }
-]
+}

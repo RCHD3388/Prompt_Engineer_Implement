@@ -1,0 +1,272 @@
+[
+  {
+    "question": "Take the letters at position 3 of the words in \"Masako Carmen Perera Sun\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Masako Carmen Perera Sun\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Masako\", \"Carmen\", \"Perera\", \"Sun\"]",
+      "['s', 'r', 'r', 'n']",
+      "s r r n"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Rajesh Annie Adamu Maung\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Rajesh Annie Adamu Maung\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Rajesh\", \"Annie\", \"Adamu\", \"Maung\"]",
+      "['j', 'n', 'a', 'u']",
+      "j n a u"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Marilyn Dominique Yakubu Choe\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Marilyn Dominique Yakubu Choe\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Marilyn\", \"Dominique\", \"Yakubu\", \"Choe\"]",
+      "['r', 'm', 'k', 'o']",
+      "r m k o"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Mark Jianhui Sekh Salas\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Mark Jianhui Sekh Salas\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Mark\", \"Jianhui\", \"Sekh\", \"Salas\"]",
+      "['r', 'a', 'k', 'l']",
+      "r a k l"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Smt Mira Sing Ortega\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Smt Mira Sing Ortega\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Smt\", \"Mira\", \"Sing\", \"Ortega\"]",
+      "['t', 'r', 'n', 't']",
+      "t r n t"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Samir Joel Rodriguez Parker\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Samir Joel Rodriguez Parker\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Samir\", \"Joel\", \"Rodriguez\", \"Parker\"]",
+      "['m', 'e', 'd', 'r']",
+      "m e d r"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Jesus Yanhong Cheng Aliyu\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Jesus Yanhong Cheng Aliyu\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Jesus\", \"Yanhong\", \"Cheng\", \"Aliyu\"]",
+      "['s', 'n', 'e', 'i']",
+      "s n e i"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Adama Theresa Aquino Hosen\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Adama Theresa Aquino Hosen\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Adama\", \"Theresa\", \"Aquino\", \"Hosen\"]",
+      "['a', 'e', 'u', 's']",
+      "a e u s"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Bin Tien Xiong Kumar\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Bin Tien Xiong Kumar\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Bin\", \"Tien\", \"Xiong\", \"Kumar\"]",
+      "['n', 'e', 'o', 'm']",
+      "n e o m"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Yun Zhijun Khalaf Zaman\" and concatenate them using a space.",
+    "qs_lines": [
+      "[split] What are the words in \"Yun Zhijun Khalaf Zaman\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a space.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Yun\", \"Zhijun\", \"Khalaf\", \"Zaman\"]",
+      "['n', 'i', 'a', 'm']",
+      "n i a m"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Shankar Pushpa Peng Chi Nunes\" and concatenate them using a semi-colon.",
+    "qs_lines": [
+      "[split] What are the words in \"Shankar Pushpa Peng Chi Nunes\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a semi-colon.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Shankar\", \"Pushpa\", \"Peng\", \"Chi\", \"Nunes\"]",
+      "['a', 's', 'n', 'i', 'n']",
+      "a;s;n;i;n"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Manuela Vincent Min Pinheiro Cortes\" and concatenate them using a semi-colon.",
+    "qs_lines": [
+      "[split] What are the words in \"Manuela Vincent Min Pinheiro Cortes\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a semi-colon.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Manuela\", \"Vincent\", \"Min\", \"Pinheiro\", \"Cortes\"]",
+      "['n', 'n', 'n', 'n', 'r']",
+      "n;n;n;n;r"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Miriam Mohan Thin Yun Uddin\" and concatenate them using a semi-colon.",
+    "qs_lines": [
+      "[split] What are the words in \"Miriam Mohan Thin Yun Uddin\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a semi-colon.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Miriam\", \"Mohan\", \"Thin\", \"Yun\", \"Uddin\"]",
+      "['r', 'h', 'i', 'n', 'd']",
+      "r;h;i;n;d"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Rekha Alejandro Ndlovu Tian Hameed\" and concatenate them using a semi-colon.",
+    "qs_lines": [
+      "[split] What are the words in \"Rekha Alejandro Ndlovu Tian Hameed\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a semi-colon.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Rekha\", \"Alejandro\", \"Ndlovu\", \"Tian\", \"Hameed\"]",
+      "['k', 'e', 'l', 'a', 'm']",
+      "k;e;l;a;m"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Stefan Larry Jang Jiang Liu\" and concatenate them using a semi-colon.",
+    "qs_lines": [
+      "[split] What are the words in \"Stefan Larry Jang Jiang Liu\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a semi-colon.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Stefan\", \"Larry\", \"Jang\", \"Jiang\", \"Liu\"]",
+      "['e', 'r', 'n', 'a', 'u']",
+      "e;r;n;a;u"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Jim Keith Majhi Behera Yamamoto\" and concatenate them using a semi-colon.",
+    "qs_lines": [
+      "[split] What are the words in \"Jim Keith Majhi Behera Yamamoto\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a semi-colon.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Jim\", \"Keith\", \"Majhi\", \"Behera\", \"Yamamoto\"]",
+      "['m', 'i', 'j', 'h', 'm']",
+      "m;i;j;h;m"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Hung Haibo Caballero Moyo Min\" and concatenate them using a semi-colon.",
+    "qs_lines": [
+      "[split] What are the words in \"Hung Haibo Caballero Moyo Min\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a semi-colon.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Hung\", \"Haibo\", \"Caballero\", \"Moyo\", \"Min\"]",
+      "['n', 'i', 'b', 'y', 'n']",
+      "n;i;b;y;n"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Take the letters at position 3 of the words in \"Cynthia Ramesh Rathav Kanwar Sing\" and concatenate them using a semi-colon.",
+    "qs_lines": [
+      "[split] What are the words in \"Cynthia Ramesh Rathav Kanwar Sing\"?",
+      "(project_values) [str_position] What is the letter at position 3 in \"#1\"?",
+      "[merge] Concatenate #2 using a semi-colon.",
+      "[EOQ]"
+    ],
+    "result": [
+      "[\"Cynthia\", \"Ramesh\", \"Rathav\", \"Kanwar\", \"Sing\"]",
+      "['n', 'm', 't', 'n', 'n']",
+      "n;m;t;n;n"
+    ],
+    "is_correct": true
+  }
+]

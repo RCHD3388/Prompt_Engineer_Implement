@@ -53,18 +53,40 @@ class LatterCatController:
             
             elif match == "str_position":
                 references = self.get_references(qs)
-                word_list = json.loads(result_answers[references[0]-1])
-                for word in word_list:
-                    formatted_qs = self.replace_references(qs, word)
-                    str_pos_decomp_chain = self.generate_chain(lettercat_template.str_position_template, formatted_qs)
-                    process_answer = self.chain_processing(str_pos_decomp_chain)[-1]
-                    
-            # elif match == "merge":
-            #     formatted_qs = self.replace_references(qs, result_answers)
-            #     merge_prompt = lettercat_template.merge_template.replace('{input}', formatted_qs)
-            #     generated_ans = generate_answer(merge_prompt)
-            #     print(f"Generated answer for merge: {generated_ans}")
-            #     process_answer = self.get_generated_answer(generated_ans)
+                word_lists = json.loads(result_answers[references[0]-1])
+                ans_list = []
+
+                time.sleep(60)
+
+                for word in word_lists:
+                    formatted_qs = re.sub(r"#\d+", word, qs)
+                    print("Formatted qs: ")
+                    print(formatted_qs)
+                    cleaned_formatted_qs = re.sub(r'\(.*?\)|\[.*?\]', '', formatted_qs).strip()
+                    print("Cleaned formatted qs: ")
+                    print(cleaned_formatted_qs)
+
+                    str_pos_decomp_chain = self.generate_chain(lettercat_template.str_position_template, cleaned_formatted_qs)
+                    ans_list.append(self.chain_processing(str_pos_decomp_chain)[-1])
+
+                print(f"Split Result: {ans_list}")
+                print(ans_list)
+                process_answer = str(ans_list)
+
+            elif match == "arr_position":    
+                formatted_qs = self.replace_references(qs, result_answers)
+                arr_pos_prompt = lettercat_template.arr_position_template.replace('{input}', formatted_qs)
+                generated_ans = generate_answer(arr_pos_prompt)
+                process_answer = self.get_generated_answer(generated_ans)
+            
+            elif match == "merge":
+                formatted_qs = self.replace_references(qs, result_answers)
+                print("Merge Process")
+                print(formatted_qs)
+                merge_prompt = lettercat_template.merge_template.replace('{input}', formatted_qs)
+                generated_ans = generate_answer(merge_prompt)
+                print(f"Generated answer for merge: {generated_ans}")
+                process_answer = self.get_generated_answer(generated_ans)
             
             elif match == "EOQ":
                 break
@@ -96,11 +118,10 @@ class LatterCatController:
                 'question': entry['question'],
                 'qs_lines': qs_lines,
                 'result': output,
-                # "is_correct": entry['answer']["spans"][0] == output[-1] if output else False
+                "is_correct": entry['answer']["spans"][0] == output[-1] if output else False
             })
 
             save_json(output_log, 'generate_res/dummy.json')
-            time.sleep(10)
-            # time.sleep(60)  # To avoid hitting rate limits
+            time.sleep(60)  # To avoid hitting rate limits
 
         return True

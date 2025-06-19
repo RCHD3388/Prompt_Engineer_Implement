@@ -19,8 +19,8 @@ def parse_args():
     parser.add_argument(
         "--task",
         type=str,
-        default="lettercat",
-        help="Dataset type ? (default: lettercat)"
+        default="commaqa",
+        help="Dataset type ? (default: commaqa)"
     )
 
     return parser.parse_args()
@@ -33,7 +33,7 @@ def get_controller(task):
         from lettercat_controller import LatterCatController
         return LatterCatController()
     elif task == "commaqa":
-        from commaqa import CommAQAController
+        from commaqa_controller import CommAQAController
         return CommAQAController()
     else:
         raise ValueError(f"Unsupported task: {task}")
