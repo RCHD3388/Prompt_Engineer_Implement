@@ -7,6 +7,7 @@ import os
 import argparse
 import pandas as pd
 import prompts.gameof24_template as gameof24_template
+import prompts.writing_template as writing_template
 import time
 generate_prompt = gameof24_template.generate_prompt
 
@@ -36,7 +37,7 @@ def parse_args():
     return parser.parse_args()
 
 
-def handle_game24(args):
+def handle_game24(args, n_samples=3):
     dataset_path = os.path.join("dataset", "game24.csv")
     dataset = pd.read_csv(dataset_path)
 
@@ -53,7 +54,7 @@ def handle_game24(args):
             "final_score": 0,
         }
         print("\nSolve Puzzle Record : ", index)
-        for step_index, _ in enumerate(range(3)):
+        for step_index, _ in enumerate(range(n_samples)):
             generated_samples = []
             if step_index == 0:
                 current_input_list = [list(map(int, row["Puzzles"].split()))]
@@ -138,9 +139,36 @@ def handle_game24(args):
 
     return
 
-def handle_writing(args):
+def handle_writing(args, n_samples=5):
+    output_path = args.output
     with open(os.path.join("dataset", "writing.txt"), "r") as f:
         writing_data = [line.strip() for line in f.readlines()]
+
+    #  Extract the plan from the generated text
+    def extract_plan_only(text):
+        lines = text.splitlines()
+        plan_lines = []
+        in_plan = False
+
+        for line in lines:
+            stripped = line.strip()
+            if stripped.lower().startswith("plan:"):
+                in_plan = True
+                continue  # skip the "Plan:" line itself
+
+            if in_plan:
+                # jika menemukan baris kosong atau baris tidak dimulai dengan "paragraph", kita berhenti
+                if not stripped or not re.match(r'paragraph\s+\d+:', stripped, re.IGNORECASE):
+                    break
+                plan_lines.append(stripped)
+
+        return '\n'.join(plan_lines).strip() if plan_lines else "Plan not found."
+    def extract_passage_only(text):
+        match = re.search(r"Passage:\s*(.*)", text, re.DOTALL)
+        if match:
+            return match.group(1).strip()
+        else:
+            return "Passage not found."
     
     output_info = []
     for idx, data in enumerate(writing_data):
@@ -149,15 +177,90 @@ def handle_writing(args):
             "input": data,
             "steps": []
         }
-
+        print(f"\nWriting Record : {idx + 1}")
         # ToT Prompting 
+        # 1. Planning Phase ============================
+        # 1.1 Generate Plan
+        print(f"Generating plans...")
+        generated_plans = []
+        choices_list = ""
+        for index, _ in enumerate(range(n_samples)):
+            prompt = re.sub(r"\{input\}", data, writing_template.generate_sample_plan_prompt)
+            generated_plan = generate_answer(prompt)
+            generated_plan = extract_plan_only(generated_plan)
+            generated_plans.append(generated_plan)
+            choices_list += f"Choice {index + 1}: {generated_plan}\n\n"
 
+        # 1.2 Evaluate Plans
+        print(f"Evaluating plans...")
+        evaluation_score = [0] * n_samples
+        for index, _ in enumerate(range(n_samples)):
+            vote_prompt = re.sub(r"\{choices\}", choices_list, writing_template.plan_vote_prompt)
+            voting_result = generate_answer(vote_prompt)
+
+            # Extract the best choice from voting result
+            best_choice = None
+            best_choice_match = re.search(r"The best choice is (\w+)", voting_result)
+            if best_choice_match:
+                best_choice = best_choice_match.group(1)
+                evaluation_score[int(best_choice) - 1] += 1
+        
+        best_plan_index = evaluation_score.index(max(evaluation_score))
+        best_plan = generated_plans[best_plan_index] if best_choice else "No Plan"
+
+        logging_info["steps"].append({
+            "step": 0,
+            "generated_plans": generated_plans,
+            "evaluation_score": evaluation_score,
+            "best_plan_index": best_plan_index,
+            "best_plan": best_plan
+        })
+
+        time.sleep(60)  # Sleep to avoid rate limiting issues
+
+        # 2. Writing Passage Phase ============================
+        # 2.1 Generate Passage
+        print(f"Generating passages based on the best plan...")
+        generated_passages = []
+        for index, _ in enumerate(range(n_samples)):
+            prompt = re.sub(r"\{plan\}", best_plan, writing_template.generate_sample_passage_prompt)
+            generated_passage = generate_answer(prompt)
+            generated_passage = extract_passage_only(generated_passage)
+            
+            generated_passages.append(generated_passage)
+            choices_list += f"Choice {index + 1}: {generated_passage}\n\n"
+            
+        # 2.2 Evaluate Passage
+        print(f"Evaluating passages...")
+        evaluation_score = [0] * n_samples
+        for index, _ in enumerate(range(n_samples)):
+            vote_prompt = re.sub(r"\{choices\}", choices_list, writing_template.passage_vote_prompt)
+            voting_result = generate_answer(vote_prompt)
+
+            best_choice = None
+            best_choice_match = re.search(r"The best passage is (\w+)", voting_result)
+            if best_choice_match:
+                best_choice = best_choice_match.group(1)
+                evaluation_score[int(best_choice) - 1] += 1
+        
+        best_passage_index = evaluation_score.index(max(evaluation_score))
+        best_passage = generated_passages[best_passage_index] if best_choice else "No Passage"
+        print("Best passage:", best_passage)
+
+        logging_info["steps"].append({
+            "step": 1,
+            "generated_passages": generated_passages,
+            "evaluation_score": evaluation_score,
+            "best_passage_index": best_passage_index,
+            "best_plan": best_passage
+        })
+
+        time.sleep(60)  # Sleep to avoid rate limiting issues
+        print(f"\n")
 
         output_info.append(logging_info)
-    
-    # Save output_info to file based on the output argument
-    output_path = args.output
-    save_json(output_info, output_path)
+        save_json(output_info, output_path)
+        
     return
 
 
