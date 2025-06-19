@@ -47,7 +47,9 @@ class CommAQAController:
     def get_references_array(self, qs, result_answers):
         references = result_answers[self.get_references(qs)[0]-1]
         print(f"references: {references}")
-        return json.loads(references)
+        array_ver = json.loads(references)
+        print(array_ver)
+        return array_ver
 
     def get_score(self, output, entry_answer):
         ans = ast.literal_eval(output[-1])
@@ -60,6 +62,29 @@ class CommAQAController:
                 temp_score += 1
 
         return temp_score/total_number
+
+    def simple_subtask(self, qs, prompt_template, passage=""):
+        cleaned_text = self.clean_text(qs)
+        prompt = prompt_template.replace('{input}', cleaned_text).replace('{passage}', passage)
+        generated_ans = generate_answer(prompt)
+        return self.get_generated_answer(generated_ans)
+    
+    def project_values_flat_unique_subtask(self, qs, result_answers, prompt_template, passage=""):
+        references = self.get_references_array(qs, result_answers)
+        ans_list = []
+        print(f"QA Prompt References: {references}")
+        for ref in references:
+            # format and generate prompt template
+            formatted_qs = re.sub(r"#\d+", ref, qs)
+            cleaned_text = self.clean_text(formatted_qs)
+            prompt = prompt_template.replace('{input}', cleaned_text).replace('{passage}', passage)
+            # generate answer
+            generated_ans = generate_answer(prompt)
+            ans_list.append(json.loads(self.get_generated_answer(generated_ans)))
+
+        # convert to SET DataStructure add to process answer
+        ans_set_list = list(set(item for sublist in ans_list for item in sublist))
+        return json.dumps(ans_set_list)
 
     def chain_processing(self, qs_lines, passage=""):
         result_answers = []
@@ -76,80 +101,25 @@ class CommAQAController:
 
             if command == "simp_qa":
                 if query_type == "select":
-                    cleaned_text = self.clean_text(qs)
-                    simp_qa_prompt = commaQA_template.simp_qa_template.replace('{input}', cleaned_text).replace('{passage}', passage)
-                    generated_ans = generate_answer(simp_qa_prompt)
-                    process_answer = self.get_generated_answer(generated_ans)
+                    process_answer = self.simple_subtask(qs, commaQA_template.simp_qa_template, passage)
                 
                 elif query_type == "project_values_flat_unique":
-                    references = self.get_references_array(qs, result_answers)
-                    ans_list = []
-                    print(f"SimpQA References: {references}")
-                    for ref in references:
-                        # format and generate prompt template
-                        formatted_qs = re.sub(r"#\d+", ref, qs)
-                        cleaned_text = self.clean_text(formatted_qs)
-                        pos_qa_prompt = commaQA_template.simp_qa_template.replace('{input}', cleaned_text).replace('{passage}', passage)
-                        # generate answer
-                        generated_ans = generate_answer(pos_qa_prompt)
-                        ans_list.append(json.loads(self.get_generated_answer(generated_ans)))
-
-                    # convert to SET DataStructure add to process answer
-                    ans_set_list = list(set(item for sublist in ans_list for item in sublist))
-                    process_answer = str(ans_set_list)
-                
+                    process_answer = self.project_values_flat_unique_subtask(qs, result_answers, commaQA_template.simp_qa_template, passage)
 
             elif command == "pos_qa":
                 if query_type == "select":
-                    formatted_qs = self.replace_references(qs, result_answers)
-                    cleaned_text = self.clean_text(formatted_qs)
-                    pos_qa_prompt = commaQA_template.pos_qa_template.replace('{input}', cleaned_text).replace('{passage}', passage)
-                    generated_ans = generate_answer(simp_qa_prompt)
-                    process_answer = self.get_generated_answer(generated_ans)
+                    process_answer = self.simple_subtask(qs, commaQA_template.pos_qa_template, passage)
 
                 elif query_type == "project_values_flat_unique":
-                    references = self.get_references_array(qs, result_answers)
-                    ans_list = []
-                    print(f"PosQA References: {references}")
-                    for ref in references:
-                        # format and generate prompt template
-                        formatted_qs = re.sub(r"#\d+", ref, qs)
-                        cleaned_text = self.clean_text(formatted_qs)
-                        pos_qa_prompt = commaQA_template.pos_qa_template.replace('{input}', cleaned_text).replace('{passage}', passage)
-                        # generate answer
-                        generated_ans = generate_answer(pos_qa_prompt)
-                        ans_list.append(json.loads(self.get_generated_answer(generated_ans)))
-
-                    # convert to SET DataStructure add to process answer
-                    ans_set_list = list(set(item for sublist in ans_list for item in sublist))
-                    process_answer = str(ans_set_list)
-
-                    break
+                    process_answer = self.project_values_flat_unique_subtask(qs, result_answers, commaQA_template.pos_qa_template, passage)
                 
             elif command == "aw_qa":
                 if query_type == "select":
-                    formatted_qs = self.replace_references(qs, result_answers)
-                    cleaned_text = self.clean_text(formatted_qs)
-                    pos_qa_prompt = commaQA_template.aw_qa_template.replace('{input}', cleaned_text).replace('{passage}', passage)
-                    generated_ans = generate_answer(simp_qa_prompt)
-                    process_answer = self.get_generated_answer(generated_ans)
+                    process_answer = self.simple_subtask(qs, commaQA_template.aw_qa_template, passage)
 
                 elif query_type == "project_values_flat_unique":
-                    references = self.get_references_array(qs, result_answers)
-                    ans_list = []
-                    print(f"PosQA References: {references}")
-                    for ref in references:
-                        # format and generate prompt template
-                        formatted_qs = re.sub(r"#\d+", ref, qs)
-                        cleaned_text = self.clean_text(formatted_qs)
-                        pos_qa_prompt = commaQA_template.aw_qa_template.replace('{input}', cleaned_text).replace('{passage}', passage)
-                        # generate answer
-                        generated_ans = generate_answer(pos_qa_prompt)
-                        ans_list.append(json.loads(self.get_generated_answer(generated_ans)))
+                    process_answer = self.project_values_flat_unique_subtask(qs, result_answers, commaQA_template.aw_qa_template, passage)
 
-                    # convert to SET DataStructure add to process answer
-                    ans_set_list = list(set(item for sublist in ans_list for item in sublist))
-                    process_answer = str(ans_set_list)
             elif command == "EOQ":
                 break
             

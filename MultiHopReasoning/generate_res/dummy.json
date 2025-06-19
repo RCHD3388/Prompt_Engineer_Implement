@@ -1,0 +1,347 @@
+[
+  {
+    "question": "Who is the spouse of the Green performer?",
+    "qs_lines": [
+      {
+        "id": 460946,
+        "question": "Green >> performer",
+        "answer": "Steve Hillage",
+        "paragraph_support_idx": 10
+      },
+      {
+        "id": 294723,
+        "question": "#1 >> spouse",
+        "answer": "Miquette Giraudy",
+        "paragraph_support_idx": 5
+      }
+    ],
+    "result": [
+      "Star Trek: Discovery",
+      "spouse"
+    ],
+    "expected_answer": "Miquette Giraudy",
+    "is_correct": false
+  },
+  {
+    "question": "Who founded the company that distributed the film UHF?",
+    "qs_lines": [
+      {
+        "id": 252311,
+        "question": "UHF >> distributed by",
+        "answer": "Orion Pictures",
+        "paragraph_support_idx": 10
+      },
+      {
+        "id": 366220,
+        "question": "#1 >> founded by",
+        "answer": "Mike Medavoy",
+        "paragraph_support_idx": 6
+      }
+    ],
+    "result": [
+      "Fontana Distribution => DeSoto Records",
+      "founded in => 1989"
+    ],
+    "expected_answer": "Mike Medavoy",
+    "is_correct": false
+  },
+  {
+    "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+    "qs_lines": [
+      {
+        "id": 701895,
+        "question": "Ciudad Deportiva >> owned by",
+        "answer": "Nuevo Laredo",
+        "paragraph_support_idx": 11
+      },
+      {
+        "id": 752697,
+        "question": "#1 >> located in the administrative territorial entity",
+        "answer": "Tamaulipas",
+        "paragraph_support_idx": 3
+      }
+    ],
+    "result": [
+      "Ciudad Deportiva (Nuevo Laredo)",
+      "Nuevo Laredo Municipality"
+    ],
+    "expected_answer": "Tamaulipas",
+    "is_correct": false
+  },
+  {
+    "question": "Where is Ulrich Walter's employer headquartered?",
+    "qs_lines": [
+      {
+        "id": 259228,
+        "question": "Ulrich Walter >> employer",
+        "answer": "German Aerospace Center",
+        "paragraph_support_idx": 14
+      },
+      {
+        "id": 793698,
+        "question": "#1 >> headquarters location",
+        "answer": "Cologne",
+        "paragraph_support_idx": 11
+      }
+    ],
+    "result": [
+      "German Aerospace Center",
+      "Cologne, Germany"
+    ],
+    "expected_answer": "Cologne",
+    "is_correct": true
+  },
+  {
+    "question": "Which company owns the manufacturer of Learjet 60?",
+    "qs_lines": [
+      {
+        "id": 481349,
+        "question": "Learjet 60 >> manufacturer",
+        "answer": "Bombardier Aerospace",
+        "paragraph_support_idx": 10
+      },
+      {
+        "id": 302087,
+        "question": "#1 >> owned by",
+        "answer": "Bombardier Inc.",
+        "paragraph_support_idx": 5
+      }
+    ],
+    "result": [
+      "Bombardier Aerospace",
+      "Bombardier Inc"
+    ],
+    "expected_answer": "Bombardier Inc.",
+    "is_correct": true
+  },
+  {
+    "question": "Who is the child of Caroline LeRoy's spouse?",
+    "qs_lines": [
+      {
+        "id": 697790,
+        "question": "Caroline LeRoy >> spouse",
+        "answer": "Daniel Webster",
+        "paragraph_support_idx": 10
+      },
+      {
+        "id": 864352,
+        "question": "#1 >> child",
+        "answer": "Fletcher Webster",
+        "paragraph_support_idx": 0
+      }
+    ],
+    "result": [
+      "Daniel Webster",
+      "Fletcher Webster, Caroline LeRoy Webster, Princess Stéphanie of Monaco, Daniel Bremer Juell, Margareta von Ascheberg"
+    ],
+    "expected_answer": "Fletcher Webster",
+    "is_correct": true
+  },
+  {
+    "question": "Who is the grandmother of Philippe, Duke of Orléans?",
+    "qs_lines": [
+      {
+        "id": 207476,
+        "question": "Philippe, Duke of Orléans >> father",
+        "answer": "Louis XIII",
+        "paragraph_support_idx": 8
+      },
+      {
+        "id": 625987,
+        "question": "#1 of France >> mother",
+        "answer": "Marie de' Medici",
+        "paragraph_support_idx": 14
+      }
+    ],
+    "result": [
+      "Louis XIII of France",
+      "Anne of Austria"
+    ],
+    "expected_answer": "Marie de' Medici",
+    "is_correct": false
+  },
+  {
+    "question": "What is the goal of the group that European Movement Germany is a member of?",
+    "qs_lines": [
+      {
+        "id": 390947,
+        "question": "European Movement Germany >> member of",
+        "answer": "European Movement International",
+        "paragraph_support_idx": 4
+      },
+      {
+        "id": 232243,
+        "question": "#1 >> movement",
+        "answer": "European integration",
+        "paragraph_support_idx": 17
+      }
+    ],
+    "result": [
+      "Bernd Hüttemann",
+      "European Movement International"
+    ],
+    "expected_answer": "European integration",
+    "is_correct": false
+  },
+  {
+    "question": "What company succeeded the owner of Empire Sports Network?",
+    "qs_lines": [
+      {
+        "id": 354635,
+        "question": "Empire Sports Network >> owned by",
+        "answer": "Adelphia Communications Corporation",
+        "paragraph_support_idx": 2
+      },
+      {
+        "id": 174222,
+        "question": "#1 >> followed by",
+        "answer": "Time Warner Cable",
+        "paragraph_support_idx": 16
+      }
+    ],
+    "result": [
+      "Adelphia Communications Corporation",
+      "Empire Sports Network"
+    ],
+    "expected_answer": "Time Warner Cable",
+    "is_correct": false
+  },
+  {
+    "question": "What province shares a border with the province where Lago District is located?",
+    "qs_lines": [
+      {
+        "id": 635187,
+        "question": "Lago District >> located in the administrative territorial entity",
+        "answer": "Niassa Province",
+        "paragraph_support_idx": 16
+      },
+      {
+        "id": 861533,
+        "question": "#1 >> shares border with",
+        "answer": "Cabo Delgado Province",
+        "paragraph_support_idx": 0
+      }
+    ],
+    "result": [
+      "Niassa Province",
+      "Cabo Delgado Province"
+    ],
+    "expected_answer": "Cabo Delgado Province",
+    "is_correct": true
+  },
+  {
+    "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+    "qs_lines": [
+      {
+        "id": 166824,
+        "question": "Stadio Ciro Vigorito >> occupant",
+        "answer": "Benevento Calcio",
+        "paragraph_support_idx": 11
+      },
+      {
+        "id": 185403,
+        "question": "#1 >> league",
+        "answer": "Lega Pro Prima Divisione",
+        "paragraph_support_idx": 13
+      }
+    ],
+    "result": [
+      "Benevento Calcio",
+      "Serie C"
+    ],
+    "expected_answer": "Lega Pro Prima Divisione",
+    "is_correct": false
+  },
+  {
+    "question": "What is a notable work written by the author of The Timothy files?",
+    "qs_lines": [
+      {
+        "id": 698577,
+        "question": "The Timothy Files >> author",
+        "answer": "Lawrence Sanders",
+        "paragraph_support_idx": 3
+      },
+      {
+        "id": 851686,
+        "question": "#1 >> notable work",
+        "answer": "Anderson Tapes",
+        "paragraph_support_idx": 15
+      }
+    ],
+    "result": [
+      "Lawrence Sanders",
+      "The Anderson Tapes (novel) => The Anderson Tapes is the debut crime fiction novel by Lawrence Sanders, published in 1970."
+    ],
+    "expected_answer": "Anderson Tapes",
+    "is_correct": true
+  },
+  {
+    "question": "In which borough was Callum McManaman born?",
+    "qs_lines": [
+      {
+        "id": 362107,
+        "question": "Callum McManaman >> place of birth",
+        "answer": "Whiston",
+        "paragraph_support_idx": 17
+      },
+      {
+        "id": 652514,
+        "question": "#1 >> located in the administrative territorial entity",
+        "answer": "Knowsley",
+        "paragraph_support_idx": 18
+      }
+    ],
+    "result": [
+      "Whiston, Merseyside",
+      "Whiston, Merseyside >> located in the administrative territorial entity: Metropolitan Borough of Knowsley"
+    ],
+    "expected_answer": "Knowsley",
+    "is_correct": false
+  },
+  {
+    "question": "What other county does the county where Imperial is located share a border with?",
+    "qs_lines": [
+      {
+        "id": 402530,
+        "question": "Imperial >> located in the administrative territorial entity",
+        "answer": "Pecos County",
+        "paragraph_support_idx": 17
+      },
+      {
+        "id": 774333,
+        "question": "#1 >> shares border with",
+        "answer": "Crockett County",
+        "paragraph_support_idx": 12
+      }
+    ],
+    "result": [
+      "Minsk Region => Minsk",
+      "Minsk >> separate administrative territorial entity of Belarus"
+    ],
+    "expected_answer": "Crockett County",
+    "is_correct": false
+  },
+  {
+    "question": "In what county is William W. Blair's birthplace located?",
+    "qs_lines": [
+      {
+        "id": 195917,
+        "question": "William W. Blair >> place of birth",
+        "answer": "Holley",
+        "paragraph_support_idx": 15
+      },
+      {
+        "id": 575657,
+        "question": "#1 >> located in the administrative territorial entity",
+        "answer": "Orleans County",
+        "paragraph_support_idx": 17
+      }
+    ],
+    "result": [
+      "Holley, New York",
+      "located in the administrative territorial entity: Holley is a village in the town of Murray in Orleans County, New York, United States."
+    ],
+    "expected_answer": "Orleans County",
+    "is_correct": true
+  }
+]

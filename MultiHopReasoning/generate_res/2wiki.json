@@ -1,0 +1,257 @@
+[
+  {
+    "question": "Which film came out first, The Love Route or Engal Aasan?",
+    "qs_lines": [
+      "[get_ent_qa] Which films are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the release date of #1?",
+      "[comp_qa] Which film came out first based on the release date?"
+    ],
+    "output": [
+      "[\"The Love Route\", \"Engal Aasan\"]",
+      [
+        "The Love Route => February 25, 1915",
+        "Engal Aasan => July 2009"
+      ],
+      "The Love Route"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Are Matraville Sports High School and Wabash High School both located in the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Which schools are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the location of #1?",
+      "[comp_qa] Are the schools located in the same country?"
+    ],
+    "output": [
+      "[\"Matraville Sports High School\", \"Wabash High School\"]",
+      [
+        "Matraville Sports High School => Anzac Parade, Chifley, an eastern suburb of Sydney, New South Wales, Australia.",
+        "Wabash High School => Wabash, Indiana, United States"
+      ],
+      "No"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Are Alison Skipper and Diane Gilliam Fisher from the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Who are the people being compared in the question?",
+      "(foreach)[get_atr_qa] What is the nationality of #1?",
+      "[comp_qa] Do they have the same nationality?"
+    ],
+    "output": [
+      "[\"Alison Skipper\", \"Diane Gilliam Fisher\"]",
+      [
+        "Alison Skipper => American",
+        "Diane Gilliam Fisher => American"
+      ],
+      "Yes"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Do the movies Bloody Birthday and The Beckoning Silence, originate from the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Which movies are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the country of origin of #1?",
+      "[comp_qa] Do the movies originate from the same country?"
+    ],
+    "output": [
+      "[\"Carnival Of Souls\", \"Uvanga\"]",
+      [
+        "Carnival Of Souls => USA",
+        "Uvanga => It is not possible to determine the country of origin of Uvanga with the given context."
+      ],
+      "No"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Are both businesses, Vakıfbank and Infopro Sdn Bhd, located in the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Which businesses are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the location of #1?",
+      "[comp_qa] Are the businesses located in the same country?"
+    ],
+    "output": [
+      "[\"Vakıfbank\", \"Infopro Sdn Bhd\"]",
+      [
+        "Vakıfbank => VakıfBank has multiple locations. Its headquarters was established in Ankara, and it has branches in Istanbul, Ankara, and İzmir. It also has international offices in New York and Bahrain, and branches of \"VakifBank International AG\" in Vienna, Cologne, and Frankfurt. It operates 610 branches domestically in Turkey.",
+        "Infopro Sdn Bhd => I cannot provide the location of Infopro Sdn Bhd without more information."
+      ],
+      "No"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Does Mukasa Mbidde have the same nationality as Erich Maas?",
+    "qs_lines": [
+      "[get_ent_qa] Who are the people being compared in the question?",
+      "(foreach)[get_atr_qa] What is the nationality of #1?",
+      "[comp_qa] Do they have the same nationality?"
+    ],
+    "output": [
+      "[\"Mukasa Mbidde\", \"Erich Maas\"]",
+      [
+        "Mukasa Mbidde => Ugandan",
+        "Erich Maas => German"
+      ],
+      "No"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Does Ted Swinford have the same nationality as Nirmala Sheoran?",
+    "qs_lines": [
+      "[get_ent_qa] Who are the people being compared in the question?",
+      "(foreach)[get_atr_qa] What is the nationality of #1?",
+      "[comp_qa] Do they have the same nationality?"
+    ],
+    "output": [
+      "[\"Ted Swinford\", \"Nirmala Sheoran\"]",
+      [
+        "Ted Swinford => American",
+        "Nirmala Sheoran => Indian"
+      ],
+      "No"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Which film was released more recently, Die schöne Lurette or Sabhash?",
+    "qs_lines": [
+      "[get_ent_qa] Which films are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the release date of #1?",
+      "[comp_qa] Which film was released more recently based on the release date?"
+    ],
+    "output": [
+      "[\"Die schöne Lurette\", \"Sabhash\"]",
+      [
+        "Die schöne Lurette => 1960",
+        "Sabhash => 1 September 2000"
+      ],
+      "Sabhash"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Did the movies Pony Express (Film) and The Da Vinci Code (Film), originate from the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Which movies are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the country of origin of #1?",
+      "[comp_qa] Do the movies originate from the same country?"
+    ],
+    "output": [
+      "[\"Pony Express (Film)\", \"The Da Vinci Code (Film)\"]",
+      [
+        "Pony Express (Film) => United States",
+        "The Da Vinci Code (Film) => American"
+      ],
+      "yes"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Are Sam Earle and Felix Luckeneder from the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Who are the people being compared in the question?",
+      "(foreach)[get_atr_qa] What is the nationality of #1?",
+      "[comp_qa] Do they have the same nationality?"
+    ],
+    "output": [
+      "[\"Sam Earle\", \"Felix Luckeneder\"]",
+      [
+        "Sam Earle => Canadian",
+        "Felix Luckeneder => Austrian"
+      ],
+      "No"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Are both Lesser Slave Lake and Medeweger See located in the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Which lakes are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the location of #1?",
+      "[comp_qa] Are the lakes located in the same country?"
+    ],
+    "output": [
+      "[\"Lesser Slave Lake\", \"Medeweger See\"]",
+      [
+        "Lesser Slave Lake => Lesser Slave Lake is located in central Alberta, Canada, northwest of Edmonton.",
+        "Medeweger See => Mecklenburg-Vorpommern, Germany"
+      ],
+      "No"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Are Alsino And The Condor and 1922 (2017 Film) both from the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Which movies are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the country of origin of #1?",
+      "[comp_qa] Do the movies originate from the same country?"
+    ],
+    "output": [
+      "[\"Alsino And The Condor\", \"1922 (2017 Film)\"]",
+      [
+        "Alsino And The Condor => Nicaragua",
+        "1922 (2017 Film) => American"
+      ],
+      "No"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Are the bands Cinematic Sunrise and Kingston Falls, from the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Which bands are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the country of origin of #1?",
+      "[comp_qa] Are the bands from the same country?"
+    ],
+    "output": [
+      "[\"Cinematic Sunrise\", \"Kingston Falls\"]",
+      [
+        "Cinematic Sunrise => United States",
+        "Kingston Falls => United States of America"
+      ],
+      "yes"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Are the movies Carnival Of Souls and Uvanga, from the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Which movies are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the country of origin of #1?",
+      "[comp_qa] Do the movies originate from the same country?"
+    ],
+    "output": [
+      "[\"Carnival Of Souls\", \"Uvanga\"]",
+      [
+        "Carnival Of Souls => American",
+        "Uvanga => Canada"
+      ],
+      "No"
+    ],
+    "is_correct": true
+  },
+  {
+    "question": "Are St. Mary High School (Rutherford, New Jersey) and Mother Teresa High School both located in the same country?",
+    "qs_lines": [
+      "[get_ent_qa] Which schools are being compared in the question?",
+      "(foreach)[get_atr_qa] What is the location of #1?",
+      "[comp_qa] Are the schools located in the same country?"
+    ],
+    "output": [
+      "[\"St. Mary High School (Rutherford, New Jersey)\", \"Mother Teresa High School\"]",
+      [
+        "St. Mary High School (Rutherford, New Jersey) => Rutherford, New Jersey; Royal Oak, Michigan; Dell Rapids, South Dakota",
+        "Mother Teresa High School => Based on the context provided, there are two schools with similar names:\n\n*   **St. Mother Teresa High School** is located in **Nepean, Ottawa, Ontario, Canada**. (From C1)\n*   **St. Teresa High School** is located in **Decatur, Illinois**. (From C2)\n\nTherefore, to provide a specific location, you would need to clarify which \"Mother Teresa High School\" you are asking about."
+      ],
+      "No"
+    ],
+    "is_correct": true
+  }
+]
