@@ -1,1 +1,8 @@
-/dataset/gsm8k - /generate_res/gsm8k/gsm8k_fewshot ✅ Accuracy: 14/15 correct → 93.33%
+/dataset/aqua - /generate_res/aqua/aqua_fewshot ✅ Accuracy: 43/45 correct → 95.56%
+/dataset/aqua - /generate_res/aqua/aqua ✅ Accuracy: 41/45 correct → 91.11%
+
+/dataset/gsm8k - /generate_res/gsm8k/gsm8k_fewshot ✅ Accuracy: 45/45 correct → 91.30%
+/dataset/gsm8k - /generate_res/gsm8k/gsm8k ✅ Accuracy: 39/46 correct → 84.78%
+
+/dataset/lastletter - /generate_res/gsm8k/lastletter_fewshot ✅ Accuracy: 45/45 correct → 97.78%
+/dataset/lastletter - /generate_res/gsm8k/lastletter ✅ Accuracy: 45/45 correct → 100.00%

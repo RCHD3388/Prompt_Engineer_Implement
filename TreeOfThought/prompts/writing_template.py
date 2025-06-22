@@ -1,3 +1,5 @@
+# prompts/writing_template.py
+
 generate_sample_plan_prompt = """Write a coherent passage of 4 short paragraphs. The end sentence of each paragraph must be: It isn't difficult to do a handstand if you just stand on your hands. It caught him off guard that space smelled of seared steak. When she didn’t like a guy who was trying to pick her up, she started using sign language. Each person who knows you has a different perception of who you are.
 
 Make a plan only for the passage. Your output MUST be of the following format:

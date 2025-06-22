@@ -1,3 +1,4 @@
+# prompts/commaQA/template.py
 
 decomp_qa_template = '''Generate a Question Set (QS) based on the given Question Context (QC) WITHOUT PROVIDING Answer (A). Each QS step should logically follow from the previous one, leading to the final answer, but do not include the answer. Use consistent format and tags as shown below.
 

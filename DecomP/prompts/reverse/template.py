@@ -1,3 +1,5 @@
+# prompts/reverse/template.py
+
 decomp_chain = '''Generate a Question Set (QS) based on the given Question Context (QC) WITHOUT PROVIDING Answer (A). Each QS step should logically follow from the previous one, leading to the final answer, but do not include the answer. Use consistent format and tags as shown below.
 
 QC: Reverse the sequence "driving license, button, packet, identity card, shoe".

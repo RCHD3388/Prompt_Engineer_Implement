@@ -1,4 +1,4 @@
-# main.py
+# main.py - setup code
 
 from utils.io_utils import load_json, save_json
 from utils.gemini_client import generate_answer
@@ -37,6 +37,7 @@ def parse_args():
     return parser.parse_args()
 
 
+# main.py - function handle_game24 
 def handle_game24(args, n_samples=3):
     dataset_path = os.path.join("dataset", "game24.csv")
     dataset = pd.read_csv(dataset_path)
@@ -139,6 +140,7 @@ def handle_game24(args, n_samples=3):
 
     return
 
+# main.py - function handle_writing
 def handle_writing(args, n_samples=5):
     output_path = args.output
     with open(os.path.join("dataset", "writing.txt"), "r") as f:
@@ -263,7 +265,7 @@ def handle_writing(args, n_samples=5):
         
     return
 
-
+# main.py - function main
 def main():
     args = parse_args()
     print("Arguments parsed:")

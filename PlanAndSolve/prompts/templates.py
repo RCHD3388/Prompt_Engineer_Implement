@@ -76,7 +76,6 @@ Plan:
 """
     return few_shot_examples.strip().replace("{question}", question)
 
-
 def aqua_plan_and_solve_template(question: str, options: list[str]) -> str:
     options_text = "\n".join(options)
     return f"""
@@ -97,7 +96,6 @@ Begin your solution:
 Plan:
 - 
 """.strip()
-
 
 def aqua_plan_and_solve_fewshot_template(question: str, options: list[str]) -> str:
     options_text = "\n".join(options)
@@ -138,3 +136,80 @@ Plan:
 - 
 """.strip()
     return few_shot_examples.replace("{question}", question).replace("{options_text}", options_text)
+
+def lastletter_plan_and_solve(question: str) -> str:
+
+    return f"""
+You are a helpful and logical assistant. When solving a word problem, follow these steps:
+
+1. First create a plan with bullet points.
+2. Then solve the problem step-by-step.
+3. Finally, output the final answer in the format: Answer: <FINAL ANSWER MUST BE A LOWERCASE STRING>.
+
+Question:
+{question}
+
+Plan:
+- 
+Solve:
+""".strip()
+
+def lastletter_plan_and_solve_fewshot(question: str) -> str:
+    few_shot_examples = """
+You are a logical and helpful assistant. For each string manipulation task, follow this format:
+
+Plan:
+- Break the sentence into individual words.
+- Take the last letter of each word.
+- Concatenate the letters.
+- Convert to lowercase if needed.
+
+Solve:
+Whitney Erika Tj Benito → ["Whitney", "Erika", "Tj", "Benito"]
+Last letters → ["y", "a", "j", "o"]
+Concatenate → "yajo"
+
+Answer: yajo
+
+---
+
+Question: Lucky Mireya Jj Kc
+
+Plan:
+- Break the sentence into individual words.
+- Take the last letter of each word.
+- Concatenate the letters.
+- Convert to lowercase if needed.
+
+Solve:
+Lucky Mireya Jj Kc → ["Lucky", "Mireya", "Jj", "Kc"]
+Last letters → ["y", "a", "j", "c"]
+Concatenate → "yajc"
+
+Answer: yajc
+
+---
+
+Question: Caleb Chase Eleazar Chanel
+
+Plan:
+- Break the sentence into individual words.
+- Take the last letter of each word.
+- Concatenate the letters.
+- Convert to lowercase if needed.
+
+Solve:
+Caleb Chase Eleazar Chanel → ["Caleb", "Chase", "Eleazar", "Chanel"]
+Last letters → ["b", "e", "r", "l"]
+Concatenate → "berl"
+
+Answer: berl
+
+---
+
+Question: {question}
+
+Plan:
+- 
+""".strip()
+    return few_shot_examples.replace("{question}", question)

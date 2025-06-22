@@ -1,3 +1,5 @@
+# prompts/lettercat/template.py
+
 decomp_template = '''
 QC: Take the last letters of the words in "Elon Musk Tesla" and concatenate them.
 QS: [split] What are the words in "Elon Musk"?

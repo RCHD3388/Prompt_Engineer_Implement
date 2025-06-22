@@ -1,3 +1,5 @@
+# prompts/wiki/template.py
+
 decomp_template = '''
 QC: Which film came out first, The Love Route or Engal Aasan?  
 QS: [get_ent_qa] Which films are being compared in the question?

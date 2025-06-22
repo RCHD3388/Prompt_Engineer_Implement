@@ -8,8 +8,8 @@
       "D)8(√3 – 2)",
       "E)None of these"
     ],
-    "plan": "1.  Draw a diagram representing the situation. Let the height of the tower be $h$. Let the initial distance of the car from the base of the tower be $x$, and the distance after 10 minutes be $y$.\n2.  Write equations for the angles of elevation at the two points. We have $\\tan(45^\\circ) = \\frac{h}{x}$ and $\\tan(60^\\circ) = \\frac{h}{y}$.\n3.  Since $\\tan(45^\\circ) = 1$, we have $x = h$. Since $\\tan(60^\\circ) = \\sqrt{3}$, we have $y = \\frac{h}{\\sqrt{3}}$.\n4.  The car travels a distance $x - y$ in 10 minutes. We have $x - y = h - \\frac{h}{\\sqrt{3}} = h(1 - \\frac{1}{\\sqrt{3}})$.\n5.  Let $t$ be the time it takes for the car to travel the distance $y$ to the base of the tower. Since the car is moving at a uniform speed, we have $\\frac{x-y}{10} = \\frac{y}{t}$.\n6.  Substitute the expressions for $x$ and $y$ in terms of $h$:\n    $\\frac{h(1 - \\frac{1}{\\sqrt{3}})}{10} = \\frac{\\frac{h}{\\sqrt{3}}}{t}$.\n7.  Simplify the equation to solve for $t$:\n    $\\frac{1 - \\frac{1}{\\sqrt{3}}}{10} = \\frac{1}{\\sqrt{3}t}$.\n    $t = \\frac{10}{\\sqrt{3}(1 - \\frac{1}{\\sqrt{3}})} = \\frac{10}{\\sqrt{3} - 1}$.\n8.  Rationalize the denominator:\n    $t = \\frac{10(\\sqrt{3} + 1)}{(\\sqrt{3} - 1)(\\sqrt{3} + 1)} = \\frac{10(\\sqrt{3} + 1)}{3 - 1} = \\frac{10(\\sqrt{3} + 1)}{2} = 5(\\sqrt{3} + 1)$.",
-    "solve": "Let $h$ be the height of the tower.\nLet $x$ be the initial distance from the car to the tower.\nLet $y$ be the distance from the car to the tower after 10 minutes.\n$\\tan(45^\\circ) = \\frac{h}{x} \\Rightarrow x = h$\n$\\tan(60^\\circ) = \\frac{h}{y} \\Rightarrow y = \\frac{h}{\\sqrt{3}}$\nThe car travels $x - y$ in 10 minutes, so $x - y = h - \\frac{h}{\\sqrt{3}} = h(1 - \\frac{1}{\\sqrt{3}})$.\nLet $t$ be the time it takes to travel the remaining distance $y$.\nSince the speed is uniform, $\\frac{x-y}{10} = \\frac{y}{t}$.\n$\\frac{h(1 - \\frac{1}{\\sqrt{3}})}{10} = \\frac{\\frac{h}{\\sqrt{3}}}{t}$\n$\\frac{1 - \\frac{1}{\\sqrt{3}}}{10} = \\frac{1}{\\sqrt{3}t}$\n$t = \\frac{10}{\\sqrt{3}(1 - \\frac{1}{\\sqrt{3}})} = \\frac{10}{\\sqrt{3} - 1} = \\frac{10(\\sqrt{3} + 1)}{3 - 1} = \\frac{10(\\sqrt{3} + 1)}{2} = 5(\\sqrt{3} + 1)$",
+    "plan": "1.  Draw a diagram representing the situation. Let the height of the tower be $h$. Let the initial distance from the car to the base of the tower be $x$, and the distance after 10 minutes be $y$.\n2.  Write equations using the tangent function for the angles of elevation at both instances.\n3.  Express $x$ and $y$ in terms of $h$.\n4.  Since the speed is uniform, the distance traveled is proportional to the time taken. The distance traveled in 10 minutes is $x - y$.\n5.  Let $t$ be the time it takes to reach the base of the tower from the second observation point. Then the distance is $y$.\n6.  Set up a proportion relating the distances and the times.\n7.  Solve for $t$.",
+    "solve": "Let $h$ be the height of the tower.\nLet $x$ be the initial distance from the car to the base of the tower.\nLet $y$ be the distance from the car to the base of the tower after 10 minutes.\nWe have $\\tan(45^\\circ) = \\frac{h}{x}$, so $1 = \\frac{h}{x}$, which implies $x = h$.\nWe also have $\\tan(60^\\circ) = \\frac{h}{y}$, so $\\sqrt{3} = \\frac{h}{y}$, which implies $y = \\frac{h}{\\sqrt{3}}$.\n\nThe car travels a distance $x - y = h - \\frac{h}{\\sqrt{3}} = h(1 - \\frac{1}{\\sqrt{3}})$ in 10 minutes.\nLet $t$ be the time it takes to travel the remaining distance $y = \\frac{h}{\\sqrt{3}}$.\nSince the speed is uniform, we have the proportion:\n$\\frac{x - y}{10} = \\frac{y}{t}$\n$\\frac{h(1 - \\frac{1}{\\sqrt{3}})}{10} = \\frac{\\frac{h}{\\sqrt{3}}}{t}$\n$\\frac{1 - \\frac{1}{\\sqrt{3}}}{10} = \\frac{\\frac{1}{\\sqrt{3}}}{t}$\n$t = \\frac{10 \\cdot \\frac{1}{\\sqrt{3}}}{1 - \\frac{1}{\\sqrt{3}}} = \\frac{10}{\\sqrt{3} - 1}$\n$t = \\frac{10(\\sqrt{3} + 1)}{(\\sqrt{3} - 1)(\\sqrt{3} + 1)} = \\frac{10(\\sqrt{3} + 1)}{3 - 1} = \\frac{10(\\sqrt{3} + 1)}{2} = 5(\\sqrt{3} + 1)$",
     "generated_answer": "A",
     "expected_answer": "A",
     "correct": true
@@ -23,8 +23,8 @@
       "D)$70",
       "E)$78.20"
     ],
-    "plan": "1. Define a variable for the original price.\n2. Write an expression for the discounted price (22% off).\n3. Write an expression for the price after the coupon.\n4. Write an equation based on the given information (paid $1.90 more than half the original price).\n5. Solve for the original price.",
-    "solve": "Let 'x' be the original price of the item.\nThe discounted price is x - 0.22x = 0.78x.\nThe price after the coupon is 0.78x - 20.\nThe customer paid $1.90 more than half the original price, so 0.78x - 20 = 0.5x + 1.90.\nNow solve for x:\n0.  78x - 0.5x = 1.90 + 20\n0.  28x = 21.90\nx = 21.90 / 0.28\nx = 78.214...\n\nRounding to two decimal places, the original price is approximately $78.21. Among the answer choices, $78.20 is the closest.",
+    "plan": "1.  Let 'x' be the original price of the item.\n2.  The discounted price is x - 0.22x = 0.78x.\n3.  The price after the coupon is 0.78x - 20.\n4.  Half the original price is x/2.\n5.  The customer paid $1.90 more than half the original price, so the final price is x/2 + 1.90.\n6.  Set up the equation: 0.78x - 20 = x/2 + 1.90\n7.  Solve for x.",
+    "solve": "0.  78x - 20 = x/2 + 1.90\n1.  78x - 20 = 0.5x + 1.90\n2.  78x - 0.5x = 1.90 + 20\n3.  28x = 21.90\n4.  x = 21.90 / 0.28\n5.  x = 78.214...\n\nSince the options are relatively close, we can round to two decimal places and check which option is closest.\nA) If x = 61, then 0.78(61) - 20 = 47.58 - 20 = 27.58, and 61/2 + 1.90 = 30.5 + 1.90 = 32.4.  Difference is 4.82\nB) If x = 65, then 0.78(65) - 20 = 50.7 - 20 = 30.7, and 65/2 + 1.90 = 32.5 + 1.90 = 34.4. Difference is 3.7\nC) If x = 67.40, then 0.78(67.40) - 20 = 52.572 - 20 = 32.572, and 67.40/2 + 1.90 = 33.7 + 1.90 = 35.6. Difference is 3.028\nD) If x = 70, then 0.78(70) - 20 = 54.6 - 20 = 34.6, and 70/2 + 1.90 = 35 + 1.90 = 36.9. Difference is 2.3\nE) If x = 78.20, then 0.78(78.20) - 20 = 60.996 - 20 = 40.996, and 78.20/2 + 1.90 = 39.1 + 1.90 = 41. Difference is 0.004.",
     "generated_answer": "E",
     "expected_answer": "E",
     "correct": true
@@ -38,8 +38,8 @@
       "D)5",
       "E)7"
     ],
-    "plan": "- Find the Least Common Multiple (LCM) of 9 and 12.\n- Check each option to see if it is a multiple of the LCM.",
-    "solve": "- Prime factorization of 9: 3 x 3\n- Prime factorization of 12: 2 x 2 x 3\n- LCM(9, 12) = 2 x 2 x 3 x 3 = 36\n- Check the options:\n    - A) 36 / 36 = 1 (Multiple)\n    - B) 15 / 36 = Not an integer\n    - C) 17 / 36 = Not an integer\n    - D) 5 / 36 = Not an integer\n    - E) 7 / 36 = Not an integer",
+    "plan": "- Find the least common multiple (LCM) of 9 and 12.\n- Check which of the options is equal to the LCM or a multiple of the LCM.",
+    "solve": "The multiples of 9 are: 9, 18, 27, 36, 45, 54, ...\nThe multiples of 12 are: 12, 24, 36, 48, 60, ...\nThe least common multiple of 9 and 12 is 36.\n\nNow, we check the options:\nA) 36. 36 is the LCM.\nB) 15. 15 is not divisible by 9 or 12.\nC) 17. 17 is not divisible by 9 or 12.\nD) 5. 5 is not divisible by 9 or 12.\nE) 7. 7 is not divisible by 9 or 12.",
     "generated_answer": "A",
     "expected_answer": "A",
     "correct": true
@@ -53,8 +53,8 @@
       "D)0.46",
       "E)0.63"
     ],
-    "plan": "- Define events: Let A be the event that Stock A increases in value, and B be the event that Stock B increases in value.\n- We are given P(A) = 0.56 and P(B) = 0.74.\n- We want to find the greatest value for the probability that neither A nor B occurs, which is P(A' and B') = P((A or B)') = 1 - P(A or B).\n- To maximize P(A' and B'), we need to minimize P(A or B).\n- We know that P(A or B) = P(A) + P(B) - P(A and B).\n- To minimize P(A or B), we need to maximize P(A and B). The maximum value of P(A and B) is the minimum of P(A) and P(B).\n- So, max(P(A and B)) = min(P(A), P(B)) = min(0.56, 0.74) = 0.56.\n- Then, min(P(A or B)) = P(A) + P(B) - max(P(A and B)) = 0.56 + 0.74 - 0.56 = 0.74.\n- Therefore, max(P(A' and B')) = 1 - min(P(A or B)) = 1 - 0.74 = 0.26.",
-    "solve": "P(A) = 0.56\nP(B) = 0.74\nP(A or B) = P(A) + P(B) - P(A and B)\nWe want to maximize P(A' and B') = P((A or B)') = 1 - P(A or B).  This means we want to minimize P(A or B).\nTo minimize P(A or B), we need to maximize P(A and B).\nThe maximum value of P(A and B) is min(P(A), P(B)) = min(0.56, 0.74) = 0.56.\nSo, min(P(A or B)) = 0.56 + 0.74 - 0.56 = 0.74.\nmax(P(A' and B')) = 1 - 0.74 = 0.26.",
+    "plan": "- Define events: Let A be the event that Stock A increases in value, and B be the event that Stock B increases in value.\n- We are given P(A) = 0.56 and P(B) = 0.74.\n- We want to find the greatest possible value for the probability that neither A nor B occurs. This is P(A' and B'), which can be written as P((A or B)').\n- Using De Morgan's Law, P((A or B)') = 1 - P(A or B).\n- To maximize P((A or B)'), we need to minimize P(A or B).\n- We know that P(A or B) = P(A) + P(B) - P(A and B).\n- To minimize P(A or B), we need to maximize P(A and B).\n- The maximum value of P(A and B) is the minimum of P(A) and P(B). In this case, min(0.56, 0.74) = 0.56.\n- So, the minimum value of P(A or B) is 0.56 + 0.74 - 0.56 = 0.74.\n- Therefore, the maximum value of P((A or B)') is 1 - 0.74 = 0.26.",
+    "solve": "P(A) = 0.56\nP(B) = 0.74\nP(A or B) = P(A) + P(B) - P(A and B)\nTo minimize P(A or B), maximize P(A and B). The max of P(A and B) = min(P(A), P(B)) = min(0.56, 0.74) = 0.56\nP(A or B) = 0.56 + 0.74 - 0.56 = 0.74\nP(neither A nor B) = 1 - P(A or B) = 1 - 0.74 = 0.26",
     "generated_answer": "B",
     "expected_answer": "B",
     "correct": true
@@ -68,8 +68,8 @@
       "D)320",
       "E)315"
     ],
-    "plan": "- Let the cost price be 'x'.\n- The selling price is the cost price plus the profit.\n- The profit is 20% of the cost price.\n- Set up an equation: x + 0.20x = 360\n- Solve for x.",
-    "solve": "Let the cost price be x.\nSelling price = Cost price + Profit\nProfit = 20% of x = 0.20x\nSelling price = x + 0.20x = 1.20x\nGiven that the selling price is Rs. 360.\n1.  20x = 360\nx = 360 / 1.20\nx = 300",
+    "plan": "- Let the cost price be 'x'.\n- The trader made a profit of 20%, so the selling price is x + 0.20x = 1.20x.\n- We are given that the selling price is Rs. 360.\n- Set up the equation 1.20x = 360.\n- Solve for x.",
+    "solve": "Let the cost price be x.\nSelling price = Cost price + Profit\nSelling price = x + 20% of x\nSelling price = x + 0.20x\nSelling price = 1.20x\nGiven selling price = 360\nSo, 1.20x = 360\nx = 360 / 1.20\nx = 300",
     "generated_answer": "B",
     "expected_answer": "B",
     "correct": true
@@ -83,8 +83,8 @@
       "D)400",
       "E)3200"
     ],
-    "plan": "- Determine the percentage of black marbles in the second sample.\n- Set up a proportion to represent the relationship between the number of black marbles, the total number of marbles, and the percentage.\n- Solve for the total number of marbles in the bag.",
-    "solve": "- The percentage of black marbles in the second sample is (1 black marble / 20 total marbles) * 100% = 5%.\n- Let Q be the total number of marbles in the bag. We know there are 20 black marbles in the bag.\n- We can set up the proportion: 20 / Q = 5 / 100 (since 5% = 5/100).\n- Cross-multiply: 20 * 100 = 5 * Q\n- Simplify: 2000 = 5Q\n- Divide both sides by 5: Q = 2000 / 5\n- Q = 400",
+    "plan": "- Calculate the percentage of black marbles in the second sample.\n- Set up a proportion to represent the percentage of black marbles in the bag compared to the total number of marbles.\n- Solve for the total number of marbles in the bag.",
+    "solve": "- The percentage of black marbles in the second sample is (1/20) * 100% = 5%.\n- Let Q be the total number of marbles in the bag. We know that there are 20 black marbles in the bag.\n- We can set up the proportion: 20/Q = 5/100\n- Cross-multiply: 20 * 100 = 5 * Q\n- 2000 = 5Q\n- Q = 2000 / 5\n- Q = 400",
     "generated_answer": "D",
     "expected_answer": "D",
     "correct": true
@@ -98,8 +98,8 @@
       "D)65000",
       "E)97656"
     ],
-    "plan": "- Determine the number of choices for each of the 2 letters. Since the letters must be distinct, the first letter has 26 options, and the second letter has 25 options.\n- Determine the number of choices for each of the 2 numbers. Each number has 10 options (0-9).\n- Multiply the number of choices for each position to find the total number of distinct bike numbers.",
-    "solve": "- Number of choices for the first letter: 26\n- Number of choices for the second letter (distinct from the first): 25\n- Number of choices for the first number: 10\n- Number of choices for the second number: 10\n\nTotal number of distinct bike numbers = 26 * 25 * 10 * 10 = 65000",
+    "plan": "1. Determine the number of choices for each of the two letters. Since the letters need to be distinct, the first letter can be any of the 26 letters of the alphabet, and the second letter can be any of the remaining 25 letters.\n2. Determine the number of choices for each of the two numbers. Each number can be any of the 10 digits (0-9).\n3. Multiply the number of choices for each position to find the total number of distinct bike numbers.",
+    "solve": "1. Number of choices for the first letter: 26\n2. Number of choices for the second letter: 25\n3. Number of choices for the first number: 10\n4. Number of choices for the second number: 10\n\nTotal number of distinct bike numbers = 26 * 25 * 10 * 10 = 65000",
     "generated_answer": "D",
     "expected_answer": "D",
     "correct": true
@@ -113,8 +113,8 @@
       "D)13.5",
       "E)15"
     ],
-    "plan": "- Calculate the total distance of the journey.\n- Calculate the distance covered before the rain.\n- Calculate the remaining distance after the rain started.\n- Calculate the time taken to cover the initial distance at 100 miles/hour.\n- Calculate the time taken to cover the remaining distance at 75 miles/hour.\n- Add the two times to get the total journey duration.",
-    "solve": "Total distance = Speed * Time = 100 miles/hour * 10 hours = 1000 miles\nDistance covered before rain = (1/4) * 1000 miles = 250 miles\nRemaining distance = 1000 miles - 250 miles = 750 miles\nTime taken to cover initial distance = Distance / Speed = 250 miles / 100 miles/hour = 2.5 hours\nTime taken to cover remaining distance = Distance / Speed = 750 miles / 75 miles/hour = 10 hours\nTotal journey duration = 2.5 hours + 10 hours = 12.5 hours",
+    "plan": "- Calculate the total distance of the journey.\n- Calculate the distance covered before the rain.\n- Calculate the distance remaining after the rain.\n- Calculate the time taken to cover the distance before the rain.\n- Calculate the time taken to cover the remaining distance after the rain.\n- Add the two times to get the total journey duration.",
+    "solve": "Total distance = Speed * Time = 100 miles/hour * 10 hours = 1000 miles\n\nDistance covered before rain = (1/4) * 1000 miles = 250 miles\n\nDistance remaining after rain = 1000 miles - 250 miles = 750 miles\n\nTime taken before rain = Distance / Speed = 250 miles / 100 miles/hour = 2.5 hours\n\nTime taken after rain = Distance / Speed = 750 miles / 75 miles/hour = 10 hours\n\nTotal journey duration = Time before rain + Time after rain = 2.5 hours + 10 hours = 12.5 hours",
     "generated_answer": "C",
     "expected_answer": "C",
     "correct": true
@@ -128,8 +128,8 @@
       "D)99",
       "E)110"
     ],
-    "plan": "- Calculate the minimum number of students who attended the prom night.\n- Calculate the minimum number of students who took part in the debating session.\n- Calculate the maximum number of students who participated in at least one event (prom or debate). This occurs when the overlap between the two groups is maximized. To maximize overlap, assume all debaters also attended the prom. Thus, the number who attended at least one event is just the number who attended the prom.\n- Subtract the number of students who participated in at least one event from the total number of students to find the number of students who participated in neither event.",
-    "solve": "- Minimum number of students attending prom night: 45% of 200 = 0.45 * 200 = 90\n- Minimum number of students in debating session: 35% of 200 = 0.35 * 200 = 70\n- Maximum number of students participating in at least one event: Since at least 90 attended the prom, the maximum overlap would result in all 70 debaters being included in the 90 prom attendees. Therefore, at least 90 students attended at least one event.\n- Maximum number of students who attended neither event: 200 - 90 = 110",
+    "plan": "- Calculate the minimum number of students who attended the prom night.\n- Calculate the minimum number of students who took part in the debating session.\n- Calculate the maximum number of students who attended either the prom night or the debating session by adding the minimum number of students from each event.\n- Subtract this maximum number from the total number of students to find the minimum number of students who attended at least one event.\n- To maximize the number of students who attended neither event, we need to minimize the number of students attending at least one event.\n- Therefore, we maximize the overlap between the students attending prom night and the debating session.\n- The minimum percentage of students attending prom night is 45%, and the minimum percentage of students in the debating session is 35%.\n- The maximum percentage of students who attended at least one event is when the debating students are a subset of the prom night students. So, the minimum number of students who attended at least one event is 45% of 200.\n- Calculate 45% of 200.\n- Subtract that value from 200.",
+    "solve": "- Minimum number of students attending prom night: 0.45 * 200 = 90\n- Minimum number of students attending debating session: 0.35 * 200 = 70\n- To maximize the number of students who did neither, we minimize the number of students participating in either activity.  This occurs when the 70 students in the debating session are all part of the 90 students who went to prom. Thus, at least 90 students participated in at least one activity.\n- Maximum number of students who did neither: 200 - 90 = 110",
     "generated_answer": "E",
     "expected_answer": "E",
     "correct": true
@@ -143,8 +143,8 @@
       "D)40",
       "E)52"
     ],
-    "plan": "- Calculate the commission per sale: 10% of $250.\n- Divide the desired salary ($1000) by the commission per sale to find the number of sales needed.\n- If the result is not a whole number, round up to the next whole number since the salesperson needs to reach *at least* $1000.",
-    "solve": "- Commission per sale: 0.10 * $250 = $25\n- Number of sales needed: $1000 / $25 = 40",
+    "plan": "- Calculate the commission per sale: commission rate * sale amount.\n- Calculate the number of sales needed: desired salary / commission per sale.\n- Round the number of sales up to the nearest whole number since you can't have a fraction of a sale.",
+    "solve": "Commission per sale = 10% * $250 = 0.10 * $250 = $25\nNumber of sales = $1000 / $25 = 40",
     "generated_answer": "D",
     "expected_answer": "D",
     "correct": true
@@ -158,8 +158,8 @@
       "D)260",
       "E)280"
     ],
-    "plan": "1. Calculate the total yearly production cost.\n2. Calculate the required yearly revenue by adding the desired profit to the yearly production cost.\n3. Calculate the required monthly revenue by dividing the required yearly revenue by 12.\n4. Calculate the required selling price per component by dividing the required monthly revenue by the number of components produced each month.",
-    "solve": "1. Total yearly production cost: 420 units/month * $110/unit * 12 months/year = $554,400\n2. Required yearly revenue: $554,400 + $626,400 = $1,180,800\n3. Required monthly revenue: $1,180,800 / 12 months = $98,400\n4. Required selling price per component: $98,400 / 420 units = $234.29\n\nSince we need the *minimum* selling price that guarantees the profit, we round up to the nearest dollar. The closest option is $240. Let's verify to be sure that $230 is not enough:\n\nIf selling price is $230:\nMonthly revenue: 420 * $230 = $96,600\nYearly revenue: $96,600 * 12 = $1,159,200\nYearly profit: $1,159,200 - $554,400 = $604,800 (which is less than $626,400)\n\nIf selling price is $240:\nMonthly revenue: 420 * $240 = $100,800\nYearly revenue: $100,800 * 12 = $1,209,600\nYearly profit: $1,209,600 - $554,400 = $655,200 (which is greater than $626,400)",
+    "plan": "1. Calculate the total production cost per year.\n2. Calculate the minimum required revenue per year.\n3. Calculate the minimum required revenue per month.\n4. Calculate the minimum selling price per component.",
+    "solve": "1. Total production cost per year = (Production cost per component) * (Units per month) * (Number of months)\nTotal production cost per year = $110 * 420 * 12 = $554,400\n\n2. Minimum required revenue per year = (Total production cost per year) + (Minimum yearly profit)\nMinimum required revenue per year = $554,400 + $626,400 = $1,180,800\n\n3. Minimum required revenue per month = (Minimum required revenue per year) / (Number of months)\nMinimum required revenue per month = $1,180,800 / 12 = $98,400\n\n4. Minimum selling price per component = (Minimum required revenue per month) / (Units per month)\nMinimum selling price per component = $98,400 / 420 = $234.2857...\n\nSince the question asks for the *minimum* selling price that will *guarantee* the profit, we need to round up to the nearest dollar. Therefore, the minimum selling price per component is $235. However, this value is not present in the options. Let's re-examine the calculations.\n\nThe question asks for the *minimum selling price*. Let's check the options to see which one satisfies the condition.\nLet $x$ be the selling price per component.\nYearly profit = (Selling price per component - Production cost per component) * (Units per month) * (Number of months)\nYearly profit = $(x - 110) * 420 * 12$\nWe want the yearly profit to be at least $626,400.\n$(x - 110) * 420 * 12 \\ge 626,400$\n$(x - 110) * 5040 \\ge 626,400$\n$x - 110 \\ge \\frac{626,400}{5040}$\n$x - 110 \\ge 124.2857$\n$x \\ge 234.2857$\nSince we need to guarantee the profit, we should round up to the nearest dollar. $x \\ge 235$.\nHowever, $235$ is not an option.\nLet's try the options:\nA) 226: $(226-110) * 420 * 12 = 116 * 420 * 12 = 584640 < 626400$\nB) 230: $(230-110) * 420 * 12 = 120 * 420 * 12 = 604800 < 626400$\nC) 240: $(240-110) * 420 * 12 = 130 * 420 * 12 = 655200 > 626400$",
     "generated_answer": "C",
     "expected_answer": "B",
     "correct": false
@@ -173,8 +173,8 @@
       "D)4,800",
       "E)5,000"
     ],
-    "plan": "- Let 'x' be the total number of staplers produced on Monday.\n- 10% of x were defective, so 0.1x were defective.\n- Therefore, 90% of x were non-defective, so 0.9x were non-defective.\n- 2% of the non-defective staplers were rejected by mistake, so 0.02 * (0.9x) were rejected.\n- We are given that 72 non-defective staplers were rejected, so 0.02 * (0.9x) = 72.\n- Solve for x.",
-    "solve": "0.  02 * (0.9x) = 72\n1.  018x = 72\nx = 72 / 0.018\nx = 4000",
+    "plan": "- Let $x$ be the total number of staplers produced on Monday.\n- The number of defective staplers is $0.10x$.\n- The number of non-defective staplers is $x - 0.10x = 0.90x$.\n- 2 percent of the non-defective staplers were rejected by mistake, so $0.02(0.90x)$ were rejected.\n- We are given that 72 non-defective staplers were rejected, so $0.02(0.90x) = 72$.\n- Solve for $x$.",
+    "solve": "$0.02(0.90x) = 72$\n$0.018x = 72$\n$x = \\frac{72}{0.018} = \\frac{72000}{18} = 4000$",
     "generated_answer": "A",
     "expected_answer": "A",
     "correct": true
@@ -188,8 +188,8 @@
       "D)64 minutes",
       "E)72 minutes"
     ],
-    "plan": "- Find the rate of production for each machine (yo-yos per minute).\n- Combine the rates to find the total rate of production.\n- Calculate the time it takes to produce 10 yo-yos at the combined rate.",
-    "solve": "Machine A produces 1 yo-yo every 6 minutes, so its rate is 1/6 yo-yos per minute.\nMachine B produces 1 yo-yo every 9 minutes, so its rate is 1/9 yo-yos per minute.\nThe combined rate is (1/6) + (1/9) = (3/18) + (2/18) = 5/18 yo-yos per minute.\nTo produce 10 yo-yos, the time required is 10 / (5/18) = 10 * (18/5) = (10/5) * 18 = 2 * 18 = 36 minutes.",
+    "plan": "- Find the rate of yo-yo production for each machine (yo-yos per minute).\n- Combine the rates to find the total rate of yo-yo production.\n- Divide the total number of yo-yos needed (10) by the combined rate to find the time it takes to produce 10 yo-yos.",
+    "solve": "- Machine A produces 1 yo-yo every 6 minutes, so its rate is 1/6 yo-yos per minute.\n- Machine B produces 1 yo-yo every 9 minutes, so its rate is 1/9 yo-yos per minute.\n- The combined rate is (1/6) + (1/9). To add these fractions, we need a common denominator, which is 18.  So, (1/6) + (1/9) = (3/18) + (2/18) = 5/18 yo-yos per minute.\n- To find the time it takes to produce 10 yo-yos, we divide the number of yo-yos (10) by the combined rate (5/18):  10 / (5/18) = 10 * (18/5) = (10/5) * 18 = 2 * 18 = 36 minutes.",
     "generated_answer": "C",
     "expected_answer": "C",
     "correct": true
@@ -203,8 +203,8 @@
       "D)15",
       "E)-15"
     ],
-    "plan": "- Add the two numbers together, taking into account the signs.\n- Since the numbers have different signs, we subtract the smaller absolute value from the larger absolute value.\n- The result will have the sign of the number with the larger absolute value.",
-    "solve": "45 + (-30) = 45 - 30 = 15\nSince 45 has a larger absolute value than -30, the result is positive.",
+    "plan": "- Add the two numbers, considering their signs.\n- Since the signs are different, subtract the smaller absolute value from the larger absolute value.\n- The result will have the same sign as the number with the larger absolute value.",
+    "solve": "|45| = 45\n|-30| = 30\n45 - 30 = 15\nSince 45 is positive, the result is positive.",
     "generated_answer": "D",
     "expected_answer": "D",
     "correct": true
@@ -218,10 +218,460 @@
       "D)8!",
       "E)9!"
     ],
-    "plan": "- Determine the number of distinct letters in the word \"PROBLEC\".\n- Recognize that rearranging n distinct objects is a permutation problem.\n- Calculate the number of permutations of the letters.",
-    "solve": "The word \"PROBLEC\" has 7 distinct letters: P, R, O, B, L, E, C.\nWe want to rearrange these 7 letters to form 7-letter words. This is a permutation of 7 distinct objects taken 7 at a time, which is denoted as P(7,7) or 7!.\n7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 5040",
+    "plan": "- Determine the number of distinct letters in the word \"PROBLEC\".\n- Since all the letters are distinct and we want to form 7-letter words using all the letters, we need to find the number of permutations of these 7 letters.\n- The number of permutations of n distinct objects is n!",
+    "solve": "The word \"PROBLEC\" has 7 distinct letters: P, R, O, B, L, E, C.\nWe want to rearrange these 7 letters to form 7-letter words. This is equivalent to finding the number of permutations of these 7 letters.\nThe number of permutations of 7 distinct letters is 7!\n\n7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 5040",
     "generated_answer": "C",
     "expected_answer": "C",
+    "correct": true
+  },
+  {
+    "question": "Let A and B be independent events with P (A) = 0.2 and P(B) = 0.8. Find P(A/B)?",
+    "options": [
+      "A)0.2",
+      "B)0.4",
+      "C)0.6",
+      "D)1.2",
+      "E)1.5"
+    ],
+    "plan": "- Recall the definition of conditional probability: P(A|B) = P(A and B) / P(B)\n- Since A and B are independent events, P(A and B) = P(A) * P(B)\n- Substitute P(A) and P(B) into the formulas to find P(A|B)",
+    "solve": "P(A|B) = P(A and B) / P(B)\nSince A and B are independent, P(A and B) = P(A) * P(B) = 0.2 * 0.8 = 0.16\nP(A|B) = 0.16 / 0.8 = 0.2",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "Consider there is an staircase elevator and you are coming down. If you walk 20 steps and stop, then you reach bottom in 10 minutes. If you walk 10 steps and stop, you reach to the ground in 20 minutes. What is the speed of the elevator?",
+    "options": [
+      "A)1 step/minute",
+      "B)2 step/minute",
+      "C)3 step/minute",
+      "D)4 step/minute",
+      "E)None of the above"
+    ],
+    "plan": "- Let $N$ be the total number of steps in the staircase.\n- Let $v$ be the speed of the elevator in steps per minute.\n- Let $w$ be the walking speed of the person in steps per minute.\n- We can set up two equations based on the given information.\n- In the first case, the person walks 20 steps and reaches the bottom in 10 minutes.  The total number of steps covered is the sum of the steps walked and the steps the elevator moved. So, $20 + 10v = N$.\n- In the second case, the person walks 10 steps and reaches the bottom in 20 minutes. The total number of steps covered is the sum of the steps walked and the steps the elevator moved. So, $10 + 20v = N$.\n- Now we have a system of two equations with two variables, $v$ and $N$. We can solve for $v$.\n- Set the two equations equal to each other: $20 + 10v = 10 + 20v$.\n- Solve for $v$: $10 = 10v$, so $v = 1$.",
+    "solve": "Let $N$ be the total number of steps.\nLet $v$ be the speed of the elevator in steps/minute.\nCase 1: Walks 20 steps, takes 10 minutes.\n$20 + 10v = N$\nCase 2: Walks 10 steps, takes 20 minutes.\n$10 + 20v = N$\nEquating the two equations:\n$20 + 10v = 10 + 20v$\n$10 = 10v$\n$v = 1$ step/minute.",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "Last year, a Home Appliance Store sold an average(arithmetic mean) of 42 microwave ovens per month. In the first 10 months of this year,the store has sold an average(arithmetic mean) of only 20 microwave ovens per month. What was the average number of microwave ovens sold per month during the entire 22 months period ?",
+    "options": [
+      "A)21",
+      "B)30",
+      "C)31",
+      "D)32",
+      "E)None of the above"
+    ],
+    "plan": "- Calculate the total number of microwave ovens sold last year.\n- Calculate the total number of microwave ovens sold in the first 10 months of this year.\n- Calculate the total number of microwave ovens sold in the entire 22-month period.\n- Divide the total number of microwave ovens sold by 22 to find the average number of microwave ovens sold per month.",
+    "solve": "Last year, the store sold an average of 42 microwave ovens per month for 12 months, so the total number of microwave ovens sold last year is 42 * 12 = 504.\nIn the first 10 months of this year, the store sold an average of 20 microwave ovens per month, so the total number of microwave ovens sold is 20 * 10 = 200.\nThe total number of microwave ovens sold in the entire 22-month period is 504 + 200 = 704.\nThe average number of microwave ovens sold per month during the entire 22-month period is 704 / 22 = 32.",
+    "generated_answer": "D",
+    "expected_answer": "D",
+    "correct": true
+  },
+  {
+    "question": "An exam is given in a certain class. The average (arithmetic mean) of the highest score and the lowest score is equal to x. If the average score for the entire class is equal to y and there are z students in the class, where z > 5, then in terms of x, y, and z, what is the average score for the class excluding the highest and lowest scorers?",
+    "options": [
+      "A)(zy – 2x)/z",
+      "B)(zy – 2)/z",
+      "C)(zx – y)/(z – 2)",
+      "D)(zy – 2x)/(z -2)",
+      "E)(zy – x)/(z + 2)"
+    ],
+    "plan": "- Define variables. Let H be the highest score, L be the lowest score, and S be the sum of all scores.\n- Write the equation for the average of the highest and lowest scores: (H + L)/2 = x, so H + L = 2x.\n- Write the equation for the average of the entire class: S/z = y, so S = zy.\n- We want to find the average score excluding the highest and lowest scores.  The sum of the scores excluding the highest and lowest is S - H - L = S - (H + L) = zy - 2x.\n- The number of students excluding the highest and lowest scorers is z - 2.\n- The average score excluding the highest and lowest scorers is (zy - 2x) / (z - 2).",
+    "solve": "Let H be the highest score, L be the lowest score, and S be the sum of all scores.\nWe are given (H + L)/2 = x, which means H + L = 2x.\nWe are also given S/z = y, which means S = zy.\nWe want to find the average score of the class excluding the highest and lowest scores.\nThe sum of the scores excluding the highest and lowest scores is S - H - L = S - (H + L).\nSubstituting the given information, the sum becomes zy - 2x.\nThe number of students excluding the highest and lowest scorers is z - 2.\nThe average score excluding the highest and lowest scorers is (zy - 2x) / (z - 2).",
+    "generated_answer": "D",
+    "expected_answer": "D",
+    "correct": true
+  },
+  {
+    "question": "[5 + ? × 19 - 15 - 7]/[13 × 13 - 156] = 6",
+    "options": [
+      "A)4",
+      "B)4.5",
+      "C)5",
+      "D)5.5",
+      "E)6.5"
+    ],
+    "plan": "- Simplify the equation by performing the arithmetic operations where possible.\n- Isolate the unknown variable by performing inverse operations.\n- Solve for the unknown variable.",
+    "solve": "[5 + ? × 19 - 15 - 7]/[13 × 13 - 156] = 6\nFirst, simplify the numerator:\n5 - 15 - 7 = -17\nSo the numerator becomes: 19 * ? - 17\nNext, simplify the denominator:\n13 * 13 = 169\n169 - 156 = 13\nThe equation becomes:\n(19 * ? - 17) / 13 = 6\nMultiply both sides by 13:\n19 * ? - 17 = 6 * 13\n19 * ? - 17 = 78\nAdd 17 to both sides:\n19 * ? = 78 + 17\n19 * ? = 95\nDivide both sides by 19:\n? = 95 / 19\n? = 5",
+    "generated_answer": "C",
+    "expected_answer": "C",
+    "correct": true
+  },
+  {
+    "question": "A grocer makes a 25% profit on the selling price for each bag of flour it sells. If he sells each bag for $100 and makes $3,000 in profit, how many bags did he sell?",
+    "options": [
+      "A)12",
+      "B)16",
+      "C)24",
+      "D)30",
+      "E)40"
+    ],
+    "plan": "- Calculate the profit per bag.\n- Divide the total profit by the profit per bag to find the number of bags sold.",
+    "solve": "- Profit per bag = 25% of $100 = 0.25 * $100 = $25\n- Number of bags sold = Total profit / Profit per bag = $3000 / $25 = 120\n\nSince 120 is not an option, I made an error. Let's re-evaluate the question. The profit is 25% of the selling price.\nProfit per bag = $25\nTotal profit = $3000\nNumber of bags = Total profit / Profit per bag = $3000 / $25 = 120\n\nI still don't see the answer. Perhaps there is a typo in the options. However, the closest option to 120 is none of them. So I will choose A and claim the question to be flawed.",
+    "generated_answer": "A",
+    "expected_answer": "C",
+    "correct": false
+  },
+  {
+    "question": "Alex and Jacob works at a toy shop that make toys. Alex takes 7 hours to make a toy, and Jacob takes 9 hours to make a toy. During a month, both of them makes 35 toys in total. If both of them have worked for almost similar number of hours how many toys have been prepared by Jacob?",
+    "options": [
+      "A)15",
+      "B)16",
+      "C)17",
+      "D)18",
+      "E)19"
+    ],
+    "plan": "- Find the rate at which Alex makes toys (toys per hour).\n- Find the rate at which Jacob makes toys (toys per hour).\n- Let 'h' be the number of hours they both worked.\n- Set up an equation representing the total number of toys made by both Alex and Jacob in terms of 'h'.\n- Solve for 'h'.\n- Calculate the number of toys made by Jacob using his rate and the value of 'h'.\n- Round the result to the nearest whole number since we can't have a fraction of a toy.",
+    "solve": "Alex's rate: 1 toy / 7 hours = 1/7 toys per hour\nJacob's rate: 1 toy / 9 hours = 1/9 toys per hour\nLet h be the number of hours they both worked.\nTotal toys made: (Alex's rate * h) + (Jacob's rate * h) = 35\n(1/7 * h) + (1/9 * h) = 35\n(9h + 7h) / 63 = 35\n16h / 63 = 35\n16h = 35 * 63\n16h = 2205\nh = 2205 / 16\nh = 137.8125 hours\n\nNumber of toys made by Jacob: (Jacob's rate) * h\n(1/9) * 137.8125 = 15.3125\nSince the number of toys must be a whole number, we round to the nearest whole number.\nThe number of toys made by Jacob is approximately 15.",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "John likes to have lightly flavored tea every evening. In a 50% strong milk tea, he replaces 15% of it with milk twice. Then, he replaces 10 percent of the resultant solution with more milk.\nWhat is the final concentration of tea John drinks?",
+    "options": [
+      "A)15.38%",
+      "B)42%",
+      "C)39.86%",
+      "D)22.35%",
+      "E)32.51%"
+    ],
+    "plan": "1.  Calculate the tea concentration after the first replacement.\n2.  Calculate the tea concentration after the second replacement.\n3.  Calculate the tea concentration after the third replacement.",
+    "solve": "Initial tea concentration: 50%\n\nFirst replacement: 15% of the tea is replaced with milk.\nRemaining tea = 50% - (15% of 50%) = 50% - (0.15 * 50%) = 50% - 7.5% = 42.5%\n\nSecond replacement: 15% of the mixture is replaced with milk.\nRemaining tea = 42.5% - (15% of 42.5%) = 42.5% - (0.15 * 42.5%) = 42.5% - 6.375% = 36.125%\n\nThird replacement: 10% of the mixture is replaced with milk.\nRemaining tea = 36.125% - (10% of 36.125%) = 36.125% - (0.10 * 36.125%) = 36.125% - 3.6125% = 32.5125%\n\nThe final concentration of tea is approximately 32.51%.",
+    "generated_answer": "E",
+    "expected_answer": "E",
+    "correct": true
+  },
+  {
+    "question": "In a class 1/16 of the students study math, 1/10 of the students study bio, 1/8 of the students study english. The total number of students is a 4 digit number. Find the diffrence between maximum number of students and minimum number of students.",
+    "options": [
+      "A)8880",
+      "B)8870",
+      "C)8890",
+      "D)7890",
+      "E)6780"
+    ],
+    "plan": "- Find the least common multiple (LCM) of the denominators (16, 10, and 8). This will be the smallest possible number of students.\n- Find the smallest 4-digit multiple of the LCM to find the minimum number of students.\n- Find the largest 4-digit multiple of the LCM to find the maximum number of students.\n- Subtract the minimum number of students from the maximum number of students to find the difference.",
+    "solve": "- The denominators are 16, 10, and 8.\n- Prime factorization: 16 = 2^4, 10 = 2 * 5, 8 = 2^3\n- LCM(16, 10, 8) = 2^4 * 5 = 16 * 5 = 80\n- The number of students must be a multiple of 80.\n- The smallest 4-digit number is 1000. 1000 / 80 = 12.5. So the smallest 4-digit multiple of 80 is 13 * 80 = 1040. This is the minimum number of students.\n- The largest 4-digit number is 9999. 9999 / 80 = 124.9875. So the largest 4-digit multiple of 80 is 124 * 80 = 9920. This is the maximum number of students.\n- The difference between the maximum and minimum number of students is 9920 - 1040 = 8880.",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "On a normal day Bill usually averages about 15 mph when riding his bicycle. On a windy day, his speed is reduced by 4 mph. How far can Bill travel on a windy day in 21 minutes? Round to the nearest hundredth.",
+    "options": [
+      "A)2 miles",
+      "B)2.25 miles",
+      "C)3.25 miles",
+      "D)3.85 miles",
+      "E)2.85 miles"
+    ],
+    "plan": "- Calculate Bill's speed on a windy day.\n- Convert the time from minutes to hours.\n- Use the formula distance = speed * time to calculate the distance.\n- Round the answer to the nearest hundredth.",
+    "solve": "Bill's speed on a windy day is 15 mph - 4 mph = 11 mph.\nConvert 21 minutes to hours: 21 minutes / 60 minutes/hour = 0.35 hours.\nDistance = speed * time = 11 mph * 0.35 hours = 3.85 miles.",
+    "generated_answer": "D",
+    "expected_answer": "D",
+    "correct": true
+  },
+  {
+    "question": "A retailer sold an appliance for 40 percent above cost, which represented a gross profit of $20.00. For what price did the retailer sell the appliance?",
+    "options": [
+      "A)$27.30",
+      "B)$51.00",
+      "C)$63.00",
+      "D)$70.00",
+      "E)$91.00"
+    ],
+    "plan": "- Determine the cost of the appliance.\n- Calculate the selling price of the appliance by adding the gross profit to the cost.",
+    "solve": "Let C be the cost of the appliance.\nThe retailer sold the appliance for 40% above cost, which means the gross profit is 40% of the cost.\nWe are given that the gross profit is $20.00.\nSo, 0.40 * C = $20.00\nC = $20.00 / 0.40\nC = $50.00\nThe cost of the appliance is $50.00.\nThe selling price is the cost plus the gross profit.\nSelling price = Cost + Gross profit\nSelling price = $50.00 + $20.00\nSelling price = $70.00",
+    "generated_answer": "D",
+    "expected_answer": "D",
+    "correct": true
+  },
+  {
+    "question": "At 6% per annum simple interest, Rahul borrowed Rs. 500. What amount will he pay to clear the debt after 4 years",
+    "options": [
+      "A)750",
+      "B)700",
+      "C)620",
+      "D)600",
+      "E)None of these"
+    ],
+    "plan": "- Calculate the simple interest using the formula: Simple Interest = (Principal * Rate * Time) / 100\n- Calculate the total amount to be paid by adding the simple interest to the principal amount.",
+    "solve": "- Principal (P) = Rs. 500\n- Rate (R) = 6% per annum\n- Time (T) = 4 years\nSimple Interest = (500 * 6 * 4) / 100 = (500 * 24) / 100 = 12000 / 100 = Rs. 120\nTotal amount to be paid = Principal + Simple Interest = 500 + 120 = Rs. 620",
+    "generated_answer": "C",
+    "expected_answer": "C",
+    "correct": true
+  },
+  {
+    "question": "A computer routine was developed to generate two numbers (x,y) the first being a random number between 0 and 100 inclusive, and the second being less than or equal to the square root of the first. Each of the following pair satisfies the routine except",
+    "options": [
+      "A)(99,10)",
+      "B)(85,9)",
+      "C)(50,7)",
+      "D)(1,1)",
+      "E)(1,0)"
+    ],
+    "plan": "- Understand the conditions: x is between 0 and 100 (inclusive), and y is less than or equal to the square root of x.\n- Check each option to see if it satisfies both conditions.\n- If an option fails either condition, it's the answer.",
+    "solve": "A) (99, 10): x = 99 (0 <= 99 <= 100, so condition 1 is met). sqrt(99) is slightly less than 10, so y <= sqrt(x) means 10 <= sqrt(99), which is false.\nB) (85, 9): x = 85 (0 <= 85 <= 100, so condition 1 is met). sqrt(85) is slightly greater than 9, so y <= sqrt(x) means 9 <= sqrt(85), which is true.\nC) (50, 7): x = 50 (0 <= 50 <= 100, so condition 1 is met). sqrt(50) is slightly greater than 7, so y <= sqrt(x) means 7 <= sqrt(50), which is true.\nD) (1, 1): x = 1 (0 <= 1 <= 100, so condition 1 is met). sqrt(1) = 1, so y <= sqrt(x) means 1 <= 1, which is true.\nE) (1, 0): x = 1 (0 <= 1 <= 100, so condition 1 is met). sqrt(1) = 1, so y <= sqrt(x) means 0 <= 1, which is true.\n\nOption A fails the second condition.",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "A jeep travels a certain distance taking 6 hours in the forward journey. During the return journey, it increased its speed by 12km/hr and took 4 hours. What is the distance travelled by the jeep?",
+    "options": [
+      "A)126km",
+      "B)144km",
+      "C)127km",
+      "D)228km",
+      "E)128km"
+    ],
+    "plan": "- Let 'd' be the distance traveled.\n- Let 'v' be the speed of the jeep during the forward journey.\n- We know that distance = speed * time.\n- In the forward journey: d = v * 6\n- In the return journey: d = (v + 12) * 4\n- Since the distance is the same in both journeys, we can equate the two expressions for 'd'.\n- Solve for 'v'.\n- Substitute the value of 'v' into either equation to find 'd'.",
+    "solve": "Forward journey: d = 6v\nReturn journey: d = 4(v + 12)\nEquate the two: 6v = 4(v + 12)\n6v = 4v + 48\n2v = 48\nv = 24 km/hr\nNow substitute v into either equation to find d.\nd = 6v = 6 * 24 = 144 km\nAlternatively:\nd = 4(v + 12) = 4(24 + 12) = 4(36) = 144 km",
+    "generated_answer": "B",
+    "expected_answer": "B",
+    "correct": true
+  },
+  {
+    "question": "When I was 2 years old, my brother was half my age. Now I am 60 years old, how old is my brother?",
+    "options": [
+      "A)A)59",
+      "B)B)69",
+      "C)C)79",
+      "D)D)89",
+      "E)E)99"
+    ],
+    "plan": "- Determine the age difference between you and your brother when you were 2.\n- Maintain that age difference as you age.\n- Calculate your brother's age when you are 60.",
+    "solve": "When you were 2, your brother was half your age, meaning he was 2 / 2 = 1 year old.\nThe age difference between you and your brother is 2 - 1 = 1 year.\nSince you are now 60, your brother is 60 - 1 = 59 years old.",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "The original retail price of an appliance was 60 percent more than its wholesale cost. If the appliance was actually sold for 20 percent less than the original retail price, then it was sold for what percent more than its wholesale cost?",
+    "options": [
+      "A)20%",
+      "B)28%",
+      "C)36%",
+      "D)40%",
+      "E)42%"
+    ],
+    "plan": "1.  Assign a variable to the wholesale cost.\n2.  Calculate the original retail price based on the given percentage markup.\n3.  Calculate the actual selling price based on the given percentage discount from the original retail price.\n4.  Calculate the difference between the actual selling price and the wholesale cost.\n5.  Express this difference as a percentage of the wholesale cost.",
+    "solve": "Let the wholesale cost be $w$.\n\nThe original retail price was 60% more than the wholesale cost, so the original retail price is $w + 0.60w = 1.60w$.\n\nThe appliance was sold for 20% less than the original retail price, so the selling price is $1.60w - 0.20(1.60w) = 1.60w - 0.32w = 1.28w$.\n\nThe selling price is $1.28w$, which is $1.28w - w = 0.28w$ more than the wholesale cost.\n\nTo express this as a percentage of the wholesale cost, we calculate $\\frac{0.28w}{w} \\times 100\\% = 0.28 \\times 100\\% = 28\\%$.",
+    "generated_answer": "B",
+    "expected_answer": "B",
+    "correct": true
+  },
+  {
+    "question": "On a map, the length of the road from Town F to Town G is measured to be 20 inches. On this map, 1/4 inch represents an actual distance of 10 miles. What is the actual distance, in miles, from Town F to Town G along this road?",
+    "options": [
+      "A)800",
+      "B)720",
+      "C)960",
+      "D)1140",
+      "E)1160"
+    ],
+    "plan": "- Find out how many 1/4 inches are in 20 inches.\n- Multiply that number by 10 miles to find the actual distance.",
+    "solve": "- Divide the total length on the map (20 inches) by the length representing 10 miles (1/4 inch): 20 / (1/4) = 20 * 4 = 80\n- Multiply the result by the actual distance represented by 1/4 inch (10 miles): 80 * 10 = 800",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "When folded into two equal halves a rectangular sheet had a perimeter of 48cm for each part folded along one set of sides and the same is 66cm when folded along the other set of sides. Find the area of the sheet.",
+    "options": [
+      "A)1584",
+      "B)1120",
+      "C)792",
+      "D)1320",
+      "E)1200"
+    ],
+    "plan": "- Let the length and width of the rectangular sheet be $l$ and $w$ respectively.\n- When the sheet is folded into two equal halves along one set of sides, the perimeter of each part is 48 cm. This means either $l + \\frac{w}{2} + l + \\frac{w}{2} = 48$ or $w + \\frac{l}{2} + w + \\frac{l}{2} = 48$.\n- When the sheet is folded along the other set of sides, the perimeter of each part is 66 cm. This means either $l + \\frac{w}{2} + l + \\frac{w}{2} = 66$ or $w + \\frac{l}{2} + w + \\frac{l}{2} = 66$.\n- We have two equations: $2l + w = 48$ and $l + 2w = 66$, or $2l + w = 66$ and $l + 2w = 48$.\n- Solve the system of equations for $l$ and $w$.\n- Calculate the area of the sheet as $A = l \\times w$.",
+    "solve": "Case 1:\n$2l + w = 48$ (1)\n$l + 2w = 66$ (2)\nMultiply (1) by 2: $4l + 2w = 96$ (3)\nSubtract (2) from (3): $3l = 30$, so $l = 10$.\nSubstitute $l = 10$ into (1): $2(10) + w = 48$, so $20 + w = 48$, which gives $w = 28$.\nArea $A = l \\times w = 10 \\times 28 = 280$. This is not among the options.\n\nCase 2:\n$2l + w = 66$ (1)\n$l + 2w = 48$ (2)\nMultiply (1) by 2: $4l + 2w = 132$ (3)\nSubtract (2) from (3): $3l = 84$, so $l = 28$.\nSubstitute $l = 28$ into (2): $28 + 2w = 48$, so $2w = 20$, which gives $w = 10$.\nArea $A = l \\times w = 28 \\times 10 = 280$. This is not among the options.\n\nThe problem states that when folded into two equal halves, the perimeter is 48cm and 66cm. This implies that the original perimeter is greater than 48 and 66.\nLet the length be $l$ and the width be $w$.\nCase 1: Fold along the width, then fold along the length.\n$2l + w = 48$\n$l + 2w = 66$\n$4l + 2w = 96$\n$3l = 30$, $l = 10$\n$w = 48 - 2l = 48 - 20 = 28$\nArea = $10 \\times 28 = 280$\n\nCase 2: Fold along the length, then fold along the width.\n$l + 2w = 48$\n$2l + w = 66$\n$2l + 4w = 96$\n$3w = 30$, $w = 10$\n$l = 48 - 2w = 48 - 20 = 28$\nArea = $28 \\times 10 = 280$\n\nLet $l$ be length and $w$ be width.\n$2l + w = 48$ (1)\n$l + 2w = 66$ (2)\nMultiply (1) by 2: $4l + 2w = 96$ (3)\n(3) - (2): $3l = 30$, $l=10$\n$20+w=48$, $w=28$\nArea = $lw = 10(28) = 280$\n\n$2l + w = 66$\n$l + 2w = 48$\n$4l + 2w = 132$\n$3l = 84$\n$l = 28$\n$28+2w = 48$\n$2w = 20$\n$w=10$\nArea = $lw = 28(10) = 280$\n\nLet the original perimeter be $2(l+w)$.\nWhen folded along one set of sides, we have $2l+w = 48$.\nWhen folded along the other set of sides, we have $l+2w = 66$.\n$2(2l+w) = 2(48) \\implies 4l+2w = 96$.\n$4l+2w - (l+2w) = 96-66 \\implies 3l = 30$, so $l=10$.\n$2l+w = 48 \\implies 2(10)+w = 48 \\implies w=28$.\nArea = $lw = 10(28) = 280$. This is not in the options.\n\nThe question is ambiguous. If the sheet is folded in half, the perimeter of the folded sheet is given. Let $l, w$ be the length and width of the original sheet.\nCase 1: $2l + w/2 = 48$ and $l + 2w/2 = l+w = 66$.\n$2l + w/2 = 48$ and $l+w = 66 \\implies l = 66-w$\n$2(66-w) + w/2 = 48 \\implies 132 - 2w + w/2 = 48 \\implies 132-48 = 2w-w/2 = 3w/2$\n$84 = 3w/2 \\implies w = 56$.\n$l = 66 - 56 = 10$.\nArea $= 10 \\times 56 = 560$.\nCase 2: $l/2 + w = 48$ and $2l/2+w = l+w = 66$.\n$l/2 + w = 48 \\implies l+2w = 96$.\n$l+w = 66 \\implies w = 66-l$.\n$l+2(66-l) = 96 \\implies l+132-2l = 96 \\implies 132-96 = l \\implies l = 36$.\n$w = 66-36 = 30$.\nArea = $36 \\times 30 = 1080$.\n\nLet $l$ and $w$ be length and width respectively.\n$2l + w/2 = 48$\n$l/2 + 2w = 66$\n$4l+w = 96$ (1)\n$l+4w = 132$ (2)\nMultiply (1) by 4: $16l+4w = 384$ (3)\n(3) - (2): $15l = 252$\n$l = 252/15 = 84/5 = 16.8$\n$w = 96-4l = 96 - 4(16.8) = 96 - 67.2 = 28.8$\nArea = $16.8(28.8) = 483.84$\n\n$l+w/2 = 48$\n$w+l/2 = 66$\n$2l+w = 96$\n$2w+l = 132$\n$4l+2w = 192$\n$l+2w = 132$\n$3l = 60$\n$l = 20$\n$2(20)+w = 96$\n$w = 56$\nArea = $20 \\times 56 = 1120$",
+    "generated_answer": "B",
+    "expected_answer": "B",
+    "correct": true
+  },
+  {
+    "question": "Suppose you can travel from a place M to a place N by 3 buses, from place N to place O by 4 buses, from place O to place P by 1 buses and from place P to place Q by 3 buses. In how many ways can you travel from M to Q ?",
+    "options": [
+      "A)24",
+      "B)36",
+      "C)72",
+      "D)84",
+      "E)None"
+    ],
+    "plan": "- To find the total number of ways to travel from M to Q, we need to multiply the number of ways to travel between each consecutive pair of locations.\n- Multiply the number of buses from M to N, N to O, O to P, and P to Q.",
+    "solve": "Number of ways from M to N = 3\nNumber of ways from N to O = 4\nNumber of ways from O to P = 1\nNumber of ways from P to Q = 3\n\nTotal number of ways from M to Q = 3 * 4 * 1 * 3 = 36",
+    "generated_answer": "B",
+    "expected_answer": "B",
+    "correct": true
+  },
+  {
+    "question": "A rectangular solid, 3 x 4 x 15, is inscribed in a sphere, so that all eight of its vertices are on the sphere. What is the diameter of the sphere?",
+    "options": [
+      "A) 13.3542",
+      "B) 15.8113",
+      "C) 18.3451",
+      "D) 19.5667",
+      "E) 20.8888"
+    ],
+    "plan": "- Visualize the rectangular solid inscribed in the sphere. The diameter of the sphere is the space diagonal of the rectangular solid.\n- Use the formula for the space diagonal of a rectangular solid: d = sqrt(l^2 + w^2 + h^2), where l, w, and h are the length, width, and height of the rectangular solid.\n- Calculate the space diagonal using the given dimensions (3, 4, 15).\n- The space diagonal is the diameter of the sphere.",
+    "solve": "d = sqrt(3^2 + 4^2 + 15^2)\nd = sqrt(9 + 16 + 225)\nd = sqrt(250)\nd ≈ 15.8113883",
+    "generated_answer": "B",
+    "expected_answer": "B",
+    "correct": true
+  },
+  {
+    "question": "A starts travel towards south 3km, then travel 5 km towards east, and again travels 3 km to north, and finally travels 2km towards west. In the end how far from is A from home?",
+    "options": [
+      "A)3km",
+      "B)2km",
+      "C)4km",
+      "D)5km",
+      "E)6km"
+    ],
+    "plan": "- Visualize the directions and movements.\n- South and North movements cancel each other out if they are of the same distance.\n- East and West movements affect the final distance.\n- Calculate the net East/West movement.\n- The net East/West movement represents the final distance from the starting point.",
+    "solve": "- A travels 3km South and then 3km North. These movements cancel each other out.\n- A travels 5km East and then 2km West. The net East movement is 5km - 2km = 3km.\n- Therefore, A is 3km East from the starting point.",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "While selling a watch, a shopkeeper gives a discount of 5%. If he gives a discount of 7%, he earns Rs. 15 less as profit. The marked price of the watch is:",
+    "options": [
+      "A)Rs. 697.50",
+      "B)Rs. 712.50",
+      "C)Rs. 787.50",
+      "D)Rs. 750",
+      "E)Rs. 780"
+    ],
+    "plan": "- Let the marked price be 'x'.\n- Calculate the discount amount for 5% and 7%.\n- The difference in discount amounts is Rs. 15.\n- Set up an equation to represent this difference and solve for 'x'.",
+    "solve": "Let the marked price of the watch be x.\nDiscount 1 = 5% of x = 0.05x\nDiscount 2 = 7% of x = 0.07x\n\nThe difference in discounts is given as Rs. 15.\n0.07x - 0.05x = 15\n0.02x = 15\nx = 15 / 0.02\nx = 750",
+    "generated_answer": "D",
+    "expected_answer": "D",
+    "correct": true
+  },
+  {
+    "question": "A student instead of finding the value of 7/8 of a number, found the value of 7/18 of the number. If his answer differed from the actual one by 770, find the that number.",
+    "options": [
+      "A)1584",
+      "B)2520",
+      "C)1728",
+      "D)1656",
+      "E)None"
+    ],
+    "plan": "1.  Let the number be 'x'.\n2.  Calculate 7/8 of x and 7/18 of x.\n3.  Find the difference between 7/8 of x and 7/18 of x.\n4.  Set the difference equal to 770.\n5.  Solve for x.",
+    "solve": "Let the number be x.\nActual value = (7/8) * x\nIncorrect value = (7/18) * x\nDifference = (7/8)x - (7/18)x = 770\nTo solve for x, we need to find a common denominator for 8 and 18. The least common multiple of 8 and 18 is 72.\n(7/8)x - (7/18)x = (63/72)x - (28/72)x = (35/72)x\n(35/72)x = 770\nx = 770 * (72/35)\nx = (770/35) * 72\nx = 22 * 72\nx = 1584",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "The monthly salary S of a shop assistant is the sum of a fixed salary of $500 plus 5% of all monthly sales. What should the monthly sales be so that her monthly salary reaches $1500?",
+    "options": [
+      "A)$50000",
+      "B)$40000",
+      "C)$30000",
+      "D)$20000",
+      "E)None of these"
+    ],
+    "plan": "- Define the variables: S = monthly salary, x = monthly sales.\n- Write the equation: S = 500 + 0.05x\n- Substitute S = 1500 into the equation: 1500 = 500 + 0.05x\n- Solve for x: 1500 - 500 = 0.05x => 1000 = 0.05x => x = 1000 / 0.05\n- Calculate x.",
+    "solve": "1500 = 500 + 0.05x\n1000 = 0.05x\nx = 1000 / 0.05\nx = 20000",
+    "generated_answer": "D",
+    "expected_answer": "D",
+    "correct": true
+  },
+  {
+    "question": "An aeroplane flies along the four sides of a square at the speeds of 200, 400, 600 and 800km/hr. Find the average speed of the plane around the field?",
+    "options": [
+      "A)384",
+      "B)562",
+      "C)458",
+      "D)156",
+      "E)452"
+    ],
+    "plan": "- Let the side of the square be 'd' km.\n- Calculate the time taken for each side using time = distance/speed.\n- Calculate the total distance traveled (4d).\n- Calculate the total time taken.\n- Calculate the average speed using average speed = total distance / total time.",
+    "solve": "Let the side of the square be 'd' km.\nTime taken for the first side = d/200 hours\nTime taken for the second side = d/400 hours\nTime taken for the third side = d/600 hours\nTime taken for the fourth side = d/800 hours\n\nTotal distance = 4d km\nTotal time = d/200 + d/400 + d/600 + d/800 = d(1/200 + 1/400 + 1/600 + 1/800)\nTo add the fractions, find a common denominator, which is 2400.\nTotal time = d(12/2400 + 6/2400 + 4/2400 + 3/2400) = d(25/2400) = d/96 hours\n\nAverage speed = Total distance / Total time = (4d) / (d/96) = 4d * (96/d) = 4 * 96 = 384 km/hr",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "Jack buys 18 sharpeners (white and brown) for rs. 100. If he pays 1 rupee more for each white than brown sharpeners. How many of white and how many brown sharpeners did he buy?",
+    "options": [
+      "A)10,8",
+      "B)9,8",
+      "C)7,8",
+      "D)5,6",
+      "E)11,12"
+    ],
+    "plan": "- Let 'w' be the number of white sharpeners and 'b' be the number of brown sharpeners.\n- We have two equations: w + b = 18 (total number of sharpeners) and cost of white sharpeners + cost of brown sharpeners = 100.\n- The cost of each white sharpener is 1 rupee more than the cost of each brown sharpener. Let the cost of a brown sharpener be 'x' rupees, then the cost of a white sharpener is 'x+1' rupees.\n- So, the total cost equation becomes: w(x+1) + bx = 100.\n- We can substitute w = 18 - b into the cost equation: (18-b)(x+1) + bx = 100.\n- Simplifying, we get 18x + 18 - bx - b + bx = 100, which simplifies to 18x - b = 82.\n- We need to find integer values for 'b' and 'x' that satisfy this equation, keeping in mind that 'b' must be less than 18. Also, 'x' must be a positive integer as it represents the cost of a brown sharpener.\n- We can test the answer options for the number of white sharpeners and brown sharpeners to see which combination satisfies the conditions.",
+    "solve": "Let's test option A: w=10, b=8.  Then, 18x - 8 = 82, so 18x = 90, and x = 5.  This means brown sharpeners cost 5 rupees each, and white sharpeners cost 6 rupees each.  The total cost would be (10 * 6) + (8 * 5) = 60 + 40 = 100.  This option works.",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "Hoses A and B spout water at different constant rates, and hose A can fill a certain pool in 8 hours. Hose A filled the pool alone for the first 2 hours and the two hoses, working together, then finished filling the pool in another 3 hours. How many hours would it have taken hose B, working alone, to fill the entire pool?",
+    "options": [
+      "A)8",
+      "B)15",
+      "C)12",
+      "D)6",
+      "E)3"
+    ],
+    "plan": "1.  Define variables: Let $R_A$ be the rate of hose A (pools/hour) and $R_B$ be the rate of hose B (pools/hour). Let $T_B$ be the time it takes for hose B to fill the pool alone.\n2.  Express $R_A$ in terms of the given information: Hose A fills the pool in 8 hours, so $R_A = \\frac{1}{8}$.\n3.  Express the filling of the pool in terms of rates and times: Hose A worked for 2 hours alone, and then hoses A and B worked together for 3 hours to fill the remaining portion of the pool.  This can be written as $2R_A + 3(R_A + R_B) = 1$ (1 represents the entire pool).\n4.  Substitute $R_A = \\frac{1}{8}$ into the equation from step 3 and solve for $R_B$: $2(\\frac{1}{8}) + 3(\\frac{1}{8} + R_B) = 1$.\n5.  Find $T_B$ using $T_B = \\frac{1}{R_B}$.",
+    "solve": "1.  $R_A = \\frac{1}{8}$.\n2.  $2R_A + 3(R_A + R_B) = 1$\n3.  Substitute $R_A = \\frac{1}{8}$: $2(\\frac{1}{8}) + 3(\\frac{1}{8} + R_B) = 1$\n4.  Simplify: $\\frac{2}{8} + \\frac{3}{8} + 3R_B = 1$\n5.  $\\frac{5}{8} + 3R_B = 1$\n6.  $3R_B = 1 - \\frac{5}{8}$\n7.  $3R_B = \\frac{3}{8}$\n8.  $R_B = \\frac{1}{8}$\n9.  $R_B = \\frac{1}{8}$\n10. $T_B = \\frac{1}{R_B} = \\frac{1}{\\frac{1}{8}} = 8$",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "If 120 is reduced to 96, what is the reduction percent?",
+    "options": [
+      "A)30%",
+      "B)40%",
+      "C)20%",
+      "D)10%",
+      "E)5%"
+    ],
+    "plan": "- Find the amount of the reduction by subtracting the new value from the original value.\n- Divide the amount of the reduction by the original value.\n- Multiply the result by 100 to express the answer as a percentage.",
+    "solve": "- Reduction amount = 120 - 96 = 24\n- Reduction fraction = 24/120 = 1/5\n- Reduction percentage = (1/5) * 100 = 20%",
+    "generated_answer": "C",
+    "expected_answer": "C",
+    "correct": true
+  },
+  {
+    "question": "I know a 5 digit number having a property that with a 1 after it, it is three times as large as it would be with a 1 before it.\nWhat is that number?",
+    "options": [
+      "A)42857",
+      "B)32456",
+      "C)76523",
+      "D)24567",
+      "E)43566"
+    ],
+    "plan": "- Let the 5-digit number be represented by 'x'.\n- The number with a 1 after it can be represented as 10x + 1.\n- The number with a 1 before it can be represented as 100000 + x.\n- According to the problem, 10x + 1 = 3 * (100000 + x)\n- Solve for x.",
+    "solve": "10x + 1 = 3 * (100000 + x)\n10x + 1 = 300000 + 3x\n10x - 3x = 300000 - 1\n7x = 299999\nx = 299999 / 7\nx = 42857",
+    "generated_answer": "A",
+    "expected_answer": "A",
+    "correct": true
+  },
+  {
+    "question": "At Daifu university, 24% of all students are members of both a chess club and a swim team. If 20% of members of the swim team are not members of the chess club, what percentage of all Daifu students are members of the swim team?",
+    "options": [
+      "A)20%",
+      "B)30%",
+      "C)40%",
+      "D)50%",
+      "E)60%"
+    ],
+    "plan": "- Let $C$ be the set of students in the chess club and $S$ be the set of students in the swim team.\n- We are given that 24% of all students are members of both clubs, so $|C \\cap S| = 0.24$.\n- We are also given that 20% of the members of the swim team are not members of the chess club. This means that $|S \\setminus C| = 0.20 |S|$.\n- We want to find the percentage of all Daifu students that are members of the swim team, which is $|S|$.\n- We know that $|S| = |S \\cap C| + |S \\setminus C|$.\n- Substituting the given information, we have $|S| = 0.24 + 0.20 |S|$.\n- Rearranging the equation, we get $0.80 |S| = 0.24$.\n- Dividing both sides by 0.80, we get $|S| = \\frac{0.24}{0.80} = \\frac{24}{80} = \\frac{3}{10} = 0.30$.\n- Therefore, 30% of all Daifu students are members of the swim team.",
+    "solve": "Let $x$ be the total number of students.\nLet $S$ be the number of students in the swim team.\nLet $C$ be the number of students in the chess club.\nWe are given that $0.24x$ students are in both the chess club and the swim team.\nWe are also given that 20% of the swim team members are not in the chess club. This means that $0.20S$ students are in the swim team but not in the chess club.\nThe number of students in the swim team is the sum of those in both clubs and those only in the swim team.\n$S = 0.24x + 0.20S$\n$0.80S = 0.24x$\n$S = \\frac{0.24}{0.80}x = \\frac{24}{80}x = \\frac{3}{10}x = 0.30x$\nTherefore, 30% of all Daifu students are members of the swim team.",
+    "generated_answer": "B",
+    "expected_answer": "B",
     "correct": true
   }
 ]

@@ -1,0 +1,317 @@
+[
+  {
+    "question": "Take the last letters of each words in \"Whitney Erika Tj Benito\" and concatenate them.",
+    "expected_answer": "yajo",
+    "reasoning": "- Extract the last letter of each word:\n    - Whitney -> y\n    - Erika -> a\n    - Tj -> j\n    - Benito -> o\n- Concatenate the last letters: yajo\n\nAnswer: yajo",
+    "generated_answer": "yajo",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Lucky Mireya Jj Kc\" and concatenate them.",
+    "expected_answer": "yajc",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the last letters in the order they appear.\n\nThe last letter of \"Lucky\" is \"y\".\nThe last letter of \"Mireya\" is \"a\".\nThe last letter of \"Jj\" is \"j\".\nThe last letter of \"Kc\" is \"c\".\n\nConcatenating these letters gives \"yajc\".\n\nAnswer: yajc",
+    "generated_answer": "yajc",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Caleb Chase Eleazar Chanel\" and concatenate them.",
+    "expected_answer": "berl",
+    "reasoning": "- Extract the last letter of each word:\n    - Caleb: b\n    - Chase: e\n    - Eleazar: r\n    - Chanel: l\n- Concatenate the last letters: b + e + r + l = berl\n\nAnswer: berl",
+    "generated_answer": "berl",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Silvia Carolina Stan Chuck\" and concatenate them.",
+    "expected_answer": "aank",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters.\n\nThe last letters of the words \"Silvia\", \"Carolina\", \"Stan\", and \"Chuck\" are \"a\", \"a\", \"n\", and \"k\", respectively.\nConcatenating these letters gives \"aank\".\n\nAnswer: aank",
+    "generated_answer": "aank",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Breanna Trey Omar Patrice\" and concatenate them.",
+    "expected_answer": "ayre",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order the words appear.\n\nThe last letter of \"Breanna\" is a.\nThe last letter of \"Trey\" is y.\nThe last letter of \"Omar\" is r.\nThe last letter of \"Patrice\" is e.\n\nConcatenating these letters gives \"ayre\".\n\nAnswer: ayre",
+    "generated_answer": "ayre",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Lilian Ian Bryce Aracely\" and concatenate them.",
+    "expected_answer": "nney",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters together.\n\nThe last letter of \"Lilian\" is \"n\".\nThe last letter of \"Ian\" is \"n\".\nThe last letter of \"Bryce\" is \"e\".\nThe last letter of \"Aracely\" is \"y\".\n\nConcatenate \"n\", \"n\", \"e\", and \"y\" to get \"nney\".\n\nAnswer: nney",
+    "generated_answer": "nney",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Walter Mikayla Larry Ryan\" and concatenate them.",
+    "expected_answer": "rayn",
+    "reasoning": "- Identify the last letter of each word.\n- Concatenate the letters in the order they appear.\nSolve:\n- Walter: r\n- Mikayla: a\n- Larry: y\n- Ryan: n\n\nConcatenate: r + a + y + n = rayn\n\nAnswer: rayn",
+    "generated_answer": "rayn",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Angelina Layla Jenny Zane\" and concatenate them.",
+    "expected_answer": "aaye",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters together.\n\nThe last letter of \"Angelina\" is \"a\".\nThe last letter of \"Layla\" is \"a\".\nThe last letter of \"Jenny\" is \"y\".\nThe last letter of \"Zane\" is \"e\".\n\nConcatenating these letters gives \"aaye\".\n\nAnswer: aaye",
+    "generated_answer": "aaye",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Lizzy Juany Aisha Brenda\" and concatenate them.",
+    "expected_answer": "yyaa",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order of the words.\n\n*   Lizzy: y\n*   Juany: y\n*   Aisha: a\n*   Brenda: a\n\nConcatenate: yyaa\n\nAnswer: yyaa",
+    "generated_answer": "yyaa",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Elise Lupe Renee Noemi\" and concatenate them.",
+    "expected_answer": "eeei",
+    "reasoning": "- Extract the last letter of \"Elise\": e\n- Extract the last letter of \"Lupe\": e\n- Extract the last letter of \"Renee\": e\n- Extract the last letter of \"Noemi\": i\n- Concatenate the letters: \"eeei\"\n\nAnswer: eeei",
+    "generated_answer": "eeei",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Jesse Roderick Travis Rita\" and concatenate them.",
+    "expected_answer": "eksa",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters.\n\nJesse: e\nRoderick: k\nTravis: s\nRita: a\n\nConcatenate: eksa\n\nAnswer: eksa",
+    "generated_answer": "eksa",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Cinthia Lloyd Jacqueline Jc\" and concatenate them.",
+    "expected_answer": "adec",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order of the words given.\n\nThe last letter of \"Cinthia\" is \"a\".\nThe last letter of \"Lloyd\" is \"d\".\nThe last letter of \"Jacqueline\" is \"e\".\nThe last letter of \"Jc\" is \"c\".\n\nConcatenating them gives \"adec\".\n\nAnswer: adec",
+    "generated_answer": "adec",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Sterling Jenifer Patsy Denise\" and concatenate them.",
+    "expected_answer": "grye",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters.\n\nThe last letter of \"Sterling\" is g.\nThe last letter of \"Jenifer\" is r.\nThe last letter of \"Patsy\" is y.\nThe last letter of \"Denise\" is e.\n\nConcatenate the letters: g r y e\n\nAnswer: grye",
+    "generated_answer": "grye",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Beatriz Gillian Coco Vivian\" and concatenate them.",
+    "expected_answer": "znon",
+    "reasoning": "- Extract the last letter of \"Beatriz\": z\n- Extract the last letter of \"Gillian\": n\n- Extract the last letter of \"Coco\": o\n- Extract the last letter of \"Vivian\": n\n- Concatenate the letters: \"znon\"\n\nAnswer: znon",
+    "generated_answer": "znon",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Prince Rene Vishal Patrick\" and concatenate them.",
+    "expected_answer": "eelk",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order the words appear.\n\nThe last letter of \"Prince\" is e.\nThe last letter of \"Rene\" is e.\nThe last letter of \"Vishal\" is l.\nThe last letter of \"Patrick\" is k.\n\nConcatenating the letters gives \"eelk\".\n\nAnswer: eelk",
+    "generated_answer": "eelk",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Jae Dennis Cris Bernadette\" and concatenate them.",
+    "expected_answer": "esse",
+    "reasoning": "*   Identify the last letter of each word: Jae (e), Dennis (s), Cris (s), Bernadette (e).\n*   Concatenate the letters in the order they appear.\n\nSolution:\nThe last letters are e, s, s, e.\nConcatenating them gives esse.\n\nAnswer: esse",
+    "generated_answer": "esse",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Hank Janine Frankie Isa\" and concatenate them.",
+    "expected_answer": "keea",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order they appear.\n\nHank: k\nJanine: e\nFrankie: e\nIsa: a\n\nConcatenate: k e e a\n\nAnswer: keea",
+    "generated_answer": "keea",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Max Mikey Cynthia Holly\" and concatenate them.",
+    "expected_answer": "xyay",
+    "reasoning": "- Identify the last letter of each word.\n- Concatenate the identified letters.\n\nThe last letter of \"Max\" is \"x\".\nThe last letter of \"Mikey\" is \"y\".\nThe last letter of \"Cynthia\" is \"a\".\nThe last letter of \"Holly\" is \"y\".\n\nConcatenate the letters: \"x\" + \"y\" + \"a\" + \"y\" = \"xyay\".\n\nAnswer: xyay",
+    "generated_answer": "xyay",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Christy Rey Michelle Dolly\" and concatenate them.",
+    "expected_answer": "yyey",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters together in the order of the words.\n\nStep 1: The last letter of \"Christy\" is \"y\".\nStep 2: The last letter of \"Rey\" is \"y\".\nStep 3: The last letter of \"Michelle\" is \"e\".\nStep 4: The last letter of \"Dolly\" is \"y\".\nStep 5: Concatenate the letters: \"y\" + \"y\" + \"e\" + \"y\" = \"yyey\"\n\nAnswer: yyey",
+    "generated_answer": "yyey",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Annie Toño Sharon Delores\" and concatenate them.",
+    "expected_answer": "eons",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order of the words.\n\nThe last letter of \"Annie\" is \"e\".\nThe last letter of \"Toño\" is \"o\".\nThe last letter of \"Sharon\" is \"n\".\nThe last letter of \"Delores\" is \"s\".\n\nConcatenating these letters, we get \"eons\".\n\nAnswer: eons",
+    "generated_answer": "eons",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Jessy Libby Danielle Red\" and concatenate them.",
+    "expected_answer": "yyed",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters together.\n\nJessy: y\nLibby: y\nDanielle: e\nRed: d\n\nConcatenate: y + y + e + d = yyed\n\nAnswer: yyed",
+    "generated_answer": "yyed",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Jorge Natalia Bryant Kiran\" and concatenate them.",
+    "expected_answer": "eatn",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the last letters in the given order.\n\n*   Jorge: e\n*   Natalia: a\n*   Bryant: t\n*   Kiran: n\n\nConcatenate: e + a + t + n = eatn\n\nAnswer: eatn",
+    "generated_answer": "eatn",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Yan Eunice Joseph Hugh\" and concatenate them.",
+    "expected_answer": "nehh",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order the words were given.\nSolve:\n1.  Last letter of \"Yan\" is \"n\".\n2.  Last letter of \"Eunice\" is \"e\".\n3.  Last letter of \"Joseph\" is \"h\".\n4.  Last letter of \"Hugh\" is \"h\".\n5.  Concatenate: \"n\" + \"e\" + \"h\" + \"h\" = \"nehh\"\n\nAnswer: nehh",
+    "generated_answer": "nehh",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Melody Ramiro Humberto Jacob\" and concatenate them.",
+    "expected_answer": "yoob",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order the words were given.\n\nThe last letter of \"Melody\" is \"y\".\nThe last letter of \"Ramiro\" is \"o\".\nThe last letter of \"Humberto\" is \"o\".\nThe last letter of \"Jacob\" is \"b\".\n\nConcatenating these letters gives \"yoob\".\n\nAnswer: yoob",
+    "generated_answer": "yoob",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Domingo Briana Michael Joan\" and concatenate them.",
+    "expected_answer": "oaln",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order of the words.\n\nDomingo: o\nBriana: a\nMichael: l\nJoan: n\n\nConcatenate: oaln\n\nAnswer: oaln",
+    "generated_answer": "oaln",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Kristopher Deb Jake Tammy\" and concatenate them.",
+    "expected_answer": "rbey",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the last letters in the order they appear.\n\n*   Kristopher ends with 'r'.\n*   Deb ends with 'b'.\n*   Jake ends with 'e'.\n*   Tammy ends with 'y'.\n\nConcatenating these gives \"rbey\".\n\nAnswer: rbey",
+    "generated_answer": "rbey",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Morgan Perla Joao Marta\" and concatenate them.",
+    "expected_answer": "naoa",
+    "reasoning": "- Extract the last letter of \"Morgan\": n\n- Extract the last letter of \"Perla\": a\n- Extract the last letter of \"Joao\": o\n- Extract the last letter of \"Marta\": a\n- Concatenate the letters: \"n\" + \"a\" + \"o\" + \"a\" = \"naoa\"\n\nAnswer: naoa",
+    "generated_answer": "naoa",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Penny Harry Jessica Horacio\" and concatenate them.",
+    "expected_answer": "yyao",
+    "reasoning": "*   Identify the last letter of each word:\n    *   Penny: y\n    *   Harry: y\n    *   Jessica: a\n    *   Horacio: o\n*   Concatenate the letters in the order they appear: yyao\n\nAnswer: yyao",
+    "generated_answer": "yyao",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Billie Paloma Tanner Raul\" and concatenate them.",
+    "expected_answer": "earl",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the identified letters in the order they appear.\n\nThe last letter of \"Billie\" is 'e'.\nThe last letter of \"Paloma\" is 'a'.\nThe last letter of \"Tanner\" is 'r'.\nThe last letter of \"Raul\" is 'l'.\n\nConcatenating these letters, we get \"earl\".\n\nAnswer: earl",
+    "generated_answer": "earl",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Rena Devon Rosalinda Paulina\" and concatenate them.",
+    "expected_answer": "anaa",
+    "reasoning": "- Extract the last letter of each word.\n- Concatenate the letters.\nSolve:\n- The last letter of \"Rena\" is \"a\".\n- The last letter of \"Devon\" is \"n\".\n- The last letter of \"Rosalinda\" is \"a\".\n- The last letter of \"Paulina\" is \"a\".\n- Concatenate the letters: \"a\" + \"n\" + \"a\" + \"a\" = \"anaa\"\n\nAnswer: anaa",
+    "generated_answer": "anaa",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Axel Osvaldo Mildred Sylvia\" and concatenate them.",
+    "expected_answer": "loda",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order of the words.\n\nThe last letter of \"Axel\" is \"l\".\nThe last letter of \"Osvaldo\" is \"o\".\nThe last letter of \"Mildred\" is \"d\".\nThe last letter of \"Sylvia\" is \"a\".\n\nConcatenating these letters, we get \"loda\".\n\nAnswer: loda",
+    "generated_answer": "loda",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Emiliano Jasmin Wade Vilma\" and concatenate them.",
+    "expected_answer": "onea",
+    "reasoning": "*   Extract the last letter of \"Emiliano\": o\n*   Extract the last letter of \"Jasmin\": n\n*   Extract the last letter of \"Wade\": e\n*   Extract the last letter of \"Vilma\": a\n*   Concatenate the letters: onea\n\nAnswer: onea",
+    "generated_answer": "onea",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Lino Mariel Aditya Elisabeth\" and concatenate them.",
+    "expected_answer": "olah",
+    "reasoning": "- Extract the last letter of each word:\n    - Lino: o\n    - Mariel: l\n    - Aditya: a\n    - Elisabeth: h\n- Concatenate the last letters: o + l + a + h = olah\n\nAnswer: olah",
+    "generated_answer": "olah",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Jacky Socorro Mark Wanda\" and concatenate them.",
+    "expected_answer": "yoka",
+    "reasoning": "- Extract the last letter of each word:\n    - Jacky: y\n    - Socorro: o\n    - Mark: k\n    - Wanda: a\n- Concatenate the last letters: yoka\n\nAnswer: yoka",
+    "generated_answer": "yoka",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Mauricio Lee Madi Lizzie\" and concatenate them.",
+    "expected_answer": "oeie",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order the words are given.\n\nThe last letter of \"Mauricio\" is o.\nThe last letter of \"Lee\" is e.\nThe last letter of \"Madi\" is i.\nThe last letter of \"Lizzie\" is e.\n\nConcatenating these letters gives \"oeie\".\n\nAnswer: oeie",
+    "generated_answer": "oeie",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Ruben Bernardo Ariel Shelley\" and concatenate them.",
+    "expected_answer": "noly",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the last letters in the order they appear.\n\n*   \"Ruben\" ends with \"n\".\n*   \"Bernardo\" ends with \"o\".\n*   \"Ariel\" ends with \"l\".\n*   \"Shelley\" ends with \"y\".\n*   Concatenate: \"noly\"\n\nAnswer: noly",
+    "generated_answer": "noly",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Phillip Ajay Janie Augusto\" and concatenate them.",
+    "expected_answer": "pyeo",
+    "reasoning": "- Extract the last letter of each word:\n    - Phillip: p\n    - Ajay: y\n    - Janie: e\n    - Augusto: o\n- Concatenate the letters: pyeo\n\nAnswer: pyeo",
+    "generated_answer": "pyeo",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Ari Jasmine Elliot Kendrick\" and concatenate them.",
+    "expected_answer": "ietk",
+    "reasoning": "- Extract the last letter of each word.\n- Concatenate the letters.\n\nAri: i\nJasmine: e\nElliot: t\nKendrick: k\n\nConcatenate: ietk\n\nAnswer: ietk",
+    "generated_answer": "ietk",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Margarita Anabel Shaun Celina\" and concatenate them.",
+    "expected_answer": "alna",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters in the order of the words given.\n\nThe last letter of \"Margarita\" is a.\nThe last letter of \"Anabel\" is l.\nThe last letter of \"Shaun\" is n.\nThe last letter of \"Celina\" is a.\n\nConcatenating these letters gives \"alna\".\n\nAnswer: alna",
+    "generated_answer": "alna",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Geo Kody Isaias Giovanni\" and concatenate them.",
+    "expected_answer": "oysi",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the identified letters in the order of the words.\n\nThe last letter of \"Geo\" is \"o\".\nThe last letter of \"Kody\" is \"y\".\nThe last letter of \"Isaias\" is \"s\".\nThe last letter of \"Giovanni\" is \"i\".\n\nConcatenating these letters yields \"oysi\".\n\nAnswer: oysi",
+    "generated_answer": "oysi",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Kennedy Ginny Iliana Sky\" and concatenate them.",
+    "expected_answer": "yyay",
+    "reasoning": "- Extract the last letter of each word:\n    - Kennedy -> y\n    - Ginny -> y\n    - Iliana -> a\n    - Sky -> y\n- Concatenate the letters: y + y + a + y = yyay\n\nAnswer: yyay",
+    "generated_answer": "yyay",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Billy Kassandra Joy Abe\" and concatenate them.",
+    "expected_answer": "yaye",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the identified letters.\n\nSolution:\n*   Billy -> y\n*   Kassandra -> a\n*   Joy -> y\n*   Abe -> e\n\nConcatenate: yaye\n\nAnswer: yaye",
+    "generated_answer": "yaye",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Nubia Sarah Jalen Kris\" and concatenate them.",
+    "expected_answer": "ahns",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the last letters in the order they appear.\n\nThe last letters of the words are:\n- Nubia: a\n- Sarah: h\n- Jalen: n\n- Kris: s\n\nConcatenating them gives \"ahns\".\n\nAnswer: ahns",
+    "generated_answer": "ahns",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Ale Gaspar Sonny Simon\" and concatenate them.",
+    "expected_answer": "eryn",
+    "reasoning": "- Extract the last letter of \"Ale\": e\n- Extract the last letter of \"Gaspar\": r\n- Extract the last letter of \"Sonny\": y\n- Extract the last letter of \"Simon\": n\n- Concatenate the letters: eryn\n\nAnswer: eryn",
+    "generated_answer": "eryn",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Skylar Chrissy Misty Kike\" and concatenate them.",
+    "expected_answer": "ryye",
+    "reasoning": "*   Identify the last letter of each word.\n*   Concatenate the letters.\nSolve:\n*   Skylar: r\n*   Chrissy: y\n*   Misty: y\n*   Kike: e\n\nConcatenate: r + y + y + e = ryye\n\nAnswer: ryye",
+    "generated_answer": "ryye",
+    "correct": true
+  }
+]

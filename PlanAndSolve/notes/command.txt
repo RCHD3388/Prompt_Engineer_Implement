@@ -1,13 +1,22 @@
-python main.py --technique basic --output generate_res/gsm8k_basic.json
-python main.py --technique plan-and-solve --output generate_res/gsm8k_plan.json
-python main.py --technique plan-and-solve-fewshot --output generate_res/gsm8k_fewshot.json
+--> GSM8K PLAN SOLVE -- FEW SHOT
+python main.py --technique plan-and-solve-fewshot --dataset dataset/gsm8k.json --dataset-type gsm8k --output generate_res/dummy.json
 
-python main.py --technique plan-and-solve-fewshot --dataset dataset/gsm8k.json --output generate_res/gsm8k/gsm8k_fewshot.json
-python main.py --technique plan-and-solve --dataset dataset/gsm8k.json --output generate_res/gsm8k/gsm8k_plan.json
+--> GSM8K PLAN SOLVE -- ZERO SHOT
+python main.py --technique plan-and-solve --dataset dataset/gsm8k.json --dataset-type gsm8k --output generate_res/dummy.json
+
+-----------------------------------------------------
 
 --> AQUA PLAN SOLVE -- FEW SHOT
-python main.py --technique aqua-plan-and-solve-fewshot --dataset dataset/aqua.json --dataset-type aqua --output generate_res/aqua/aqua_fewshot.json
+python main.py --technique aqua-plan-and-solve-fewshot --dataset dataset/aqua.json --dataset-type aqua --output generate_res/dummy.json
 
 --> AQUA PLAN SOLVE -- ZERO SHOT
-python main.py --technique aqua-plan-and-solve --dataset dataset/aqua.json --dataset-type aqua --output generate_res/aqua/aqua_zeroshot.json
+python main.py --technique aqua-plan-and-solve --dataset dataset/aqua.json --dataset-type aqua --output generate_res/dummy.json
+
+-----------------------------------------------------
+
+--> LAST LETTER PLAN SOLVE -- FEW SHOT
+python main.py --technique lastletter-plan-and-solve-fewshot --dataset dataset/last_letter.json --dataset-type lastletter --output generate_res/dummy.json
+
+--> LAST LETTER PLAN SOLVE -- ZERO SHOT
+python main.py --technique lastletter-plan-and-solve --dataset dataset/last_letter.json --dataset-type lastletter --output generate_res/dummy.json
 

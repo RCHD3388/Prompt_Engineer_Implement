@@ -1,3 +1,5 @@
+# prompts/gameof24_template.py
+
 generate_prompt = """
 Select exactly two of the input numbers, combine them using one of the operators (+, -, , /), and replace them with the result—reducing the list by one number.
 

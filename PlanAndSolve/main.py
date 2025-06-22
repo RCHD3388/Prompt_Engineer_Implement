@@ -6,6 +6,7 @@ import re
 from prompts.templates import basic_math_template, plan_and_solve_template 
 import os
 import argparse
+import time
 
 INPUT_FILE = "dataset/gsm8k.json"
 OUTPUT_FILE = "generate_res/gsm8k.json"
@@ -17,6 +18,8 @@ from prompts.templates import (
     plan_and_solve_fewshot_template,
     aqua_plan_and_solve_template,
     aqua_plan_and_solve_fewshot_template,
+    lastletter_plan_and_solve,
+    lastletter_plan_and_solve_fewshot
 )
 
 TEMPLATE_MAP = {
@@ -25,6 +28,8 @@ TEMPLATE_MAP = {
     "plan-and-solve-fewshot": plan_and_solve_fewshot_template,
     "aqua-plan-and-solve": aqua_plan_and_solve_template,
     "aqua-plan-and-solve-fewshot": aqua_plan_and_solve_fewshot_template,
+    "lastletter-plan-and-solve": lastletter_plan_and_solve,
+    "lastletter-plan-and-solve-fewshot": lastletter_plan_and_solve_fewshot,
 }
 
 def parse_args():
@@ -38,12 +43,12 @@ def parse_args():
     parser.add_argument(
         "--output",
         type=str,
-        default="generate_res/gsm8k.json",
+        default="generate_res/dummy.json",
         help="Output file path (default: generate_res/gsm8k.json)"
     )
     parser.add_argument(
         "--dataset-type",
-        choices=["gsm8k", "aqua"],
+        choices=["gsm8k", "aqua", "lastletter"],
         required=True,
         help="Dataset type: gsm8k or aqua"
     )
@@ -56,6 +61,62 @@ def parse_args():
 
     return parser.parse_args()
 
+# main.py - processing lastletter dataset
+def process_lastletter(dataset, prompt_fn, technique):
+    results = []
+    correct_count = 0
+
+    for i, entry in enumerate(dataset):
+        question = entry["question"]
+        expected_answer = entry["answer"]
+
+        prompt = prompt_fn(question)
+        print(f"[{i+1}] LastLetter: {question[:60]}...")
+
+        model_answer = generate_answer(prompt)
+
+        if "Solve:" in model_answer:
+            plan_part, solve_part = model_answer.split("Solve:", 1)
+            reasoning = plan_part.strip() + "\nSolve:\n" + solve_part.strip()
+            full_text = solve_part.strip()
+        else:
+            reasoning = model_answer.strip()
+            full_text = model_answer.strip()
+
+        match = re.search(r"Answer:\s*([a-zA-Z]+)", full_text)
+        final_answer = match.group(1).lower() if match else None
+
+        is_correct = final_answer == expected_answer if final_answer else False
+        if is_correct:
+            correct_count += 1
+
+        if technique == "plan-and-solve-fewshot" or technique == "lastletter-plan-and-solve-fewshot":
+            plan_match = re.search(r"Plan:\s*(.*?)Solve:", model_answer, re.DOTALL)
+            solve_match = re.search(r"Solve:\s*(.*?)Answer:", model_answer, re.DOTALL)
+
+            results.append({
+                "question": question,
+                "expected_answer": expected_answer,
+                "plan": plan_match.group(1).strip() if plan_match else "",
+                "solve": solve_match.group(1).strip() if solve_match else "",
+                "generated_answer": final_answer,
+                "correct": is_correct
+            })
+        else:
+            results.append({
+                "question": question,
+                "expected_answer": expected_answer,
+                "reasoning": reasoning,
+                "generated_answer": final_answer,
+                "correct": is_correct
+            })
+
+        if (i+1) % 15 == 0:
+            print(f"Delaying for 1 minute after {i+1} iterations...")
+            time.sleep(60)
+            
+    return results, correct_count
+# main.py - processing gsm8k dataset
 def process_gsm8k(dataset, prompt_fn, technique):
     results = []
     correct_count = 0
@@ -105,8 +166,12 @@ def process_gsm8k(dataset, prompt_fn, technique):
                 "correct": is_correct
             })
 
-    return results, correct_count
+        if (i+1) % 15 == 0:
+            print(f"Delaying for 1 minute after {i+1} iterations...")
+            time.sleep(60)
 
+    return results, correct_count
+# main.py - processing aqua dataset
 def process_aqua(dataset, prompt_fn, technique):
     results = []
     correct_count = 0
@@ -161,6 +226,10 @@ def process_aqua(dataset, prompt_fn, technique):
                 "correct": is_correct
             })
 
+        if (i+1) % 15 == 0:
+            print(f"Delaying for 1 minute after {i+1} iterations...")
+            time.sleep(60)
+
     return results, correct_count
 
 
@@ -177,6 +246,8 @@ def main():
         results, correct_count = process_gsm8k(dataset, prompt_fn, technique)
     elif dataset_type == "aqua":
         results, correct_count = process_aqua(dataset, prompt_fn, technique)
+    elif dataset_type == "lastletter":
+        results, correct_count = process_lastletter(dataset, prompt_fn, technique)
     else:
         raise ValueError("Unsupported dataset type")
 

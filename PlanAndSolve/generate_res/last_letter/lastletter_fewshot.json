@@ -1,0 +1,362 @@
+[
+  {
+    "question": "Take the last letters of each words in \"Whitney Erika Tj Benito\" and concatenate them.",
+    "expected_answer": "yajo",
+    "plan": "",
+    "solve": "Whitney Erika Tj Benito → [\"Whitney\", \"Erika\", \"Tj\", \"Benito\"]\nLast letters → [\"y\", \"a\", \"j\", \"o\"]\nConcatenate → \"yajo\"",
+    "generated_answer": "yajo",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Lucky Mireya Jj Kc\" and concatenate them.",
+    "expected_answer": "yajc",
+    "plan": "",
+    "solve": "Lucky Mireya Jj Kc → [\"Lucky\", \"Mireya\", \"Jj\", \"Kc\"]\nLast letters → [\"y\", \"a\", \"j\", \"c\"]\nConcatenate → \"yajc\"",
+    "generated_answer": "yajc",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Caleb Chase Eleazar Chanel\" and concatenate them.",
+    "expected_answer": "berl",
+    "plan": "",
+    "solve": "Caleb Chase Eleazar Chanel → [\"Caleb\", \"Chase\", \"Eleazar\", \"Chanel\"]\nLast letters → [\"b\", \"e\", \"r\", \"l\"]\nConcatenate → \"berl\"",
+    "generated_answer": "berl",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Silvia Carolina Stan Chuck\" and concatenate them.",
+    "expected_answer": "aank",
+    "plan": "",
+    "solve": "Silvia Carolina Stan Chuck → [\"Silvia\", \"Carolina\", \"Stan\", \"Chuck\"]\nLast letters → [\"a\", \"a\", \"n\", \"k\"]\nConcatenate → \"aank\"",
+    "generated_answer": "aank",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Breanna Trey Omar Patrice\" and concatenate them.",
+    "expected_answer": "ayre",
+    "plan": "",
+    "solve": "Breanna Trey Omar Patrice → [\"Breanna\", \"Trey\", \"Omar\", \"Patrice\"]\nLast letters → [\"a\", \"y\", \"r\", \"e\"]\nConcatenate → \"ayre\"",
+    "generated_answer": "ayre",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Lilian Ian Bryce Aracely\" and concatenate them.",
+    "expected_answer": "nney",
+    "plan": "",
+    "solve": "Lilian Ian Bryce Aracely → [\"Lilian\", \"Ian\", \"Bryce\", \"Aracely\"]\nLast letters → [\"n\", \"n\", \"e\", \"y\"]\nConcatenate → \"nney\"",
+    "generated_answer": "nney",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Walter Mikayla Larry Ryan\" and concatenate them.",
+    "expected_answer": "rayn",
+    "plan": "",
+    "solve": "Walter Mikayla Larry Ryan → [\"Walter\", \"Mikayla\", \"Larry\", \"Ryan\"]\nLast letters → [\"r\", \"a\", \"y\", \"n\"]\nConcatenate → \"rayn\"",
+    "generated_answer": "rayn",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Angelina Layla Jenny Zane\" and concatenate them.",
+    "expected_answer": "aaye",
+    "plan": "",
+    "solve": "Angelina Layla Jenny Zane → [\"Angelina\", \"Layla\", \"Jenny\", \"Zane\"]\nLast letters → [\"a\", \"a\", \"y\", \"e\"]\nConcatenate → \"aaye\"",
+    "generated_answer": "aaye",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Lizzy Juany Aisha Brenda\" and concatenate them.",
+    "expected_answer": "yyaa",
+    "plan": "",
+    "solve": "Lizzy Juany Aisha Brenda → [\"Lizzy\", \"Juany\", \"Aisha\", \"Brenda\"]\nLast letters → [\"y\", \"y\", \"a\", \"a\"]\nConcatenate → \"yyaa\"",
+    "generated_answer": "yyaa",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Elise Lupe Renee Noemi\" and concatenate them.",
+    "expected_answer": "eeei",
+    "plan": "",
+    "solve": "Elise Lupe Renee Noemi → [\"Elise\", \"Lupe\", \"Renee\", \"Noemi\"]\nLast letters → [\"e\", \"e\", \"e\", \"i\"]\nConcatenate → \"eeei\"",
+    "generated_answer": "eeei",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Jesse Roderick Travis Rita\" and concatenate them.",
+    "expected_answer": "eksa",
+    "plan": "",
+    "solve": "Jesse Roderick Travis Rita → [\"Jesse\", \"Roderick\", \"Travis\", \"Rita\"]\nLast letters → [\"e\", \"k\", \"s\", \"a\"]\nConcatenate → \"eksa\"",
+    "generated_answer": "eksa",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Cinthia Lloyd Jacqueline Jc\" and concatenate them.",
+    "expected_answer": "adec",
+    "plan": "",
+    "solve": "Cinthia Lloyd Jacqueline Jc → [\"Cinthia\", \"Lloyd\", \"Jacqueline\", \"Jc\"]\nLast letters → [\"a\", \"d\", \"e\", \"c\"]\nConcatenate → \"adec\"",
+    "generated_answer": "adec",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Sterling Jenifer Patsy Denise\" and concatenate them.",
+    "expected_answer": "grye",
+    "plan": "",
+    "solve": "Sterling Jenifer Patsy Denise → [\"Sterling\", \"Jenifer\", \"Patsy\", \"Denise\"]\nLast letters → [\"g\", \"r\", \"y\", \"e\"]\nConcatenate → \"grye\"",
+    "generated_answer": "grye",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Beatriz Gillian Coco Vivian\" and concatenate them.",
+    "expected_answer": "znon",
+    "plan": "",
+    "solve": "Beatriz Gillian Coco Vivian → [\"Beatriz\", \"Gillian\", \"Coco\", \"Vivian\"]\nLast letters → [\"z\", \"n\", \"o\", \"n\"]\nConcatenate → \"znon\"",
+    "generated_answer": "znon",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Prince Rene Vishal Patrick\" and concatenate them.",
+    "expected_answer": "eelk",
+    "plan": "",
+    "solve": "Prince Rene Vishal Patrick → [\"Prince\", \"Rene\", \"Vishal\", \"Patrick\"]\nLast letters → [\"e\", \"e\", \"l\", \"k\"]\nConcatenate → \"eelk\"",
+    "generated_answer": "eelk",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Jae Dennis Cris Bernadette\" and concatenate them.",
+    "expected_answer": "esse",
+    "plan": "",
+    "solve": "Jae Dennis Cris Bernadette → [\"Jae\", \"Dennis\", \"Cris\", \"Bernadette\"]\nLast letters → [\"e\", \"s\", \"s\", \"e\"]\nConcatenate → \"esse\"",
+    "generated_answer": "esse",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Hank Janine Frankie Isa\" and concatenate them.",
+    "expected_answer": "keea",
+    "plan": "",
+    "solve": "Hank Janine Frankie Isa → [\"Hank\", \"Janine\", \"Frankie\", \"Isa\"]\nLast letters → [\"k\", \"e\", \"e\", \"a\"]\nConcatenate → \"keea\"",
+    "generated_answer": "keea",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Max Mikey Cynthia Holly\" and concatenate them.",
+    "expected_answer": "xyay",
+    "plan": "",
+    "solve": "Max Mikey Cynthia Holly → [\"Max\", \"Mikey\", \"Cynthia\", \"Holly\"]\nLast letters → [\"x\", \"y\", \"a\", \"y\"]\nConcatenate → \"xyay\"",
+    "generated_answer": "xyay",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Christy Rey Michelle Dolly\" and concatenate them.",
+    "expected_answer": "yyey",
+    "plan": "",
+    "solve": "Christy Rey Michelle Dolly → [\"Christy\", \"Rey\", \"Michelle\", \"Dolly\"]\nLast letters → [\"y\", \"y\", \"e\", \"y\"]\nConcatenate → \"yyey\"",
+    "generated_answer": "yyey",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Annie Toño Sharon Delores\" and concatenate them.",
+    "expected_answer": "eons",
+    "plan": "",
+    "solve": "Annie Toño Sharon Delores → [\"Annie\", \"Toño\", \"Sharon\", \"Delores\"]\nLast letters → [\"e\", \"o\", \"n\", \"s\"]\nConcatenate → \"eons\"",
+    "generated_answer": "eons",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Jessy Libby Danielle Red\" and concatenate them.",
+    "expected_answer": "yyed",
+    "plan": "",
+    "solve": "Jessy Libby Danielle Red → [\"Jessy\", \"Libby\", \"Danielle\", \"Red\"]\nLast letters → [\"y\", \"y\", \"e\", \"d\"]\nConcatenate → \"yyed\"",
+    "generated_answer": "yyed",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Jorge Natalia Bryant Kiran\" and concatenate them.",
+    "expected_answer": "eatn",
+    "plan": "",
+    "solve": "Jorge Natalia Bryant Kiran → [\"Jorge\", \"Natalia\", \"Bryant\", \"Kiran\"]\nLast letters → [\"e\", \"a\", \"t\", \"n\"]\nConcatenate → \"eatn\"",
+    "generated_answer": "eatn",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Yan Eunice Joseph Hugh\" and concatenate them.",
+    "expected_answer": "nehh",
+    "plan": "",
+    "solve": "Yan Eunice Joseph Hugh → [\"Yan\", \"Eunice\", \"Joseph\", \"Hugh\"]\nLast letters → [\"n\", \"e\", \"h\", \"h\"]\nConcatenate → \"nehh\"",
+    "generated_answer": "nehh",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Melody Ramiro Humberto Jacob\" and concatenate them.",
+    "expected_answer": "yoob",
+    "plan": "",
+    "solve": "Melody Ramiro Humberto Jacob → [\"Melody\", \"Ramiro\", \"Humberto\", \"Jacob\"]\nLast letters → [\"y\", \"o\", \"o\", \"b\"]\nConcatenate → \"yoob\"",
+    "generated_answer": "yoob",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Domingo Briana Michael Joan\" and concatenate them.",
+    "expected_answer": "oaln",
+    "plan": "",
+    "solve": "Domingo Briana Michael Joan → [\"Domingo\", \"Briana\", \"Michael\", \"Joan\"]\nLast letters → [\"o\", \"a\", \"l\", \"n\"]\nConcatenate → \"oaln\"",
+    "generated_answer": "oaln",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Kristopher Deb Jake Tammy\" and concatenate them.",
+    "expected_answer": "rbey",
+    "plan": "",
+    "solve": "Kristopher Deb Jake Tammy → [\"Kristopher\", \"Deb\", \"Jake\", \"Tammy\"]\nLast letters → [\"r\", \"b\", \"e\", \"y\"]\nConcatenate → \"rbey\"",
+    "generated_answer": "rbey",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Morgan Perla Joao Marta\" and concatenate them.",
+    "expected_answer": "naoa",
+    "plan": "",
+    "solve": "Morgan Perla Joao Marta → [\"Morgan\", \"Perla\", \"Joao\", \"Marta\"]\nLast letters → [\"n\", \"a\", \"o\", \"a\"]\nConcatenate → \"naoa\"",
+    "generated_answer": "naoa",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Penny Harry Jessica Horacio\" and concatenate them.",
+    "expected_answer": "yyao",
+    "plan": "",
+    "solve": "Penny Harry Jessica Horacio → [\"Penny\", \"Harry\", \"Jessica\", \"Horacio\"]\nLast letters → [\"y\", \"y\", \"a\", \"o\"]\nConcatenate → \"yyao\"",
+    "generated_answer": "yyao",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Billie Paloma Tanner Raul\" and concatenate them.",
+    "expected_answer": "earl",
+    "plan": "",
+    "solve": "Billie Paloma Tanner Raul → [\"Billie\", \"Paloma\", \"Tanner\", \"Raul\"]\nLast letters → [\"e\", \"a\", \"r\", \"l\"]\nConcatenate → \"earl\"",
+    "generated_answer": "earl",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Rena Devon Rosalinda Paulina\" and concatenate them.",
+    "expected_answer": "anaa",
+    "plan": "",
+    "solve": "Rena Devon Rosalinda Paulina → [\"Rena\", \"Devon\", \"Rosalinda\", \"Paulina\"]\nLast letters → [\"a\", \"n\", \"a\", \"a\"]\nConcatenate → \"anaa\"",
+    "generated_answer": "anaa",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Axel Osvaldo Mildred Sylvia\" and concatenate them.",
+    "expected_answer": "loda",
+    "plan": "",
+    "solve": "Axel Osvaldo Mildred Sylvia → [\"Axel\", \"Osvaldo\", \"Mildred\", \"Sylvia\"]\nLast letters → [\"l\", \"o\", \"d\", \"a\"]\nConcatenate → \"loda\"",
+    "generated_answer": "loda",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Emiliano Jasmin Wade Vilma\" and concatenate them.",
+    "expected_answer": "onea",
+    "plan": "",
+    "solve": "Emiliano Jasmin Wade Vilma → [\"Emiliano\", \"Jasmin\", \"Wade\", \"Vilma\"]\nLast letters → [\"o\", \"n\", \"e\", \"a\"]\nConcatenate → \"onea\"",
+    "generated_answer": "onea",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Lino Mariel Aditya Elisabeth\" and concatenate them.",
+    "expected_answer": "olah",
+    "plan": "",
+    "solve": "Lino Mariel Aditya Elisabeth → [\"Lino\", \"Mariel\", \"Aditya\", \"Elisabeth\"]\nLast letters → [\"o\", \"l\", \"a\", \"h\"]\nConcatenate → \"olah\"",
+    "generated_answer": "olah",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Jacky Socorro Mark Wanda\" and concatenate them.",
+    "expected_answer": "yoka",
+    "plan": "",
+    "solve": "Jacky Socorro Mark Wanda → [\"Jacky\", \"Socorro\", \"Mark\", \"Wanda\"]\nLast letters → [\"y\", \"o\", \"k\", \"a\"]\nConcatenate → \"yoka\"",
+    "generated_answer": "yoka",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Mauricio Lee Madi Lizzie\" and concatenate them.",
+    "expected_answer": "oeie",
+    "plan": "",
+    "solve": "Mauricio Lee Madi Lizzie → [\"Mauricio\", \"Lee\", \"Madi\", \"Lizzie\"]\nLast letters → [\"o\", \"e\", \"i\", \"e\"]\nConcatenate → \"oeie\"",
+    "generated_answer": "oeie",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Ruben Bernardo Ariel Shelley\" and concatenate them.",
+    "expected_answer": "noly",
+    "plan": "",
+    "solve": "Ruben Bernardo Ariel Shelley → [\"Ruben\", \"Bernardo\", \"Ariel\", \"Shelley\"]\nLast letters → [\"n\", \"o\", \"l\", \"y\"]\nConcatenate → \"noly\"",
+    "generated_answer": "noly",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Phillip Ajay Janie Augusto\" and concatenate them.",
+    "expected_answer": "pyeo",
+    "plan": "",
+    "solve": "Phillip Ajay Janie Augusto → [\"Phillip\", \"Ajay\", \"Janie\", \"Augusto\"]\nLast letters → [\"p\", \"y\", \"e\", \"o\"]\nConcatenate → \"pyeo\"",
+    "generated_answer": "pyeo",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Ari Jasmine Elliot Kendrick\" and concatenate them.",
+    "expected_answer": "ietk",
+    "plan": "",
+    "solve": "Ari Jasmine Elliot Kendrick → [\"Ari\", \"Jasmine\", \"Elliot\", \"Kendrick\"]\nLast letters → [\"i\", \"e\", \"t\", \"k\"]\nConcatenate → \"ietk\"",
+    "generated_answer": "ietk",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Margarita Anabel Shaun Celina\" and concatenate them.",
+    "expected_answer": "alna",
+    "plan": "",
+    "solve": "Margarita Anabel Shaun Celina → [\"Margarita\", \"Anabel\", \"Shaun\", \"Celina\"]\nLast letters → [\"a\", \"l\", \"n\", \"a\"]\nConcatenate → \"alna\"",
+    "generated_answer": "alna",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Geo Kody Isaias Giovanni\" and concatenate them.",
+    "expected_answer": "oysi",
+    "plan": "",
+    "solve": "Geo Kody Isaias Giovanni → [\"Geo\", \"Kody\", \"Isaias\", \"Giovanni\"]\nLast letters → [\"o\", \"y\", \"s\", \"i\"]\nConcatenate → \"oysi\"",
+    "generated_answer": "oysi",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Kennedy Ginny Iliana Sky\" and concatenate them.",
+    "expected_answer": "yyay",
+    "plan": "",
+    "solve": "Kennedy Ginny Iliana Sky → [\"Kennedy\", \"Ginny\", \"Iliana\", \"Sky\"]\nLast letters → [\"y\", \"y\", \"a\", \"y\"]\nConcatenate → \"yyay\"",
+    "generated_answer": "yyay",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Billy Kassandra Joy Abe\" and concatenate them.",
+    "expected_answer": "yaye",
+    "plan": "",
+    "solve": "Billy Kassandra Joy Abe → [\"Billy\", \"Kassandra\", \"Joy\", \"Abe\"]\nLast letters → [\"y\", \"a\", \"y\", \"e\"]\nConcatenate → \"yaye\"",
+    "generated_answer": "yaye",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Nubia Sarah Jalen Kris\" and concatenate them.",
+    "expected_answer": "ahns",
+    "plan": "",
+    "solve": "Nubia Sarah Jalen Kris → [\"Nubia\", \"Sarah\", \"Jalen\", \"Kris\"]\nLast letters → [\"a\", \"h\", \"n\", \"s\"]\nConcatenate → \"ahns\"",
+    "generated_answer": "ahns",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Ale Gaspar Sonny Simon\" and concatenate them.",
+    "expected_answer": "eryn",
+    "plan": "",
+    "solve": "Ale Gaspar Sonny Simon → [\"Ale\", \"Gaspar\", \"Sonny\", \"Simon\"]\nLast letters → [\"e\", \"r\", \"y\", \"n\"]\nConcatenate → \"eryn\"",
+    "generated_answer": "eryn",
+    "correct": true
+  },
+  {
+    "question": "Take the last letters of each words in \"Skylar Chrissy Misty Kike\" and concatenate them.",
+    "expected_answer": "ryye",
+    "plan": "",
+    "solve": "",
+    "generated_answer": null,
+    "correct": false
+  }
+]
