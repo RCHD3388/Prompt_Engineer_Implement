@@ -11,8 +11,6 @@ import prompts.writing_template as writing_template
 import time
 generate_prompt = gameof24_template.generate_prompt
 
-
-
 def parse_args():
     parser = argparse.ArgumentParser(description="Run prompting with Gemini API.")
     parser.add_argument(
@@ -172,6 +170,9 @@ def handle_writing(args, n_samples=5):
         else:
             return "Passage not found."
     
+    def split_with_dot(text):
+        return ". ".join([f"{index + 1}. {s.strip()}" for index, s in enumerate(text.split("."))])
+
     output_info = []
     for idx, data in enumerate(writing_data):
         logging_info = {
@@ -187,7 +188,7 @@ def handle_writing(args, n_samples=5):
         generated_plans = []
         choices_list = ""
         for index, _ in enumerate(range(n_samples)):
-            prompt = re.sub(r"\{input\}", data, writing_template.generate_sample_plan_prompt)
+            prompt = re.sub(r"\{input\}", split_with_dot(data), writing_template.generate_sample_plan_prompt)
             generated_plan = generate_answer(prompt)
             generated_plan = extract_plan_only(generated_plan)
             generated_plans.append(generated_plan)
@@ -226,6 +227,7 @@ def handle_writing(args, n_samples=5):
         generated_passages = []
         for index, _ in enumerate(range(n_samples)):
             prompt = re.sub(r"\{plan\}", best_plan, writing_template.generate_sample_passage_prompt)
+            prompt = re.sub(r"\{input\}", split_with_dot(data), prompt)
             generated_passage = generate_answer(prompt)
             generated_passage = extract_passage_only(generated_passage)
             
